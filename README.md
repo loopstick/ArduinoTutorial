@@ -225,7 +225,7 @@ You can always email me
 	including long list of different sensors	
 - Michael’s pages: http://teachmetomake.com/wordpress
 
-#### You can purchase Michael Shiloh’s [LBL kit](http://www.oddwires.com/lawrence-berkeley-laboratory-kit/)from [Oddwires](http://www.oddwires.com/)
+#### You can purchase Michael Shiloh’s [LBL kit](http://www.oddwires.com/lawrence-berkeley-laboratory-kit/) from [Oddwires](http://www.oddwires.com/)
 - LBL Workshop kit contents:
 	- Arduino Uno
 	- USB cable
