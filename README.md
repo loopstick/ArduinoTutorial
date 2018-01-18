@@ -52,7 +52,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
 	
 #### What’s going on: How to use Arduino to turn something On and Off
 How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
-```
+```cpp
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
