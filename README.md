@@ -12,35 +12,19 @@ Revised by Sudhu Tewari 2018
 The workshop will focus on getting you up and running with Arduino quickly, so that you will understand the basic procedures for working with Arduino and can explore further on your own.
 
 We will cover how to install Arduino on your laptop; how to understand, modify, and write Arduino programs; how to connect sensors to Arduino and read them from a program; and how to connect actuators (LEDs, motors, speakers) and control them from a program. Other topics will be covered as interest dictates and time permits.
-
-Contents
-		1 Before the Workshop
-		2 At the Workshop
-		3 First steps: Verifying correct installation
-		4 What’s going on: How to use Arduino to turn something On and Off
-		5 How do we add our own things (LEDs, motors, speakers, sensors, etc.)
-		6 How to use a sensor
-		7 Communicating with Arduino
-		8 analogWrite(): Controlling speed or brightness
-		9 What else can analogWrite() do?
-		10 Arduino outputs: Voltage and current
-		11 Controlling large loads with a transistor
-		12 More to explore
-		13 Examples of Projects for Inspiration
-		14 Where to go next
-		15 Workshop kit contents. You can  purchase the kit  from Oddwires
 		
-Before the Workshop
+#### Before the Workshop
 Please bring your laptop. Arduino runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can. Instructions at http://arduino.cc/en/Guide/HomePage
 
 An Arduino kit will be provided for use during the workshop or you may bring your own.
 If you have questions prior to or after the workshop please contact Sudhu: loopstick@hotmail.com
 
-At the Workshop
+#### At the Workshop
 Please interrupt anytime with questions.
 
-First steps: Verifying correct installation
-All of this is in the Arduino Getting Started guide for your operating system.
+#### First steps: Verifying correct installation
+All of this is in the Arduino Getting Started guide for your operating system. [https://www.arduino.cc/en/Guide/HomePage](https://www.arduino.cc/en/Guide/HomePage).
+
 	▪	Connect Arduino via USB cable
 	▪	Windows? Might see “New Hardware Discovered” and later might see “New Hardware Ready for Use”.
 	▪	Mac OS X? Might see “New Network Interface Found”. Click “Network Preferences…”,  click “Apply”, and when it finishes, click “Close”. It doesn’t matter if the configuration fails.
@@ -59,8 +43,9 @@ All of this is in the Arduino Getting Started guide for your operating system.
 	▪	Errors? Raise your hand for help or visit troubleshooting
 	▪	Look for the amber LED on your Arduino to be blinking
 	▪	No blinking? Raise your hand for help or visit troubleshooting
-	▪	
-What’s going on: How to use Arduino to turn something On and Off
+	
+	
+#### What’s going on: How to use Arduino to turn something On and Off
 How does the program (sketch) do this? (all described in the  Blink tutorial)
 /*
   Blink
@@ -87,8 +72,8 @@ void loop() {
   delay(1000);               // wait for a second
 }
 
-How do we add our own things (LEDs, motors, speakers, sensors, etc.)
-The Solderless Breadboard (SparkFun tutorial)
+#### How do we add our own things (LEDs, motors, speakers, sensors, etc.)
+The Solderless Breadboard (SparkFun [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
 
 Use it to add an external LED. LEDs must always be used with resistors so they don’t burn . The resistor value can be anywhere from 220 ohm to 1k ohm. The lower the resistance, the brighter the light:
 
