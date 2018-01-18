@@ -17,6 +17,10 @@ We will cover how to install Arduino on your laptop; how to understand, modify, 
 Please bring your laptop. Arduino runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can. Instructions at http://arduino.cc/en/Guide/HomePage
 
 An Arduino kit will be provided for use during the workshop or you may bring your own.
+
+What is Arduino anyway?
+	Read about Arduino: https://www.arduino.cc/en/Guide/Introduction
+
 If you have questions prior to or after the workshop please contact Sudhu: loopstick@hotmail.com
 
 #### At the Workshop
