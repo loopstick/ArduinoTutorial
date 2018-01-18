@@ -81,6 +81,8 @@ void loop() {
 
 #### How do we add our own things (LEDs, motors, speakers, sensors, etc.)
 The Solderless Breadboard (SparkFun [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
+![Breadboard](/images/Breadboard.JPG)
+Format: ![Breadboard](url)
 
 Use it to add an external LED. LEDs must always be used with resistors so they don’t burn . The resistor value can be anywhere from 220 ohm to 1k ohm. The lower the resistance, the brighter the light:
 
@@ -89,7 +91,8 @@ Here’s another view:
 Use the Blink sketch: File -> Examples -> Basics -> Blink (think about why)
 And here is a schematic of this circuit:
 
-(Fritzing)
+[Fritzing](http://www.fritzing.org/)
+
 Exercise 1: Move LED to a different pin (e.g. pin 8). See if you can figure out how to do this from the schematic alone:
 
 Now the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
