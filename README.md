@@ -225,35 +225,34 @@ You can always email me
 	including long list of different sensors	
 - Michael’s pages: http://teachmetomake.com/wordpress
 
-#### You can purchase Michael Shiloh’s [LBL kit](http://www.oddwires.com/lawrence-berkeley-laboratory-kit/)
-from [Oddwires](http://www.oddwires.com/)
-	LBL Workshop kit contents:
-	▪	Arduino Uno
-	▪	USB cable
-	▪	Prototyping
-	▪	Solderless Breadboard
-	▪	Jumper wires
-	▪	Output devices (actuators)
-	▪	LEDs
-	▪	5-9V DC Motor with leads
-	▪	Piezo element (passive, so can be used both as a sensor and an actuator)
-	▪	Input devices (sensors)
-	▪	Light dependent resistor (CdS cell)
-	▪	Thermistor
-	▪	Piezo element (passive, so can be used both as a sensor and an actuator)
-	▪	Helper components
-	▪	220 ohm resistors
-	▪	10K resistors
-	▪	1K resistors
-	▪	MOSFET irlb8721pbf
-	▪	9V battery case with 2.1mm plug for Arduino
+#### You can purchase Michael Shiloh’s [LBL kit](http://www.oddwires.com/lawrence-berkeley-laboratory-kit/)from [Oddwires](http://www.oddwires.com/)
+- LBL Workshop kit contents:
+	- Arduino Uno
+	- USB cable
+	- Prototyping
+	- Solderless Breadboard
+	- Jumper wires
+	- Output devices (actuators)
+	- LEDs
+	- 5-9V DC Motor with leads
+	- Piezo element (passive, so can be used both as a sensor and an actuator)
+	- Input devices (sensors)
+	- Light dependent resistor (CdS cell)
+	- Thermistor
+	- Piezo element (passive, so can be used both as a sensor and an actuator)
+	- Helper components
+	- 220 ohm resistors
+	- 10K resistors
+	- 1K resistors
+	- MOSFET irlb8721pbf
+	- 9V battery case with 2.1mm plug for Arduino
 
 Oddwires sells a variety of other kits as well:
 http://www.oddwires.com/arduino-kits/
 
 
 #### Electronics _surplus_ supplies online
-[Marlin P. Jones}(http://www.mpja.com/)
+[Marlin P. Jones](http://www.mpja.com/)
 [AllElectronics](https://www.allelectronics.com/)
 [Electronics Goldmine](http://www.goldmine-elec-products.com/)
 [CircuitSpecialists](https://www.circuitspecialists.com/)
