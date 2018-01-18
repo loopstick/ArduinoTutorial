@@ -141,7 +141,7 @@ Now upload this sketch:
 _File -> Examples -> Basics -> Fade_
 
 What’s the LED doing? Can you figure out how the sketch is doing this?
-```
+```cpp
 analogWrite(led, brightness);
 and then
 brightness = brightness + fadeAmount;
@@ -177,22 +177,22 @@ or
 	▪	tutorial
 
 #### More to explore
-	digitalRead()
-	What is a switch?	
-	_Arduino->File->Examples->Basics->DigitalReadSerial_
-	[Digital Read Serial](http://arduino.cc/en/Tutorial/DigitalReadSerial) tutorial
-	Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
-	Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc.
-	▪	Multiple output devices: play melody while controlling motor speed, etc.
-	▪	The problem with, and a solution to, delay(): 
-	[BlinkWithoutDelay(http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
-	▪	Boolean logic, tests, and conditionals
+- digitalRead()
+- What is a switch?	
+- _Arduino->File->Examples->Basics->DigitalReadSerial_
+- [Digital Read Serial](http://arduino.cc/en/Tutorial/DigitalReadSerial) tutorial
+- Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
+- Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc.
+- Multiple output devices: play melody while controlling motor speed, etc.
+- The problem with, and a solution to, delay(): 
+- [BlinkWithoutDelay(http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
+- Boolean logic, tests, and conditionals
 
 #### Examples of Projects for Inspiration
-	▪	One website’s opinion of the [top 40 Arduino Projects](http://hacknmod.com/hack/top-40-arduino-projects-of-the-web/)
-	▪	[Interfacing with Hardware](http://playground.arduino.cc/Main/InterfacingWithHardware)
-	▪	[Arduino related Instructables](http://www.instructables.com/tag/type-id/category-technology/channel-arduino/)
-	▪	Google anything you can think of and the word “Arduino”
+- One website’s opinion of the [top 40 Arduino Projects](http://hacknmod.com/hack/top-40-arduino-projects-of-the-web/)
+- [Interfacing with Hardware](http://playground.arduino.cc/Main/InterfacingWithHardware)
+- [Arduino related Instructables](http://www.instructables.com/tag/type-id/category-technology/channel-arduino/)
+- Google anything you can think of and the word “Arduino”
 
 #### Where to go next
 You can always email me
