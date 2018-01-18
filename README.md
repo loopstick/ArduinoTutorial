@@ -104,7 +104,8 @@ Use the Blink sketch: _File -> Examples -> Basics -> Blink_
 		(think about why)
 
 ### Exercise 1: 
-Move LED to a different pin (e.g. pin 8). See if you can figure out how to do this from the schematic alone:
+Move LED to a different pin (e.g. pin 8). 
+	See if you can figure out how to do this on your own
 
 Now the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
 
@@ -121,6 +122,7 @@ The LDR indicates the amount of light by changing its resistance, but Arduino ca
 
 Open and upload this sketch:
 _File->Examples->Basics->AnalogReadSerial_
+
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out.
 
 #### Communicating with Arduino
@@ -177,52 +179,55 @@ or
 #### More to explore
 	digitalRead()
 	What is a switch?	
-	Arduino->File->Examples->Basics->DigitalReadSerial
-	Digital Read Serial tutorial
-	Making sounds: Melody tutorial
+	_Arduino->File->Examples->Basics->DigitalReadSerial_
+	[Digital Read Serial](http://arduino.cc/en/Tutorial/DigitalReadSerial) tutorial
+	Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
 	Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc.
 	▪	Multiple output devices: play melody while controlling motor speed, etc.
-	▪	The problem with, and a solution to, delay(): BlinkWithoutDelay tutorial
+	▪	The problem with, and a solution to, delay(): 
+	[BlinkWithoutDelay(http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
 	▪	Boolean logic, tests, and conditionals
 
 #### Examples of Projects for Inspiration
-	▪	One website’s opinion of the top 40 Arduino Projects
-	▪	Interfacing with Hardware
-	▪	Arduino related Instructables
+	▪	One website’s opinion of the [top 40 Arduino Projects](http://hacknmod.com/hack/top-40-arduino-projects-of-the-web/)
+	▪	[Interfacing with Hardware](http://playground.arduino.cc/Main/InterfacingWithHardware)
+	▪	[Arduino related Instructables](http://www.instructables.com/tag/type-id/category-technology/channel-arduino/)
 	▪	Google anything you can think of and the word “Arduino”
 
 #### Where to go next
-	▪	You can always email me
-	▪	Free “Arduino in a Nutshell” booklet
-	▪	Many excellent Arduino books, e.g. “Getting Started with Arduino“
-	▪	Local places to work on projects and get informal help
-	▪	Open hack night every Wednesday at Tech Liminal in Oakland
-	▪	Hacker spaces often welcome non-members to bring projects or questions
-	▪	Noisebridge (San Francisco)
-	▪	Sudo room (Oakland)
-	▪	Hacker Dojo (Mountain View)
-	▪	Ace Monster Toys (Oakland)
-	▪	
-	▪	Websites with parts, tutorials, examples
-	▪	Arduino
-	▪	Adafruit Industries
-	▪	Sparkfun
-	▪	Tronixstuff
-	▪	NYU ITP
+You can always email me
+- Free [“Arduino in a Nutshell”](http://hci.rwth-aachen.de/arduino) booklet
+- Many excellent Arduino books, e.g. [“Getting Started with Arduino“](http://shop.oreilly.com/product/0636920021414.do)
 
-	▪	Local shops with very knowledgeable staff
-	▪	Al lasher’s (Berkeley)
+*Local places to work on projects and get informal help*
+- [Open hack night](http://techliminal.com/open-hack-night/) every Wednesday at Tech Liminal in Oakland
+- Hacker spaces often welcome non-members to bring projects or questions
+- [Noisebridge](https://www.noisebridge.net/) (San Francisco)
+- [Sudo room](https://sudoroom.org/) (Oakland)
+- [Hacker Dojo](http://www.hackerdojo.com/) (Mountain View)
+- [Ace Monster Toys](http://acemonstertoys.org/) (Oakland)
+	
+#### Websites with parts, tutorials, examples
+- [Arduino](http://arduino.cc/)
+- [Adafruit Industries](https://www.adafruit.com/)
+- [Sparkfun](https://www.sparkfun.com/)
+- [Tronixstuff](https://tronixstuff.wordpress.com/)
+- [NYU ITP](http://itp.nyu.edu/physcomp/Tutorials/Tutorials}
 
-	▪	Online resources
-	▪	Arduino forum
-	▪	Arduino Google+
-	▪	Massive list of resources
-	▪	Sensor workshop at ITP, including long list of different sensors
-	▪	Michael’s pages
+#### Local shops with very knowledgeable staff
+- [Al Lasher’s](http://allashers.com/) (Berkeley)
 
-#### You can purchase Michael Shiloh’s LBL kit from Oddwires
+#### Online resources
+- [Arduino forum](http://arduino.cc/forum/)
+- [Arduino Google+](https://plus.google.com/+Arduino)
+- [Massive list of resources](http://arduino.cc/forum/index.php?board=3.0)
+- [Sensor workshop at ITP](http://itp.nyu.edu/physcomp/sensors/Reports/Reports),
+	including long list of different sensors	
+- Michael’s pages: http://teachmetomake.com/wordpress
 
-#### LBL Workshop kit contents:
+#### You can purchase Michael Shiloh’s [LBL kit](http://www.oddwires.com/lawrence-berkeley-laboratory-kit/)
+from [Oddwires](http://www.oddwires.com/)
+	LBL Workshop kit contents:
 	▪	Arduino Uno
 	▪	USB cable
 	▪	Prototyping
@@ -243,6 +248,12 @@ or
 	▪	MOSFET irlb8721pbf
 	▪	9V battery case with 2.1mm plug for Arduino
 
-
-#### Oddwires sells a variety of other kits as well:
+Oddwires sells a variety of other kits as well:
 http://www.oddwires.com/arduino-kits/
+
+
+#### Electronics _surplus_ supplies online
+[Marlin P. Jones}(http://www.mpja.com/)
+[AllElectronics](https://www.allelectronics.com/)
+[Electronics Goldmine](http://www.goldmine-elec-products.com/)
+[CircuitSpecialists](https://www.circuitspecialists.com/)
