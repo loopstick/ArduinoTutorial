@@ -3,7 +3,7 @@
 ### Arduino Hands-on Introduction Workshop
 
 This workshop created by:
-Michael Shiloh and Judy Castro for Teach Me To Make 
+Michael Shiloh and Judy Castro for *Teach Me To Make*
 
 Revised by Sudhu Tewari 2018
 
@@ -32,17 +32,17 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 2. Open Arduino software (IDE)
 
-3. Select Tools -> Board.
+3. Select _Tools -> Board_
    - You have an Uno.
 
-4. Select Tools -> Serial Port
+4. Select _Tools -> Serial Port_
    - Windows? Chose the largest COM number
      - No COMs? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
    - Mac OS X? Chose either usbmodem
      - No usbmodem? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
    - Linux? There is only one choice
    
-5. Open File->Examples->Basics->Blink
+5. Open _File->Examples->Basics->Blink_
    - Click “Upload”
    - Look for errors in the bottom window of the program
      - Errors? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
@@ -79,49 +79,64 @@ void loop() {
 }
 ``` 
 
-#### How do we add our own things (LEDs, motors, speakers, sensors, etc.)
+#### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
+
 The Solderless Breadboard (SparkFun [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
+
 ![Breadboard](/images/Breadboard.JPG)
-Format: ![Breadboard](url)
 
-Use it to add an external LED. LEDs must always be used with resistors so they don’t burn . The resistor value can be anywhere from 220 ohm to 1k ohm. The lower the resistance, the brighter the light:
+Use it to add an external LED. LEDs must always be used with resistors so they don’t burn out. The resistor value can be anywhere from 220 ohm to 1k ohm. The lower the resistance, the brighter the light:
 
-Here’s another view:
+Here’s a picture showing how to connect the LED and resistor on the breadboard:
+![Breadboard](/images/LED_Resistor.JPG)
 
-Use the Blink sketch: File -> Examples -> Basics -> Blink (think about why)
+Here is another view of this circuit:
+![Fritzing: LED resistor pic](http://www.fritzing.org/)
+
 And here is a schematic of this circuit:
+![Fritzing: LED resistor schematic](http://www.fritzing.org/)
 
-[Fritzing](http://www.fritzing.org/)
+Use the Blink sketch: _File -> Examples -> Basics -> Blink_
+	Does your LED blink? 
+		(think about why)
 
-Exercise 1: Move LED to a different pin (e.g. pin 8). See if you can figure out how to do this from the schematic alone:
+### Exercise 1: 
+Move LED to a different pin (e.g. pin 8). See if you can figure out how to do this from the schematic alone:
 
 Now the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
-Exercise 2: If you changed the program to control only pin 8, then the built-in LED on pin 13 is no longer blinking. Can you change the program to make them both blink?
+
+### Exercise 2: 
+If you changed the program to control only pin 8, then the built-in LED on pin 13 is no longer blinking. Can you change the program to make them both blink?
+
 Are we limited to LEDs? No; we could replace the LED (and its resistor) with any other suitable device, with some considerations. We’ll learn more about this later.
 
-How to use a sensor
+#### How to use a sensor
 So far we’ve only used Arduino as an output device, to control something in the physical world (the LED). The other way of interfacing to the physical world is as an input device, using a sensor to get information about the physical world. We’ll start with a photoresistor, also called a light dependent resistor or LDR. It’s a resistor whose resistance depends on the light: the more light, the lower the resistance. (The resistor we used above with the LED is a fixed resistor.)
-The LDR indicates the amount of light by changing its resistance, but Arduino can not measure resistance. Arduino can measure voltage. Fortunately, we can easily convert a varying resistance to a varying voltage using a fixed resistor to create a voltage divider. This time the fixed resistor needs a larger resistance, so select a 10 k ohm resistor and build the circuit below. You don’t need to remove the LED circuit as there should be room on your breadboard for both, and we’ll use the LED again later.
+The LDR indicates the amount of light by changing its resistance, but Arduino can not measure resistance. But, Arduino can measure voltage! Fortunately, we can easily convert a varying resistance to a varying voltage using a fixed resistor to create a voltage divider. This time the fixed resistor needs a larger resistance, so select a 10k ohm resistor and build the circuit below. You don’t need to remove the LED circuit as there should be room on your breadboard for both, and we’ll use the LED again later.
+
+![CircuitExample](/images/LDRcircuit.jpg)
 
 Open and upload this sketch:
-File->Examples->Basics->AnalogReadSerial
-How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? Read the Arduino tutorial to find out.
+_File->Examples->Basics->AnalogReadSerial_
+How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out.
 
-Communicating with Arduino
-Arduino is connected to your computer, so they can communicate. Let’s look at the AnalogReadSerial sketch:
-Serial.println(sensorValue);
-This allows Arduino to send a message to your laptop. In order to see this message you need to open the Serial Monitor by clicking on the magnifying glass near the top right corner.
-(By the way, this also allows a program on your laptop to communicate with a program on your Arduino. See
-File->Examples->Communication
-This is covered more in the intermediate Arduino workshops.)
+#### Communicating with Arduino
+Arduino is connected to your computer, so they can communicate. Let’s look at the _AnalogReadSerial_ sketch.
+	Serial.println(sensorValue);
+This allows Arduino to send a message to your laptop. In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
+This allows a program on your laptop to communicate with a program on your Arduino. 
+(See_File->Examples->Communication_, covered further in the intermediate Arduino workshops.)
 
-analogWrite(): Controlling speed or brightness
+#### analogWrite(): Controlling speed or brightness
 If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess analogWrite() might do?
+
 Move the LED to pin 11:
 
 Now upload this sketch:
-File -> Examples -> Basics -> Fade
+_File -> Examples -> Basics -> Fade_
+
 What’s the LED doing? Can you figure out how the sketch is doing this?
+```
 analogWrite(led, brightness);
 and then
 brightness = brightness + fadeAmount;
@@ -129,46 +144,51 @@ How does it know to start fading down when it reaches the maximum value?
   if (brightness == 0 || brightness == 255) {
     fadeAmount = -fadeAmount ; 
   }
+```
 
-Why did I ask you to move the LED to pin 11? It turns out analogWrite() only works on certain pins: 3, 5, 6, 9, 10, and 11. (reference)
+Why did I ask you to move the LED to pin 11? 
+	It turns out analogWrite() only works on certain pins: 3, 5, 6, 9, 10, and 11. (reference)
 
 What else can analogWrite() do?
-It turns out that analogWrite() also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
+	analogWrite() also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
 
-Arduino outputs: Voltage and current
+#### Arduino outputs: Voltage and current
 When used as outputs, two things must be considered: the voltage and the current. Our Arduino can deliver 5 v, and at most 40 mA.
 The voltage is determined by Arduino, but the current is determined by whatever we’re trying to control. In the case of the LEDs, they only need 20 mA or less. The motor we have might take more than 40 mA. In the worst case, when it’s stalled, it might want a 200 mA.
 The important thing to realize is that Arduino does not have the ability to limit this current. It will try to deliver whatever is asked of it, even if it overheats and damages itself.
 If we want to control a device that might take more than 40 mA, we have to use an intermediary.
 
-Controlling large loads with a transistor
-The transistor is like a bicycle gear: you control it with a small amount of current, and it in turn can control a lot more current.
-The transistor also allows us to use a higher voltage than the 5V Arduino can deliver.
+#### Controlling large loads with a transistor
+The transistor is like a bicycle gear: you control it with a small amount of current, and it in turn can control a lot more current. The transistor also allows us to use a higher voltage than the 5V Arduino can deliver.
 
 You can test this with either
-File -> Examples -> Basics -> Blink File -> Examples -> Basics -> Fade
-References:
+	_File -> Examples -> Basics -> Blink_
+or
+	_File -> Examples -> Basics -> Fade_
+
+
+#### References:
 	▪	irlb8721pbf datasheet
 	▪	tutorial
 
-More to explore
-	▪	digitalRead()
-	▪	What is a switch?	
-	▪	Arduino->File->Examples->Basics->DigitalReadSerial
-	▪	Digital Read Serial tutorial
-	▪	Making sounds: Melody tutorial
-	▪	Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc.
+#### More to explore
+	digitalRead()
+	What is a switch?	
+	Arduino->File->Examples->Basics->DigitalReadSerial
+	Digital Read Serial tutorial
+	Making sounds: Melody tutorial
+	Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc.
 	▪	Multiple output devices: play melody while controlling motor speed, etc.
 	▪	The problem with, and a solution to, delay(): BlinkWithoutDelay tutorial
 	▪	Boolean logic, tests, and conditionals
 
-Examples of Projects for Inspiration
+#### Examples of Projects for Inspiration
 	▪	One website’s opinion of the top 40 Arduino Projects
 	▪	Interfacing with Hardware
 	▪	Arduino related Instructables
 	▪	Google anything you can think of and the word “Arduino”
 
-Where to go next
+#### Where to go next
 	▪	You can always email me
 	▪	Free “Arduino in a Nutshell” booklet
 	▪	Many excellent Arduino books, e.g. “Getting Started with Arduino“
@@ -197,9 +217,9 @@ Where to go next
 	▪	Sensor workshop at ITP, including long list of different sensors
 	▪	Michael’s pages
 
-You can purchase Michael Shiloh’s LBL kit from Oddwires
+#### You can purchase Michael Shiloh’s LBL kit from Oddwires
 
-LBL Workshop kit contents:
+#### LBL Workshop kit contents:
 	▪	Arduino Uno
 	▪	USB cable
 	▪	Prototyping
@@ -221,5 +241,5 @@ LBL Workshop kit contents:
 	▪	9V battery case with 2.1mm plug for Arduino
 
 
- Oddwires sells a variety of other kits as well:
+#### Oddwires sells a variety of other kits as well:
 http://www.oddwires.com/arduino-kits/
