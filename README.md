@@ -81,20 +81,20 @@ void loop() {
 
 #### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
 
-The Solderless Breadboard (SparkFun [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
+The Solderless Breadboard (SparkFun [tutorial:](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
 
 ![Breadboard](/images/Breadboard.JPG)
 
 Use it to add an external LED. LEDs must always be used with resistors so they don’t burn out. The resistor value can be anywhere from 220 ohm to 1k ohm. The lower the resistance, the brighter the light:
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
-![Breadboard](/images/LED_Resistor.JPG)
+![LED_Resistor](/images/2-Blink-an-LED_SMALL.jpg)
 
 Here is another view of this circuit:
-![Fritzing: LED resistor pic](http://www.fritzing.org/)
+![Fritzing: LED resistor pic](/images/LED_ResistorPic.JPG)
 
 And here is a schematic of this circuit:
-![Fritzing: LED resistor schematic](http://www.fritzing.org/)
+![Fritzing: LED resistor schematic](/images/LED-circuit-diagram.png)
 
 Use the Blink sketch: _File -> Examples -> Basics -> Blink_
 	Does your LED blink? 
