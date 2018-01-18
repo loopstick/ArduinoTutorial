@@ -25,28 +25,34 @@ Please interrupt anytime with questions.
 #### First steps: Verifying correct installation
 All of this is in the Arduino Getting Started guide for your operating system. [https://www.arduino.cc/en/Guide/HomePage](https://www.arduino.cc/en/Guide/HomePage).
 
-	▪	Connect Arduino via USB cable
-	▪	Windows? Might see “New Hardware Discovered” and later might see “New Hardware Ready for Use”.
-	▪	Mac OS X? Might see “New Network Interface Found”. Click “Network Preferences…”,  click “Apply”, and when it finishes, click “Close”. It doesn’t matter if the configuration fails.
-	▪	Linux? Nothing to do here
-	▪	Open Arduino software (IDE)
-	▪	Select Tools -> Board. You have an Uno.
-	▪	Select Tools -> Serial Port
-	▪	Windows? Chose the largest COM number
-	▪	No COMs? Raise your hand for help or visit troubleshooting
-	▪	Mac OS X? Chose either usbmodem
-	▪	No usbmodem? Raise your hand for help or visit troubleshooting
-	▪	Linux? There is only one choice
-	▪	Open File->Examples->Basics->Blink
-	▪	Click “Upload”
-	▪	Look for errors in the bottom window of the program
-	▪	Errors? Raise your hand for help or visit troubleshooting
-	▪	Look for the amber LED on your Arduino to be blinking
-	▪	No blinking? Raise your hand for help or visit troubleshooting
+1. Connect Arduino via USB cable	
+   - Windows? Might see “New Hardware Discovered” and later might see “New Hardware Ready for Use”.
+   - Mac OS X? Might see “New Network Interface Found”. Click “Network Preferences…”,  click “Apply”, and when it finishes, click “Close”. It doesn’t matter if the configuration fails.
+   - Linux? Nothing to do here
+
+2. Open Arduino software (IDE)
+
+3. Select Tools -> Board.
+   - You have an Uno.
+
+4. Select Tools -> Serial Port
+   - Windows? Chose the largest COM number
+     - No COMs? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
+   - Mac OS X? Chose either usbmodem
+     - No usbmodem? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
+   - Linux? There is only one choice
+   
+5. Open File->Examples->Basics->Blink
+   - Click “Upload”
+   - Look for errors in the bottom window of the program
+     - Errors? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
+   - Look for the amber LED on your Arduino to be blinking
+     - No blinking? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
 	
 	
 #### What’s going on: How to use Arduino to turn something On and Off
-How does the program (sketch) do this? (all described in the  Blink tutorial)
+How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
+```
 /*
   Blink
   Turns on an LED on for one second, then off for one second, repeatedly.
@@ -71,6 +77,7 @@ void loop() {
   digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);               // wait for a second
 }
+``` 
 
 #### How do we add our own things (LEDs, motors, speakers, sensors, etc.)
 The Solderless Breadboard (SparkFun [tutorial](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
