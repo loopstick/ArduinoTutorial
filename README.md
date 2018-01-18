@@ -130,7 +130,7 @@ Arduino is connected to your computer, so they can communicate. Let’s look at 
 	Serial.println(sensorValue);
 This allows Arduino to send a message to your laptop. In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
 This allows a program on your laptop to communicate with a program on your Arduino. 
-(See_File->Examples->Communication_, covered further in the intermediate Arduino workshops.)
+(See _File->Examples->Communication_ covered further in the intermediate Arduino workshops.)
 
 #### analogWrite(): Controlling speed or brightness
 If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess analogWrite() might do?
