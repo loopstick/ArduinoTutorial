@@ -93,7 +93,7 @@ Use it to add an external LED. LEDs must always be used with resistors so they d
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
 
-![LED_Resistor Pic](/images/LED_Breadboard2.JPG)
+![LED_Resistor Pic](/images/LED_Breadboard2.jpg)
 
 Here is another view of this circuit:
 
