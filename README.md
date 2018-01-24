@@ -156,7 +156,8 @@ How does it know to start fading down when it reaches the maximum value?
 ```
 
 Why did I ask you to move the LED to pin 11? 
-	It turns out analogWrite() only works on certain pins: 3, 5, 6, 9, 10, and 11. (reference)
+	It turns out analogWrite() only works on certain pins: 3, 5, 6, 9, 10, and 11. 
+	[Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board)
 
 What else can analogWrite() do?
 	analogWrite() also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
