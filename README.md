@@ -177,8 +177,10 @@ or
 
 
 #### References:
-	▪	irlb8721pbf datasheet
-	▪	tutorial
+- [Arduino Transistor Motor Control](https://www.arduino.cc/en/Tutorial/TransistorMotorControl)
+- [Using a Transistor to Control Hight Current Loads](http://itp.nyu.edu/physcomp/labs/motors-and-transistors/using-a-transistor-to-control-high-current-loads-with-an-arduino/)
+- [irlb8721pbf datasheet](https://www.adafruit.com/datasheets/irlb8721pbf.pdf)
+
 
 #### More to explore
 - digitalRead()
