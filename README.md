@@ -101,7 +101,7 @@ Here is another view of this circuit:
 
 And here is a schematic of this circuit:
 
-![Fritzing: LED resistor schematic](/images/LED-circuit-diagram.png)
+![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg)
 
 Use the Blink sketch: _File -> Examples -> Basics -> Blink_
 	Does your LED blink? 
