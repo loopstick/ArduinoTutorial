@@ -171,6 +171,9 @@ If we want to control a device that might take more than 40 mA, we have to use a
 #### Controlling large loads with a transistor
 The transistor is like a bicycle gear: you control it with a small amount of current, and it in turn can control a lot more current. The transistor also allows us to use a higher voltage than the 5V Arduino can deliver.
 
+Use a TIP120 or IRF520 to control ahigher current for a motor
+![CircuitExample](/images/Transistor_Motor.jpg)
+
 You can test this with either
 	_File -> Examples -> Basics -> Blink_
 or
