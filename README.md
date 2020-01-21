@@ -90,7 +90,7 @@ The [loop()](https://www.arduino.cc/reference/en/language/structure/sketch/loop/
 
 More on the specific functions and variables soon! Let's make something happen in the real world first.
 
-#### What’s going on: How to use Arduino to turn something On and Off
+#### What’s going on: How to use Arduino to turn something ON and OFF
 How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
 ```cpp
 /*
