@@ -17,8 +17,8 @@ We will cover how to install Arduino on your laptop; how to understand, modify, 
 Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino architecture is particularly useful for understanding Arduino.
 
 #### Before the Workshop
-Arduino software (IDE) runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can.
-Instructions at http://arduino.cc/en/Guide/HomePage
+Arduino software (IDE) runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can.  
+Instructions at http://arduino.cc/en/Guide/HomePage  
 Please bring your laptop with the software installed to the workshop.
 
 An Arduino kit will be provided for use during the workshop or you may bring your own.
