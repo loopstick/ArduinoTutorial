@@ -1,3 +1,7 @@
+/*
+  a lovely combination of HelloWorld and Blink!
+*/
+
 int ledPin = 13;
 
 void setup() {
