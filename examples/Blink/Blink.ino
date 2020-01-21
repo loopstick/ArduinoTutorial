@@ -22,6 +22,7 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
+// This is unnecessary because: LED_BUILTIN 
 int LED = 13;
 
 // the setup function runs once when you press reset or power the board
@@ -37,5 +38,5 @@ void loop() {
   delay(200);                       // wait for a second
   digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
   delay(300);                       // wait for a second
- 
+
 }
