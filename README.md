@@ -5,7 +5,7 @@
 This workshop created by:
 Michael Shiloh and Judy Castro for *Teach Me To Make*
 
-Revised by Sudhu Tewari 2018
+Revised by Sudhu Tewari 2020
 
 ##### Arduino Examples - coming soon!
 
@@ -15,7 +15,7 @@ We will cover how to install Arduino on your laptop; how to understand, modify, 
 
 #### Additional Resources
 Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino parts is particularly useful for understanding Arduino.
-		
+
 #### Before the Workshop
 Please bring your laptop. Arduino runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can. Instructions at http://arduino.cc/en/Guide/HomePage
 
@@ -32,7 +32,7 @@ Please interrupt anytime with questions.
 #### First steps: Verifying correct installation
 All of this is in the Arduino Getting Started guide for your operating system. [https://www.arduino.cc/en/Guide/HomePage](https://www.arduino.cc/en/Guide/HomePage).
 
-1. Connect Arduino via USB cable	
+1. Connect Arduino via USB cable
    - Windows? Might see “New Hardware Discovered” and later might see “New Hardware Ready for Use”.
    - Mac OS X? Might see “New Network Interface Found”. Click “Network Preferences…”,  click “Apply”, and when it finishes, click “Close”. It doesn’t matter if the configuration fails.
    - Linux? Nothing to do here
@@ -48,15 +48,15 @@ All of this is in the Arduino Getting Started guide for your operating system.
    - Mac OS X? Chose either usbmodem
      - No usbmodem? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
    - Linux? There is only one choice
-   
+
 5. Open _File->Examples->Basics->Blink_
    - Click “Upload”
    - Look for errors in the bottom window of the program
      - Errors? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
    - Look for the amber LED on your Arduino to be blinking
      - No blinking? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
-	
-	
+
+
 #### What’s going on: How to use Arduino to turn something On and Off
 How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
 ```cpp
@@ -84,7 +84,7 @@ void loop() {
   digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
   delay(1000);               // wait for a second
 }
-``` 
+```
 
 #### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
 
@@ -107,16 +107,16 @@ And here is a schematic of this circuit:
 ![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg)
 
 Use the Blink sketch: _File -> Examples -> Basics -> Blink_
-	Does your LED blink? 
+	Does your LED blink?
 		(think about why)
 
-### Exercise 1: 
-Move LED to a different pin (e.g. pin 8). 
+### Exercise 1:
+Move LED to a different pin (e.g. pin 8).
 	See if you can figure out how to do this on your own
 
 Now the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
 
-### Exercise 2: 
+### Exercise 2:
 If you changed the program to control only pin 8, then the built-in LED on pin 13 is no longer blinking. Can you change the program to make them both blink?
 
 Are we limited to LEDs? No; we could replace the LED (and its resistor) with any other suitable device, with some considerations. We’ll learn more about this later.
@@ -136,7 +136,7 @@ How do you know if anything is working? Arduino might be reading the sensor, but
 Arduino is connected to your computer, so they can communicate. Let’s look at the _AnalogReadSerial_ sketch.
 	Serial.println(sensorValue);
 This allows Arduino to send a message to your laptop. In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
-This allows a program on your laptop to communicate with a program on your Arduino. 
+This allows a program on your laptop to communicate with a program on your Arduino.
 (See _File->Examples->Communication_ covered further in the intermediate Arduino workshops.)
 
 #### analogWrite(): Controlling speed or brightness
@@ -154,12 +154,12 @@ and then
 brightness = brightness + fadeAmount;
 How does it know to start fading down when it reaches the maximum value?
   if (brightness == 0 || brightness == 255) {
-    fadeAmount = -fadeAmount ; 
+    fadeAmount = -fadeAmount ;
   }
 ```
 
-Why did I ask you to move the LED to pin 11? 
-	It turns out analogWrite() only works on certain pins: 3, 5, 6, 9, 10, and 11. 
+Why did I ask you to move the LED to pin 11?
+	It turns out analogWrite() only works on certain pins: 3, 5, 6, 9, 10, and 11.
 	[Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board)
 
 What else can analogWrite() do?
@@ -191,7 +191,7 @@ or
 
 #### More to explore
 - digitalRead()
-- What is a switch?	
+- What is a switch?
 - _Arduino->File->Examples->Basics->DigitalReadSerial_
 - [Digital Read Serial](http://arduino.cc/en/Tutorial/DigitalReadSerial) tutorial
 - Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
@@ -219,7 +219,7 @@ You can always email me
 - [Sudo room](https://sudoroom.org/) (Oakland)
 - [Hacker Dojo](http://www.hackerdojo.com/) (Mountain View)
 - [Ace Monster Toys](http://acemonstertoys.org/) (Oakland)
-	
+
 #### Websites with parts, tutorials, examples
 - [Arduino](http://arduino.cc/)
 - [Adafruit Industries](https://www.adafruit.com/)
@@ -235,7 +235,7 @@ You can always email me
 - [Arduino Google+](https://plus.google.com/+Arduino)
 - [Massive list of resources](http://arduino.cc/forum/index.php?board=3.0)
 - [Sensor workshop at ITP](http://itp.nyu.edu/physcomp/sensors/Reports/Reports),
-	including long list of different sensors	
+	including long list of different sensors
 - Michael’s pages: http://teachmetomake.com/wordpress
 
 #### You can purchase Michael Shiloh’s [LBL kit](http://www.oddwires.com/lawrence-berkeley-laboratory-kit/) from [Oddwires](http://www.oddwires.com/)
