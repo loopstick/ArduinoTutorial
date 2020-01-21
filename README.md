@@ -61,10 +61,15 @@ All of this is in the Arduino Getting Started guide for your operating system.
 ```cpp
 /*
   Hello World
-  Turns on an LED on for one second, then off for one second, repeatedly.
+  A "Hello, World!" program generally is a computer program that
+	outputs or displays the message "Hello, World!".
+	Such a program is very simple in most programming languages,
+	and is often used to illustrate the basic syntax of a programming language.
+	It is often the first program written by people learning to code
 */
+
 void setup() {
-//initialize serial communications at a 9600 baud rate
+//initialize serial communications at 9600 baud rate
 Serial.begin(9600);
 }
 
@@ -74,7 +79,16 @@ Serial.println("Hello, world!");
 //wait 100 milliseconds so we don't drive ourselves crazy
 delay(1000);
 }
+```
+The _Serial_ commands allow Arduino to send a message to your laptop. In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
 
+a little code anatomy:
+The [setup()](https://www.arduino.cc/reference/en/language/structure/sketch/setup/) function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The setup() function will only run once, after each powerup or reset of the Arduino board.
+
+The [loop()](https://www.arduino.cc/reference/en/language/structure/sketch/loop/) After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and _loops_ consecutively through your list of instructions to control the Arduino.
+
+
+More on the specific functions and variables soon! Let's make something happen in the real world first.
 
 #### What’s going on: How to use Arduino to turn something On and Off
 How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
@@ -104,6 +118,8 @@ void loop() {
   delay(1000);               // wait for a second
 }
 ```
+some more code anatomy - info about an Arduino [Sketch](https://www.arduino.cc/en/tutorial/sketch)
+
 
 #### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
 
@@ -152,7 +168,8 @@ _File->Examples->Basics->AnalogReadSerial_
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out.
 
 #### Communicating with Arduino
-Arduino is connected to your computer, so they can communicate. Let’s look at the _AnalogReadSerial_ sketch.
+Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now with DATA!
+Let’s look at the _AnalogReadSerial_ sketch.
 	Serial.println(sensorValue);
 This allows Arduino to send a message to your laptop. In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
 This allows a program on your laptop to communicate with a program on your Arduino.
