@@ -14,7 +14,7 @@ The workshop will focus on getting you up and running with Arduino quickly, so t
 We will cover how to install Arduino on your laptop; how to understand, modify, and write Arduino programs; how to connect sensors to Arduino and read them from a program; and how to connect actuators (LEDs, motors, speakers) and control them from a program. Other topics will be covered as interest dictates and time permits.
 
 #### Additional Resources
-Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino parts is particularly useful for understanding Arduino.
+Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino architecture is particularly useful for understanding Arduino.
 
 #### Before the Workshop
 Please bring your laptop. Arduino runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can. Instructions at http://arduino.cc/en/Guide/HomePage
@@ -55,6 +55,25 @@ All of this is in the Arduino Getting Started guide for your operating system.
      - Errors? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
    - Look for the amber LED on your Arduino to be blinking
      - No blinking? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
+
+
+#### What’s going on: Is this thing on?
+```cpp
+/*
+  Hello World
+  Turns on an LED on for one second, then off for one second, repeatedly.
+*/
+void setup() {
+//initialize serial communications at a 9600 baud rate
+Serial.begin(9600);
+}
+
+void loop(){
+//send 'Hello, world!' over the serial port
+Serial.println("Hello, world!");
+//wait 100 milliseconds so we don't drive ourselves crazy
+delay(1000);
+}
 
 
 #### What’s going on: How to use Arduino to turn something On and Off
