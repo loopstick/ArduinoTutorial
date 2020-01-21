@@ -17,7 +17,9 @@ We will cover how to install Arduino on your laptop; how to understand, modify, 
 Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino architecture is particularly useful for understanding Arduino.
 
 #### Before the Workshop
-Please bring your laptop. Arduino runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can. Instructions at http://arduino.cc/en/Guide/HomePage
+Arduino software (IDE) runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can.
+Instructions at http://arduino.cc/en/Guide/HomePage
+Please bring your laptop with the software installed to the workshop.
 
 An Arduino kit will be provided for use during the workshop or you may bring your own.
 
@@ -27,9 +29,9 @@ What is Arduino anyway?
 If you have questions prior to or after the workshop please contact Sudhu: loopstick@hotmail.com
 
 #### At the Workshop
-Please interrupt anytime with questions.
+ - Please interrupt any time with questions.
 
-#### First steps: Verifying correct installation
+### First steps: Verifying correct installation
 All of this is in the Arduino Getting Started guide for your operating system. [https://www.arduino.cc/en/Guide/HomePage](https://www.arduino.cc/en/Guide/HomePage).
 
 1. Connect Arduino via USB cable
@@ -57,7 +59,10 @@ All of this is in the Arduino Getting Started guide for your operating system.
      - No blinking? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
 
 
-#### What’s going on: Is this thing on?
+### Is this thing on?
+Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/HelloWorld/HelloWorld/HelloWorld.ino)
+
+
 ```cpp
 /*
   Hello World
@@ -90,7 +95,7 @@ The [loop()](https://www.arduino.cc/reference/en/language/structure/sketch/loop/
 
 More on the specific functions and variables soon! Let's make something happen in the real world first.
 
-#### What’s going on: How to use Arduino to turn something ON and OFF
+### How to use Arduino to turn something ON and OFF
 How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
 ```cpp
 /*
