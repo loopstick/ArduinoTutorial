@@ -132,7 +132,7 @@ The Solderless Breadboard (SparkFun [tutorial:](https://learn.sparkfun.com/tutor
 
 ![Breadboard](/images/Breadboard.JPG)
 
-![Breadboard underside](/images/BreadboardUnderside.JPG)
+![Breadboard underside](/images/BreadboardUnderside.jpg)
 
 [Breadboard connections](http://wiring.org.co/learning/tutorials/breadboard/)
 
