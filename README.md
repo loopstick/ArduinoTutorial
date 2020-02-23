@@ -132,6 +132,11 @@ The Solderless Breadboard (SparkFun [tutorial:](https://learn.sparkfun.com/tutor
 
 ![Breadboard](/images/Breadboard.JPG)
 
+![Breadboard underside](/images/BreadboardUnderside.JPG)
+
+[Breadboard connections](http://wiring.org.co/learning/tutorials/breadboard/)
+
+
 Use it to add an external LED. LEDs must always be used with resistors so they don’t burn out. The resistor value can be anywhere from 220 ohm to 1k ohm. The lower the resistance, the brighter the light:
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
