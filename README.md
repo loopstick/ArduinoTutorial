@@ -130,7 +130,7 @@ some more code anatomy - info about an Arduino [Sketch](https://www.arduino.cc/e
 
 The Solderless Breadboard (SparkFun [tutorial:](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
 
-![Breadboard](/images/Breadboard_st.JPG)
+![Breadboard](/images/Breadboard_st.jpg)
 
 ![Breadboard underside](/images/BreadboardUnderside_st.jpg)
 
