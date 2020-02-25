@@ -166,29 +166,31 @@ If you changed the program to control only pin 8, then the built-in LED on pin 1
 
 Are we limited to LEDs? No; we could replace the LED (and its resistor) with any other suitable device, with some considerations. We’ll learn more about this later.
 
-#### How to use a sensor
+#### How to use a sensor: analogRead()
 So far we’ve only used Arduino as an output device, to control something in the physical world (the LED). The other way of interfacing to the physical world is as an input device, using a sensor to get information about the physical world. We’ll start with a photoresistor, also called a light dependent resistor or LDR. It’s a resistor whose resistance depends on the light: the more light, the lower the resistance. (The resistor we used above with the LED is a fixed resistor.)
-The LDR indicates the amount of light by changing its resistance, but Arduino can not measure resistance. But, Arduino can measure voltage! Fortunately, we can easily convert a varying resistance to a varying voltage using a fixed resistor to create a voltage divider. This time the fixed resistor needs a larger resistance, so select a 10k ohm resistor and build the circuit below. You don’t need to remove the LED circuit as there should be room on your breadboard for both, and we’ll use the LED again later.
+The LDR indicates the amount of light by changing its resistance, but Arduino can not measure resistance. But, Arduino can measure voltage! Fortunately, we can easily convert a varying resistance to a varying voltage using a fixed resistor to create a [voltage divider](https://learn.sparkfun.com/tutorials/voltage-dividers/all). This time the fixed resistor needs a larger resistance, so select a 10k ohm resistor and build the circuit below. You don’t need to remove the LED circuit as there should be room on your breadboard for both, and we’ll use the LED again later.
 
 ![CircuitExample](/images/Arduino_LDR_VoltageDiv.jpg)
 
 Open and upload this sketch:
 _File->Examples->Basics->AnalogReadSerial_
 
-How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out.
+How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? 
 
-#### Communicating with Arduino
-Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now with DATA!
-Let’s look at the _AnalogReadSerial_ sketch.
-	Serial.println(sensorValue);
-This allows Arduino to send a message to your laptop. In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
-This allows a program on your laptop to communicate with a program on your Arduino.
-(See _File->Examples->Communication_ covered further in the intermediate Arduino workshops.)
+Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now your Ardunio is sending sensor DATA!
+ - this line:	```cpp Serial.println(sensorValue);``` allows Arduino to send a message to your laptop. 
+In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner. Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more. Also see _File->Examples->Communication_ for more examples of other types of Serial communication).
+
+Now that we've got sensor data coming in (as a range of values) what can we do with the data?
+
+Let's shift our focus, for a moment, to outputting a range of voltages. Then we'll put the input and output togetherto get real world input to control real world output. 
+
+
 
 #### analogWrite(): Controlling speed or brightness
 If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess analogWrite() might do?
 
-Move the LED to pin 11:
+Move the LED to pin 9:
 
 Now upload this sketch:
 _File -> Examples -> Basics -> Fade_
@@ -204,29 +206,47 @@ How does it know to start fading down when it reaches the maximum value?
   }
 ```
 
-Why did I ask you to move the LED to pin 11?
-	It turns out analogWrite() only works on certain pins: 3, 5, 6, 9, 10, and 11.
-	[Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board)
+Why did I ask you to move the LED to pin 9?
+	It turns out analogWrite() only works on certain pins which are capable of [PWM](https://www.arduino.cc/en/tutorial/PWM) output: 3, 5, 6, 9, 10, and 11.
+	see the[Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board)for more info
 
-What else can analogWrite() do?
-	analogWrite() also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
+
+#### Sensor ranges, calibration, and mapping
+
+
+We lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
+
+What else can _analogWrite()_ do?
+	_analogWrite()_ also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
+
 
 #### Arduino outputs: Voltage and current
-When used as outputs, two things must be considered: the voltage and the current. Our Arduino can deliver 5 v, and at most 40 mA.
-The voltage is determined by Arduino, but the current is determined by whatever we’re trying to control. In the case of the LEDs, they only need 20 mA or less. The motor we have might take more than 40 mA. In the worst case, when it’s stalled, it might want a 200 mA.
-The important thing to realize is that Arduino does not have the ability to limit this current. It will try to deliver whatever is asked of it, even if it overheats and damages itself.
-If we want to control a device that might take more than 40 mA, we have to use an intermediary.
+- When used as outputs, two things must be considered: the voltage and the current. Our Arduino can deliver 5 v, and at most 40 mA.
+- The voltage is determined by Arduino, but the current is determined by whatever we’re trying to control. In the case of the LEDs, they only need 20 mA or less. The motor we have might take more than 40 mA. In the worst case, when it’s stalled, it might want a 200 mA.
+- The important thing to realize is that Arduino does not have the ability to limit this current. It will try to deliver whatever is asked of it, even if it overheats and damages itself.
+- If we want to control a device that might take more than 40 mA, we have to use an intermediary.
 
 #### Controlling large loads with a transistor
 The transistor is like a bicycle gear: you control it with a small amount of current, and it in turn can control a lot more current. The transistor also allows us to use a higher voltage than the 5V Arduino can deliver.
 
-Use a TIP120 or IRF520 to control ahigher current for a motor
+Use a transistor to control a higher current for a motor.
+ - There are hundreds of transisors that will work for this application. 
+   - here are a few that I commonly use:
+	- [TIP120](https://cdn-shop.adafruit.com/datasheets/TIP120.pdf) - Darlington sold by Adafruit
+	- [IRF520](https://www.vishay.com/docs/91017/91017.pdf)
+	- [IRF8721](https://cdn-shop.adafruit.com/datasheets/irlb8721pbf.pdf) - MOSFET sold by Adafruit
+  - never assume the pinout of a transistor or IC.
+    - ALWAYS look up the pinout before applying power.
+      - or else 爆炸
+
 ![CircuitExample](/images/Transistor_Motor.jpg)
 
 You can test this with either
 	_File -> Examples -> Basics -> Blink_
 or
 	_File -> Examples -> Basics -> Fade_
+	
+	
 
 
 #### References:
