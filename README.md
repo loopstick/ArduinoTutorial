@@ -183,7 +183,12 @@ In order to see this message you need to open the _Serial Monitor_ by clicking
 
 Now that we've got sensor data coming in (as a range of values) what can we do with the data?
 
-Let's shift our focus, for a moment, to outputting a range of voltages. Then we'll put the input and output togetherto get real world input to control real world output. 
+We could do some math to calculate the voltage we're measuring:
+_File->Examples->Basics->AnalogReadVoltage_
+
+That's nice, but what if we want to use the sensor data to control some kind of physical reaction (light, heat, motion) to the data?
+
+Let's shift our focus, for a moment, to outputting a range of voltages. Then we'll put the input and output together to get real world input to control real world output. 
 
 
 
@@ -239,12 +244,16 @@ Use a transistor to control a higher current for a motor.
     - ALWAYS look up the pinout before applying power.
       - or else 爆炸
 
-![CircuitExample](/images/Transistor_Motor.jpg)
+![CircuitExample](/images/MotorTransistor_AA.jpg)
+
 
 You can test this with either
 	_File -> Examples -> Basics -> Blink_
 or
 	_File -> Examples -> Basics -> Fade_
+
+It's important to note that we are now using a separate power source for the motor. There are good reasons for doing so...
+![CircuitExample](/images/Transistor_Motor.jpg)
 	
 	
 
