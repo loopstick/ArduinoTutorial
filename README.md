@@ -186,6 +186,9 @@ Now that we've got sensor data coming in (as a range of values) what can we do w
 We could do some math to calculate the voltage we're measuring:
 _File->Examples->Basics->AnalogReadVoltage_
 
+What other kinds of sensors are there?
+- [Sensor workshop at ITP](https://itp.nyu.edu/physcomp/lessons/sensors-the-basics/),
+
 That's nice, but what if we want to use the sensor data to control some kind of physical reaction (light, heat, motion) to the data?
 
 Let's shift our focus, for a moment, to outputting a range of voltages. Then we'll put the input and output together to get real world input to control real world output. 
@@ -243,25 +246,26 @@ Use a transistor to control a higher current for a motor.
   - never assume the pinout of a transistor or IC.
     - ALWAYS look up the pinout before applying power.
       - or else 爆炸
+      
 
 ![CircuitExample](/images/MotorTransistor_AA.jpg)
 
 
 You can test this with either
 	_File -> Examples -> Basics -> Blink_
+	
 or
+
 	_File -> Examples -> Basics -> Fade_
 
 It's important to note that we are now using a separate power source for the motor. There are good reasons for doing so...
+
 ![CircuitExample](/images/Transistor_Motor.jpg)
 	
-	
-
-
-#### References:
+##### References:
 - [Arduino Transistor Motor Control](https://www.arduino.cc/en/Tutorial/TransistorMotorControl)
 - [Using a Transistor to Control Hight Current Loads](http://itp.nyu.edu/physcomp/labs/motors-and-transistors/using-a-transistor-to-control-high-current-loads-with-an-arduino/)
-- [irlb8721pbf datasheet](https://www.adafruit.com/datasheets/irlb8721pbf.pdf)
+
 
 
 #### More to explore
@@ -276,71 +280,12 @@ It's important to note that we are now using a separate power source for the mot
 - [BlinkWithoutDelay(http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
 - Boolean logic, tests, and conditionals
 
-#### Examples of Projects for Inspiration
-- One website’s opinion of the [top 40 Arduino Projects](http://hacknmod.com/hack/top-40-arduino-projects-of-the-web/)
-- [Interfacing with Hardware](http://playground.arduino.cc/Main/InterfacingWithHardware)
-- [Arduino related Instructables](http://www.instructables.com/tag/type-id/category-technology/channel-arduino/)
-- Google anything you can think of and the word “Arduino”
 
-#### Where to go next
-You can always email me
-- Free [“Arduino in a Nutshell”](http://hci.rwth-aachen.de/arduino) booklet
-- Many excellent Arduino books, e.g. [“Getting Started with Arduino“](http://shop.oreilly.com/product/0636920021414.do)
-
-*Local places to work on projects and get informal help*
-- [Open hack night](http://techliminal.com/open-hack-night/) every Wednesday at Tech Liminal in Oakland
-- Hacker spaces often welcome non-members to bring projects or questions
-- [Noisebridge](https://www.noisebridge.net/) (San Francisco)
-- [Sudo room](https://sudoroom.org/) (Oakland)
-- [Hacker Dojo](http://www.hackerdojo.com/) (Mountain View)
-- [Ace Monster Toys](http://acemonstertoys.org/) (Oakland)
-
-#### Websites with parts, tutorials, examples
-- [Arduino](http://arduino.cc/)
-- [Adafruit Industries](https://www.adafruit.com/)
-- [Sparkfun](https://www.sparkfun.com/)
-- [Tronixstuff](https://tronixstuff.wordpress.com/)
-- [NYU ITP](http://itp.nyu.edu/physcomp/Tutorials/Tutorials}
-
-#### Local shops with very knowledgeable staff
-- [Al Lasher’s](http://allashers.com/) (Berkeley)
-
-#### Online resources
-- [Arduino forum](http://arduino.cc/forum/)
-- [Arduino Google+](https://plus.google.com/+Arduino)
-- [Massive list of resources](http://arduino.cc/forum/index.php?board=3.0)
-- [Sensor workshop at ITP](http://itp.nyu.edu/physcomp/sensors/Reports/Reports),
-	including long list of different sensors
-- Michael’s pages: http://teachmetomake.com/wordpress
-
-#### You can purchase Michael Shiloh’s [LBL kit](http://www.oddwires.com/lawrence-berkeley-laboratory-kit/) from [Oddwires](http://www.oddwires.com/)
-- LBL Workshop kit contents:
-	- Arduino Uno
-	- USB cable
-	- Prototyping
-	- Solderless Breadboard
-	- Jumper wires
-	- Output devices (actuators)
-	- LEDs
-	- 5-9V DC Motor with leads
-	- Piezo element (passive, so can be used both as a sensor and an actuator)
-	- Input devices (sensors)
-	- Light dependent resistor (CdS cell)
-	- Thermistor
-	- Piezo element (passive, so can be used both as a sensor and an actuator)
-	- Helper components
-	- 220 ohm resistors
-	- 10K resistors
-	- 1K resistors
-	- MOSFET irlb8721pbf
-	- 9V battery case with 2.1mm plug for Arduino
-
-Oddwires sells a variety of other kits as well:
-http://www.oddwires.com/arduino-kits/
+#### Resources!!!
+- [Dr Sudhu's resources page](https://github.com/loopstick/ResourcesForClasses)
 
 
-#### Electronics _surplus_ supplies online
-[Marlin P. Jones](http://www.mpja.com/)
-[AllElectronics](https://www.allelectronics.com/)
-[Electronics Goldmine](http://www.goldmine-elec-products.com/)
-[CircuitSpecialists](https://www.circuitspecialists.com/)
+
+
+
+
