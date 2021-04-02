@@ -5,7 +5,7 @@
 This workshop created by:
 Michael Shiloh and Judy Castro for *Teach Me To Make*
 
-Revised by Sudhu Tewari 2020
+Revised by Sudhu Tewari 2018-20
 
 ##### Arduino Examples - coming soon!
 
@@ -97,6 +97,10 @@ More on the specific functions and variables soon! Let's make something happen i
 
 ### How to use Arduino to turn something ON and OFF
 How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
+
+Use the code below rather than the Arduino tutorial code included in File > Examples. 
+(The new version of Blink uses a helpful pointer to BUILTIN_LED, which makes part of the following explanation more difficult)
+
 ```cpp
 /*
   Blink
