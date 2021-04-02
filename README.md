@@ -98,8 +98,10 @@ More on the specific functions and variables soon! Let's make something happen i
 ### How to use Arduino to turn something ON and OFF
 How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
 
-Use the code below rather than the Arduino tutorial code included in File > Examples. 
+Copy or download the code below rather than the Arduino tutorial code included in File > Examples. 
 (The new version of Blink uses a helpful pointer to BUILTIN_LED, which makes part of the following explanation more difficult)
+
+Blink example sketch: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino)
 
 ```cpp
 /*
@@ -268,7 +270,7 @@ It's important to note that we are now using a separate power source for the mot
 	
 ##### References:
 - [Arduino Transistor Motor Control](https://www.arduino.cc/en/Tutorial/TransistorMotorControl)
-- [Using a Transistor to Control Hight Current Loads](http://itp.nyu.edu/physcomp/labs/motors-and-transistors/using-a-transistor-to-control-high-current-loads-with-an-arduino/)
+- [Using a Transistor to Control High Current Loads](http://itp.nyu.edu/physcomp/labs/motors-and-transistors/using-a-transistor-to-control-high-current-loads-with-an-arduino/)
 
 
 
@@ -280,9 +282,10 @@ It's important to note that we are now using a separate power source for the mot
 - Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
 - Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc.
 - Multiple output devices: play melody while controlling motor speed, etc.
-- The problem with, and a solution to, delay(): 
-- [BlinkWithoutDelay(http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
 - Boolean logic, tests, and conditionals
+- The problem with, and a solution to, delay(): 
+  - [BlinkWithoutDelay](http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
+
 
 
 #### Resources!!!
