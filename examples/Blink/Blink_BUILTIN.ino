@@ -22,21 +22,22 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
-// This is unnecessary because: LED_BUILTIN 
-int LED = 13;
+
+// int LED = 13;  // we used to have to define a variable for the builtin led
+// this is now built in to the Arduino environment -> LED_BUILTIN = 13;
 
 // the setup function runs once when you press reset or power the board
 void setup() {
   // initialize digital pin LED_BUILTIN as an output.
     pinMode(LED_BUILTIN, OUTPUT);
-    //pinMode(13, OUTPUT);
+    // pinMode(13, OUTPUT); // this is no longer relevant
 }
 
 // the loop function runs over and over again forever
 void loop() {
-  digitalWrite(13, HIGH);   // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
   delay(200);                       // wait for a second
-  digitalWrite(13, LOW);    // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
   delay(300);                       // wait for a second
 
 }
