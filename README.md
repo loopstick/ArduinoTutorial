@@ -2,10 +2,10 @@
 
 ### Arduino Hands-on Introduction Workshop
 
-This workshop created by:
+This workshop originally created by:
 Michael Shiloh and Judy Castro for *Teach Me To Make*
 
-Revised by Sudhu Tewari 2018-20
+Revised by Sudhu Tewari 2018-24
 
 ##### Arduino Examples - coming soon!
 
@@ -86,12 +86,13 @@ delay(1000);
 }
 ```
 The _Serial_ commands allow Arduino to send a message to your laptop. In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
+If you are using Arduino IDE 1.8._ the serial monitor will open in another window.
+If you are using Arduino IDE 2._._ the serial monitor will display at the bottom of the IDE window.
 
 a little code anatomy:
 The [setup()](https://www.arduino.cc/reference/en/language/structure/sketch/setup/) function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The setup() function will only run once, after each powerup or reset of the Arduino board.
 
 The [loop()](https://www.arduino.cc/reference/en/language/structure/sketch/loop/) After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and _loops_ consecutively through your list of instructions to control the Arduino.
-
 
 More on the specific functions and variables soon! Let's make something happen in the real world first.
 
