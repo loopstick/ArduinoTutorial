@@ -60,8 +60,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 
 ### Is this thing on?
-Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/HelloWorld/HelloWorld/HelloWorld.ino)
-[HelloWorld.ino](examples/HelloWorld/HelloWorld/HelloWorld.ino)
+Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](examples/HelloWorld/HelloWorld/HelloWorld.ino)
 
 ```cpp
 /*
@@ -105,7 +104,7 @@ More on the specific functions and variables soon! Let's make something happen i
 Copy or download the code below rather than the Arduino tutorial code included in File > Examples. 
 (The new version of Blink uses a helpful pointer to BUILTIN_LED, which makes part of the following explanation more difficult)
 
-Blink example sketch: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino)
+Blink example sketch: [Blink.ino](examples/Blink/Blink.ino)
 
 ```cpp
 /*
@@ -146,6 +145,7 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 
 ##### Exercise:
 - combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
+- [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
 
 
 #### Let's an an LED of our own
