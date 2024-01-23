@@ -144,12 +144,12 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 - some more code anatomy - more info about an Arduino [sketches](https://docs.arduino.cc/learn/programming/sketches/)
 
 ##### Exercise:
-- combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
-- [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
+combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
+- _Hint/Cheat:_ [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
 
 
 #### Let's an an LED of our own
-- aka an external LED (as opposed to the internal LED we just lit up)
+Add an external LED (as opposed to the internal LED we just lit up)
 
   ![LED_red](/images/LED_red_sm.jpg)
 
