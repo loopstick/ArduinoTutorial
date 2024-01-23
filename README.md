@@ -60,7 +60,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 
 ### Is this thing on?
-Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/HelloWorld/HelloWorld/HelloWorld.ino)
+Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](examples/HelloWorld/HelloWorld/HelloWorld.ino)
 
 ```cpp
 /*
@@ -104,7 +104,7 @@ More on the specific functions and variables soon! Let's make something happen i
 Copy or download the code below rather than the Arduino tutorial code included in File > Examples. 
 (The new version of Blink uses a helpful pointer to BUILTIN_LED, which makes part of the following explanation more difficult)
 
-Blink example sketch: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino)
+Blink example sketch: [Blink.ino](examples/Blink/Blink.ino)
 
 ```cpp
 /*
@@ -145,6 +145,7 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 
 ##### Exercise:
 - combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
+- [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
 
 
 #### Let's an an LED of our own
@@ -215,7 +216,7 @@ Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/A
 Move LED to a different pin (e.g. pin 8).
 	See if you can figure out how to do this on your own
 
-_Hint:__the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
+_Hint:_ the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
 
 #### Exercise 2:
 If you changed the program to control only pin 8, then the built-in LED on pin 13 is no longer blinking. Can you change the program to make them both blink?
@@ -234,8 +235,10 @@ _File->Examples->Basics->AnalogReadSerial_
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? 
 
 Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now your Ardunio is sending sensor DATA!
- - this line:	```cpp Serial.println(sensorValue);``` allows Arduino to send a message to your laptop. 
-In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner. Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more. Also see _File->Examples->Communication_ for more examples of other types of Serial communication).
+ - this line: ```Serial.println(sensorValue);``` allows Arduino to send a message to your laptop. 
+- In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
+- Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more.
+- Also see _File->Examples->Communication_ for more examples of other types of Serial communication).
 
 Now that we've got sensor data coming in (as a range of values) what can we do with the data?
 
@@ -262,9 +265,9 @@ _File -> Examples -> Basics -> Fade_
 What’s the LED doing? Can you figure out how the sketch is doing this?
 ```cpp
 analogWrite(led, brightness);
-and then
+// and then
 brightness = brightness + fadeAmount;
-How does it know to start fading down when it reaches the maximum value?
+// How does it know to start fading down when it reaches the maximum value?
   if (brightness == 0 || brightness == 255) {
     fadeAmount = -fadeAmount ;
   }
@@ -272,11 +275,18 @@ How does it know to start fading down when it reaches the maximum value?
 
 Why did I ask you to move the LED to pin 9?
 	It turns out analogWrite() only works on certain pins which are capable of [PWM](https://www.arduino.cc/en/tutorial/PWM) output: 3, 5, 6, 9, 10, and 11.
-	see the[Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board)for more info
+	see the [Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board) for more info
 
 
-#### Sensor ranges, calibration, and mapping
+### LDR controls LED
+Now that we've worked with _analogRead()_ to read a range of voltage coming from our LDR.
+AND
+we've used _analogWrite()_ to fade our LED using a range of voltage
 
+-> can we use the LDR data to control the LED brightness?
+
+
+### Sensor ranges, calibration, and mapping
 
 We lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
 
