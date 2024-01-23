@@ -61,6 +61,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 ### Is this thing on?
 Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/HelloWorld/HelloWorld/HelloWorld.ino)
+[HelloWorld.ino](examples/HelloWorld/HelloWorld/HelloWorld.ino)
 
 ```cpp
 /*
@@ -274,9 +275,18 @@ brightness = brightness + fadeAmount;
 
 Why did I ask you to move the LED to pin 9?
 	It turns out analogWrite() only works on certain pins which are capable of [PWM](https://www.arduino.cc/en/tutorial/PWM) output: 3, 5, 6, 9, 10, and 11.
-	see the[Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board)for more info
+	see the [Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board) for more info
 
-#### Sensor ranges, calibration, and mapping
+
+### LDR controls LED
+Now that we've worked with _analogRead()_ to read a range of voltage coming from our LDR.
+AND
+we've used _analogWrite()_ to fade our LED using a range of voltage
+
+-> can we use the LDR data to control the LED brightness?
+
+
+### Sensor ranges, calibration, and mapping
 
 We lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
 
