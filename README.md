@@ -150,13 +150,17 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 ##### Let's an an LED of our own
 - aka an external LED (as opposed to the internal LED we just lit up)
 
+  ![LED_red](/images/LED_red.jpg)
+
   Where (and how) do we connect the LED?
 
  <!-- ![ArduinoUno_Pinout_all](/images/ArduinoUno_Pinout_all.avif) -->
 
  <!-- ![ArduinoUno_Pinout](/images/ArduinoUno_Pinout.jpg) -->
   
-  ![ArduinoUno_Pinout_simple](/images/ArduinoUno_Pinout_simple.png)
+  <!--![ArduinoUno_Pinout_simple](/images/ArduinoUno_Pinout_simple.png) -->
+
+  ![ArduinoUno_board_top](/images/ArduinoUno_board_top.jpg)
   
 
 
@@ -198,8 +202,10 @@ And here is a schematic of this circuit:
 
 ![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg)
 
-Use the Blink sketch: _File -> Examples -> Basics -> Blink_
-	Does your LED blink?
+Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino) 
+(you can also use the IDE example, but it has some "hepful" code shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
+	
+ - Does your LED blink?
 		(think about why)
 
 ### Exercise 1:
