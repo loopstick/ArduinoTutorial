@@ -147,7 +147,7 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 - combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
 
 
-##### Let's an an LED of our own
+#### Let's an an LED of our own
 - aka an external LED (as opposed to the internal LED we just lit up)
 
   ![LED_red](/images/LED_red_sm.jpg)
@@ -164,7 +164,7 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
   
 
 
-#### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
+### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
 
 The Solderless Breadboard (SparkFun [tutorial:](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
 
@@ -192,15 +192,18 @@ Use the breadboard to add an external LED.
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
 
+![LED_Resistor Pic](/images/LED_Breadboard1.jpg)
 ![LED_Resistor Pic](/images/LED_Breadboard2.jpg)
 
 Here is another view of this circuit:
 
-![Fritzing: LED resistor pic](/images/2-Blink-an-LED_SMALL.jpg)
+<!-- ![Fritzing: LED resistor pic](/images/2-Blink-an-LED_SMALL.jpg) -->
+![Fritzing: Arduino_1LED_d13_bb](/images/Arduino_1LED_d13_bb.png)
 
 And here is a schematic of this circuit:
 
-![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg)
+<!-- ![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg) -->
+![Fritzing: LED resistor schematic](/images/Arduino_1LED_d13_schem.png)
 
 Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino) 
 (you can also use the IDE example, but it has some "hepful" code shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
@@ -208,18 +211,18 @@ Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/A
  - Does your LED blink?
 		(think about why)
 
-### Exercise 1:
+#### Exercise 1:
 Move LED to a different pin (e.g. pin 8).
 	See if you can figure out how to do this on your own
 
 _Hint:__the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
 
-### Exercise 2:
+#### Exercise 2:
 If you changed the program to control only pin 8, then the built-in LED on pin 13 is no longer blinking. Can you change the program to make them both blink?
 
 Are we limited to LEDs? No; we could replace the LED (and its resistor) with any other suitable device, with some considerations. We’ll learn more about this later.
 
-#### How to use a sensor: analogRead()
+### How to use a sensor: analogRead()
 So far we’ve only used Arduino as an output device, to control something in the physical world (the LED). The other way of interfacing to the physical world is as an input device, using a sensor to get information about the physical world. We’ll start with a photoresistor, also called a light dependent resistor or LDR. It’s a resistor whose resistance depends on the light: the more light, the lower the resistance. (The resistor we used above with the LED is a fixed resistor.)
 The LDR responds to the amount of light by changing its resistance. Arduino cannot measure resistance directly, but can measure voltage (electrical potential).  Fortunately, we can easily convert a varying resistance to a varying voltage using a fixed resistor to create a [voltage divider](https://learn.sparkfun.com/tutorials/voltage-dividers/all). This time the fixed resistor needs a larger resistance, so select a 10k ohm resistor and build the circuit below. You don’t need to remove the LED circuit as there should be room on your breadboard for both, and we’ll use the LED again later.
 
@@ -248,7 +251,7 @@ Let's shift our focus, for a moment, to outputting a range of voltages. Then we'
 
 
 
-#### analogWrite(): Controlling speed or brightness
+### analogWrite(): Controlling speed or brightness
 If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess analogWrite() might do?
 
 Move the LED to pin 9:
@@ -281,13 +284,13 @@ What else can _analogWrite()_ do?
 	_analogWrite()_ also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
 
 
-#### Arduino outputs: Voltage and current
+### Arduino outputs: Voltage and current
 - When used as outputs, two things must be considered: the voltage and the current. Our Arduino can deliver 5 v, and at most 40 mA.
 - The voltage is determined by Arduino, but the current is determined by whatever we’re trying to control. In the case of the LEDs, they only need 20 mA or less. The motor we have might take more than 40 mA. In the worst case, when it’s stalled, it might want a 200 mA.
 - The important thing to realize is that Arduino does not have the ability to limit this current. It will try to deliver whatever is asked of it, even if it overheats and damages itself.
 - If we want to control a device that might take more than 40 mA, we have to use an intermediary.
 
-#### Controlling large loads with a transistor
+### Controlling large loads with a transistor
 The transistor is like a bicycle gear: you control it with a small amount of current, and it in turn can control a lot more current. The transistor also allows us to use a higher voltage than the 5V Arduino can deliver.
 
 Use a transistor to control a higher current for a motor.
