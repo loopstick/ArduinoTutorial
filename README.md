@@ -140,7 +140,7 @@ You should see a little LED on the Arduino begin to blink on and off, about once
 Can you identify the code that makes this happen?
 
 everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
-- some more code anatomy - more info about an Arduino [sketches]([https://www.arduino.cc/en/tutorial/sketch](https://docs.arduino.cc/learn/programming/sketches/))
+- some more code anatomy - more info about an Arduino [sketches](https://docs.arduino.cc/learn/programming/sketches/)
 
 ##### Exercise:
 - combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
