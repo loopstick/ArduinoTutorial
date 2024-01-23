@@ -43,10 +43,10 @@ All of this is in the Arduino Getting Started guide for your operating system.
 3. Select _Tools -> Board_
    - You have an Uno.
 
-4. Select _Tools -> Serial Port_
+4. Select _Tools -> Port_
    - Windows? Chose the largest COM number
      - No COMs? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
-   - Mac OS X? Chose either usbmodem
+   - Mac OS X? Chose either usbmodem - you should also see _(Arduino Uno)_
      - No usbmodem? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
    - Linux? There is only one choice
 
