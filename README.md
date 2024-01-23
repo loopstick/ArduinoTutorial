@@ -150,7 +150,7 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 ##### Let's an an LED of our own
 - aka an external LED (as opposed to the internal LED we just lit up)
 
-  ![LED_red](/images/LED_red.jpg)
+  ![LED_red](/images/LED_red_sm.jpg)
 
   Where (and how) do we connect the LED?
 
@@ -188,7 +188,7 @@ Use the breadboard to add an external LED.
 - LEDs are polarized
   - video: [identifying LED polarity](https://www.youtube.com/watch?v=SRDgNR_yCms)
 
-  ![led_example](/images/LED_example.png)
+  ![led_example](/images/LED_example.png)  ![LED_red](/images/LED_red_sm.jpg)
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
 
