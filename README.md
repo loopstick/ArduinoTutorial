@@ -60,7 +60,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 
 ### Is this thing on?
-Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](examples/HelloWorld/HelloWorld/HelloWorld.ino)
+Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](examples/HelloWorld/HelloWorld.ino)
 
 ```cpp
 /*
