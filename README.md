@@ -198,8 +198,10 @@ And here is a schematic of this circuit:
 
 ![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg)
 
-Use the Blink sketch: _File -> Examples -> Basics -> Blink_
-	Does your LED blink?
+Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino) 
+(you can also use the IDE example, but it has some "hepful" code shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
+	
+ - Does your LED blink?
 		(think about why)
 
 ### Exercise 1:
