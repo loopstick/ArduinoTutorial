@@ -13,18 +13,17 @@ The workshop will focus on getting you up and running with Arduino quickly, so t
 
 We will cover how to install Arduino on your laptop; how to understand, modify, and write Arduino programs; how to connect sensors to Arduino and read them from a program; and how to connect actuators (LEDs, motors, speakers) and control them from a program. Other topics will be covered as interest dictates and time permits.
 
-#### Additional Resources
-Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino architecture is particularly useful for understanding Arduino.
+#### What is Arduino anyway?
+Read about Arduino here : https://www.arduino.cc/en/Guide/Introduction
+Additionally: Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino architecture is particularly useful for understanding Arduino.
 
 #### Before the Workshop
-Arduino software (IDE) runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can.  
-Instructions at http://arduino.cc/en/Guide/HomePage  
+Arduino software (IDE) runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can.  We prefer to use an older version of the Arduino IDE: Version 1.8.19. Feel free to download the newer version as well and run them both for comparison.
 Please bring your laptop with the software installed to the workshop.
 
-An Arduino kit will be provided for use during the workshop or you may bring your own.
+Additional instructions at http://arduino.cc/en/Guide/HomePage  
 
-What is Arduino anyway?
-	Read about Arduino: https://www.arduino.cc/en/Guide/Introduction
+An Arduino kit will be provided for use during the workshop or you may bring your own.
 
 If you have questions prior to or after the workshop please contact Sudhu: loopstick@hotmail.com
 
@@ -61,7 +60,6 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 ### Is this thing on?
 Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/HelloWorld/HelloWorld/HelloWorld.ino)
-
 
 ```cpp
 /*
