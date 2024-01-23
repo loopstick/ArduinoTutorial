@@ -88,13 +88,17 @@ The _Serial_ commands allow Arduino to send a message to your laptop. In order t
 - If you are using Arduino IDE 2._._ the serial monitor will display at the bottom of the IDE window.
 
 a little code anatomy:
-- The [setup()](https://www.arduino.cc/reference/en/language/structure/sketch/setup/) function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The setup() function will only run once, after each power-up or reset of the Arduino board.
-- The [loop()](https://www.arduino.cc/reference/en/language/structure/sketch/loop/) After creating a setup() function, which initializes and sets the initial values, the loop() function does precisely what its name suggests, and _loops_ consecutively through your list of instructions to control the Arduino.
+- The [setup()](https://www.arduino.cc/reference/en/language/structure/sketch/setup/) function is called when a sketch starts.
+  - Use it to initialize variables, pin modes, start using libraries, etc.
+  - The setup() function will only run once, after each power-up or reset of the Arduino board.
+- The [loop()](https://www.arduino.cc/reference/en/language/structure/sketch/loop/) the loop() function does precisely what its name suggests, and _loops_ consecutively through your list of instructions to control the Arduino.
+  - The loop() functions runs continuously as long as the Arduino is powered on.
+  - Each instruction is executed in order from top to bottom.
+  - Arduino only executes one instruction at a time.
 
 More on the specific functions and variables soon! Let's make something happen in the real world first.
 
 ### How to use Arduino to turn something ON and OFF
-How does the program (sketch) do this? (all described in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
 
 Copy or download the code below rather than the Arduino tutorial code included in File > Examples. 
 (The new version of Blink uses a helpful pointer to BUILTIN_LED, which makes part of the following explanation more difficult)
@@ -127,7 +131,34 @@ void loop() {
   delay(1000);               // wait for a second
 }
 ```
-some more code anatomy - info about an Arduino ['sketches']([https://www.arduino.cc/en/tutorial/sketch](https://docs.arduino.cc/learn/programming/sketches/))
+upload this code to your Arduino!
+
+What happens?
+
+You should see a little LED on the Arduino begin to blink on and off, about once per second.
+
+Can you identify the code that makes this happen?
+
+everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink))
+- some more code anatomy - more info about an Arduino [sketches]([https://www.arduino.cc/en/tutorial/sketch](https://docs.arduino.cc/learn/programming/sketches/))
+
+##### Exercise:
+- combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
+
+
+##### Let's an an LED of our own
+- aka an external LED (as opposed to the internal LED we just lit up)
+
+  Where (and how) do we connect the LED?
+
+![ArduinoUno_Pinout_all](/images/ArduinoUno_Pinout_all.avif)
+
+  ![ArduinoUno_Pinout](/images/ArduinoUno_Pinout.jpg)
+  
+  ![ArduinoUno_Pinout_simple](/images/ArduinoUno_Pinout_simple.png)
+  
+
+
 
 
 #### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
