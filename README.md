@@ -215,7 +215,7 @@ Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/A
 Move LED to a different pin (e.g. pin 8).
 	See if you can figure out how to do this on your own
 
-_Hint:__the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
+_Hint:_ the LED won’t blink until you change the program, since the program is only turning pin 13 on and off. Change the program to control pin 8.
 
 #### Exercise 2:
 If you changed the program to control only pin 8, then the built-in LED on pin 13 is no longer blinking. Can you change the program to make them both blink?
