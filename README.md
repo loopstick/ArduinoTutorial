@@ -150,6 +150,8 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 ##### Let's an an LED of our own
 - aka an external LED (as opposed to the internal LED we just lit up)
 
+  ![LED_red](/images/LED_red.jpg)
+
   Where (and how) do we connect the LED?
 
  <!-- ![ArduinoUno_Pinout_all](/images/ArduinoUno_Pinout_all.avif) -->
