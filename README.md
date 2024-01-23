@@ -234,12 +234,10 @@ _File->Examples->Basics->AnalogReadSerial_
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? 
 
 Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now your Ardunio is sending sensor DATA!
- - this line: ```Serial.println(sensorValue);```
-```cpp
-Serial.println(sensorValue);
-```
-allows Arduino to send a message to your laptop. 
-In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner. Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more. Also see _File->Examples->Communication_ for more examples of other types of Serial communication).
+ - this line: ```Serial.println(sensorValue);``` allows Arduino to send a message to your laptop. 
+- In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
+- Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more.
+- Also see _File->Examples->Communication_ for more examples of other types of Serial communication).
 
 Now that we've got sensor data coming in (as a range of values) what can we do with the data?
 
@@ -266,9 +264,9 @@ _File -> Examples -> Basics -> Fade_
 What’s the LED doing? Can you figure out how the sketch is doing this?
 ```cpp
 analogWrite(led, brightness);
-and then
+// and then
 brightness = brightness + fadeAmount;
-How does it know to start fading down when it reaches the maximum value?
+// How does it know to start fading down when it reaches the maximum value?
   if (brightness == 0 || brightness == 255) {
     fadeAmount = -fadeAmount ;
   }
@@ -278,9 +276,7 @@ Why did I ask you to move the LED to pin 9?
 	It turns out analogWrite() only works on certain pins which are capable of [PWM](https://www.arduino.cc/en/tutorial/PWM) output: 3, 5, 6, 9, 10, and 11.
 	see the[Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board)for more info
 
-
 #### Sensor ranges, calibration, and mapping
-
 
 We lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
 
