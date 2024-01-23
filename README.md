@@ -234,7 +234,7 @@ _File->Examples->Basics->AnalogReadSerial_
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? 
 
 Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now your Ardunio is sending sensor DATA!
- - this line:
+ - this line: ```Serial.println(sensorValue);```
 ```cpp
 Serial.println(sensorValue);
 ```
