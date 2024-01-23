@@ -60,7 +60,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 
 ### Is this thing on?
-Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](examples/HelloWorld/HelloWorld/HelloWorld.ino)
+Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](examples/HelloWorld/HelloWorld.ino)
 
 ```cpp
 /*
@@ -143,13 +143,13 @@ Can you identify the code that makes this happen?
 everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink)
 - some more code anatomy - more info about an Arduino [sketches](https://docs.arduino.cc/learn/programming/sketches/)
 
-##### Exercise:
-- combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
-- [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
+#### Exercise:
+combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
+- _Hint/Cheat:_ [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
 
 
 #### Let's an an LED of our own
-- aka an external LED (as opposed to the internal LED we just lit up)
+Add an external LED (as opposed to the internal LED we just lit up)
 
   ![LED_red](/images/LED_red_sm.jpg)
 
@@ -237,21 +237,24 @@ How do you know if anything is working? Arduino might be reading the sensor, but
 Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now your Ardunio is sending sensor DATA!
  - this line: ```Serial.println(sensorValue);``` allows Arduino to send a message to your laptop. 
 - In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner.
-- Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more.
+- you can also see a graph of the real time data with the Serial Plotter (_Tools > Serial Plotter_)
+- Read the Arduino [AnalogReadSerial tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more.
 - Also see _File->Examples->Communication_ for more examples of other types of Serial communication).
 
 Now that we've got sensor data coming in (as a range of values) what can we do with the data?
 
 We could do some math to calculate the voltage we're measuring:
-_File->Examples->Basics->AnalogReadVoltage_
+ -> _File->Examples->Basics->AnalogReadVoltage_
+ - this will show us the voltage that the Arduino analog pin is measuring
 
 What other kinds of sensors are there?
-- [Sensor workshop at ITP](https://itp.nyu.edu/physcomp/lessons/sensors-the-basics/),
+- [Sensor workshop at ITP](https://itp.nyu.edu/physcomp/lessons/sensors-the-basics/)
+- [Adafruit Sensors](https://www.adafruit.com/category/35)
+- lots of different sensors means we can sense lots of different things!
 
 That's nice, but what if we want to use the sensor data to control some kind of physical reaction (light, heat, motion) to the data?
 
 Let's shift our focus, for a moment, to outputting a range of voltages. Then we'll put the input and output together to get real world input to control real world output. 
-
 
 
 ### analogWrite(): Controlling speed or brightness
@@ -277,6 +280,8 @@ Why did I ask you to move the LED to pin 9?
 	It turns out analogWrite() only works on certain pins which are capable of [PWM](https://www.arduino.cc/en/tutorial/PWM) output: 3, 5, 6, 9, 10, and 11.
 	see the [Arduino Uno Board Pins reference](https://www.arduino.cc/en/Reference/Board) for more info
 
+for extra fun, check out _File -> Examples -> Analog -> Fading_ <- this implements a For loop to do the fading!
+
 
 ### LDR controls LED
 Now that we've worked with _analogRead()_ to read a range of voltage coming from our LDR.
@@ -285,6 +290,9 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
 
 -> can we use the LDR data to control the LED brightness?
 
+#### Exercise: 
+- use the LDR data to control the LED brightness!
+- _Hint/Cheat:_ [LDR_LED.ino](examples/LDR_LED/LDR_LED.ino)
 
 ### Sensor ranges, calibration, and mapping
 
