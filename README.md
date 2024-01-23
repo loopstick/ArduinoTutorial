@@ -89,6 +89,7 @@ If you are using Arduino IDE 1.8._ the serial monitor will open in another windo
 
 If you are using Arduino IDE 2._._ the serial monitor will display at the bottom of the IDE window.
 
+
 a little code anatomy:
 The [setup()](https://www.arduino.cc/reference/en/language/structure/sketch/setup/) function is called when a sketch starts. Use it to initialize variables, pin modes, start using libraries, etc. The setup() function will only run once, after each powerup or reset of the Arduino board.
 
