@@ -151,14 +151,12 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
 
   Where (and how) do we connect the LED?
 
-![ArduinoUno_Pinout_all](/images/ArduinoUno_Pinout_all.avif)
+ <!-- ![ArduinoUno_Pinout_all](/images/ArduinoUno_Pinout_all.avif) -->
 
-  ![ArduinoUno_Pinout](/images/ArduinoUno_Pinout.jpg)
+ <!-- ![ArduinoUno_Pinout](/images/ArduinoUno_Pinout.jpg) -->
   
   ![ArduinoUno_Pinout_simple](/images/ArduinoUno_Pinout_simple.png)
   
-
-
 
 
 #### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
@@ -172,7 +170,20 @@ The Solderless Breadboard (SparkFun [tutorial:](https://learn.sparkfun.com/tutor
 [Breadboard connections](http://wiring.org.co/learning/tutorials/breadboard/)
 
 
-Use it to add an external LED. LEDs must always be used with resistors so they don’t burn out. The resistor value can be anywhere from 220 ohm to 1k ohm. The lower the resistance, the brighter the light:
+Use the breadboard to add an external LED.
+- LEDs must always be used with resistors so they don’t burn out.
+  - The resistor value can be anywhere from 100 ohm to 1k ohm.
+    - The lower the resistance, the brighter the light.
+    - Evil Mad Scientist explains it well [here](https://www.evilmadscientist.com/2012/resistors-for-leds/)
+  - Resistor Color Code!
+    - [Learn the Resistor Color Code in in 5 minutes](http://www.resistorguide.com/resistor-color-code/)
+
+    ![ResistorColorCode](/images/ResistorColorCode.png)
+
+- LEDs are polarized
+  - [identifying LED polarity](https://www.youtube.com/watch?v=SRDgNR_yCms)
+
+  ![led_example](/images/led_example.png)
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
 
