@@ -326,10 +326,8 @@ Use a transistor to control a higher current for a motor.
 
 
 You can test this with either
-	_File -> Examples -> Basics -> Blink_
-	
+	_File -> Examples -> Basics -> Blink_	
 or
-
 	_File -> Examples -> Basics -> Fade_
 
 It's important to note that we are now using a separate power source for the motor. There are good reasons for doing so...
