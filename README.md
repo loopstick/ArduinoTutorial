@@ -192,7 +192,8 @@ Use the breadboard to add an external LED.
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
 
-![LED_Resistor Pic](/images/LED_Breadboard1.jpg)
+ ![LED_Resistor Pic](/images/LED_Breadboard1.jpg) 
+ 
 ![LED_Resistor Pic](/images/LED_Breadboard2.jpg)
 
 Here is another view of this circuit:
