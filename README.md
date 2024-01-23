@@ -188,7 +188,7 @@ Use the breadboard to add an external LED.
 - LEDs are polarized
   - video: [identifying LED polarity](https://www.youtube.com/watch?v=SRDgNR_yCms)
 
-  ![led_example](/images/LED_example.png)  ![LED_red](/images/LED_red_sm.jpg)
+  ![led_example](/images/LED_example.png)  ![LED_red](/images/LED_red_med.jpg)
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
 
