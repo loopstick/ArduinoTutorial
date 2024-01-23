@@ -158,7 +158,7 @@ everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/B
   
   <!--![ArduinoUno_Pinout_simple](/images/ArduinoUno_Pinout_simple.png) -->
 
-  !(ArduinoUno_board_top)(/images/ArduinoUno_board_top.jpg)
+  (!ArduinoUno_board_top)(/images/ArduinoUno_board_top.jpg)
   
 
 
