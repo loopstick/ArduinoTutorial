@@ -143,7 +143,7 @@ Can you identify the code that makes this happen?
 everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink)
 - some more code anatomy - more info about an Arduino [sketches](https://docs.arduino.cc/learn/programming/sketches/)
 
-##### Exercise:
+#### Exercise:
 combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
 - _Hint/Cheat:_ [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
 
