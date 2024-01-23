@@ -128,7 +128,7 @@ void loop() {
   delay(1000);               // wait for a second
 }
 ```
-some more code anatomy - info about an Arduino [Sketch](https://www.arduino.cc/en/tutorial/sketch)
+some more code anatomy - info about an Arduino ['sketches']([https://www.arduino.cc/en/tutorial/sketch](https://docs.arduino.cc/learn/programming/sketches/))
 
 
 #### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
