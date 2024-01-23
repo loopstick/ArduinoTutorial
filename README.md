@@ -235,7 +235,9 @@ How do you know if anything is working? Arduino might be reading the sensor, but
 
 Arduino is connected to your computer, so they can communicate - just like we did earlier with Hello World, but now your Ardunio is sending sensor DATA!
  - this line:
-```cpp Serial.println(sensorValue); ```
+```cpp
+Serial.println(sensorValue);
+```
 allows Arduino to send a message to your laptop. 
 In order to see this message you need to open the _Serial Monitor_ by clicking on the magnifying glass near the top right corner. Read the Arduino [AnalogRead tutorial](http://arduino.cc/en/Tutorial/AnalogReadSerial) to find out more. Also see _File->Examples->Communication_ for more examples of other types of Serial communication).
 
