@@ -192,15 +192,18 @@ Use the breadboard to add an external LED.
 
 Here’s a picture showing how to connect the LED and resistor on the breadboard:
 
+![LED_Resistor Pic](/images/LED_Breadboard1.jpg)
 ![LED_Resistor Pic](/images/LED_Breadboard2.jpg)
 
 Here is another view of this circuit:
 
-![Fritzing: LED resistor pic](/images/2-Blink-an-LED_SMALL.jpg)
+<!-- ![Fritzing: LED resistor pic](/images/2-Blink-an-LED_SMALL.jpg) -->
+![Fritzing: Arduino_1LED_d13_bb](/images/Arduino_1LED_d13_bb.png)
 
 And here is a schematic of this circuit:
 
-![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg)
+<!-- ![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg) -->
+![Fritzing: LED resistor schematic](/images/Arduino_1LED_d13_schem.png)
 
 Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino) 
 (you can also use the IDE example, but it has some "hepful" code shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
