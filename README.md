@@ -109,7 +109,7 @@ Most microcontrollers have an on-board LED which you can use for a real-world fe
 How does the program (sketch) do this? 
 - it's all in the example below
   
-Copy the code below and paste it into a new Arduino sketch _OR_ download and open this example sketch: Blink example sketch: [Blink.ino](examples/Blink_st/Blink_st.ino)
+Copy the code below and paste it into a new Arduino sketch _OR_ download and open this example sketch: Blink example sketch: [01a_Blink_st.ino](examples/01_Blink_st/01a_Blink_st/01a_Blink_st.ino)
 
 ```cpp
 /*
@@ -148,13 +148,12 @@ You should see a little LED on the Arduino begin to blink on and off, about once
 
 Can you identify the code that makes this happen?
 
-everything is explained in the [Blink tutorial](http://arduino.cc/en/Tutorial/Blink)
+everything is explained in the [Blink](http://arduino.cc/en/Tutorial/Blink) tutorial
 - some more code anatomy - more info about an Arduino [sketches](https://docs.arduino.cc/learn/programming/sketches/)
 
 #### Exercise:
 combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
-- _Hint/Cheat:_ [HelloWorld_blink.ino](examples/HelloWorld_blink/HelloWorld_blink.ino)
-
+- _Hint/Cheat:_ [HelloWorld_blink.ino](examples/02_HelloWorld_blink/02_HelloWorld_blink.ino)
 
 #### Let's an an LED of our own
 Add an external LED (as opposed to the internal LED we just lit up)
@@ -171,7 +170,6 @@ Add an external LED (as opposed to the internal LED we just lit up)
 
   ![ArduinoUno_board_top](/images/ArduinoUno_board_top.jpg)
   
-
 
 ### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
 
@@ -214,8 +212,8 @@ And here is a schematic of this circuit:
 <!-- ![Fritzing: LED resistor schematic](/images/Arduino_LED_Resistor_schem.jpg) -->
 ![Fritzing: LED resistor schematic](/images/Arduino_1LED_d13_schem.png)
 
-Use the Blink sketch we used earlier: [Blink.ino](https://github.com/loopstick/ArduinoTutorial/blob/master/examples/Blink/Blink.ino) 
-(you can also use the IDE example, but it has some "hepful" code shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
+Use the Blink sketch we used earlier: [01a_Blink_st.ino](examples/01_Blink_st/01a_Blink_st/01a_Blink_st.ino)
+(you can also use the IDE example, but it has some "hepful" shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
 	
  - Does your LED blink?
 		(think about why)
@@ -238,7 +236,7 @@ The LDR responds to the amount of light by changing its resistance. Arduino cann
 ![CircuitExample](/images/Arduino_LDR_VoltageDiv.jpg)
 
 Open and upload this sketch:
-_File->Examples->Basics->AnalogReadSerial_
+you can also use the Arduino IDE example ->_File->Examples->Basics->AnalogReadSerial_
 
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? 
 
@@ -269,9 +267,12 @@ Let's shift our focus, for a moment, to outputting a range of voltages. Then we'
 If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess analogWrite() might do?
 
 Move the LED to pin 9:
+![Fritzing: LED_pin9_bb.png](/examples/04_LED_Fade/LED_pin9_bb.png)
 
 Now upload this sketch:
-_File -> Examples -> Basics -> Fade_
+[04_LED_Fade.ino](/examples/04_LED_Fade/04_LED_Fade.ino) 
+ - you can also use the Arduino IDE _Fade_ example:_File -> Examples -> Basics -> Fade_
+
 
 What’s the LED doing? Can you figure out how the sketch is doing this?
 ```cpp
@@ -298,9 +299,13 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
 
 -> can we use the LDR data to control the LED brightness?
 
+![LDR_LED_bb.png](examples/05_LDR_LED/LDR_LED_bb.png)
+
 #### Exercise: 
 - use the LDR data to control the LED brightness!
-- _Hint/Cheat:_ [LDR_LED.ino](examples/LDR_LED/LDR_LED.ino)
+- _Hint/Cheats:_
+  - [06a_LDR_LED_ifConditional.ino](examples/06a_LDR_LED_ifConditional/06a_LDR_LED_ifConditional.ino)
+  - [06b_LDR_LED_MapFade.ino](examples/06b_LDR_LED_MapFade/06b_LDR_LED_MapFade.ino)
 
 ### Sensor ranges, calibration, and mapping
 
