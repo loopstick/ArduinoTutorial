@@ -109,7 +109,7 @@ Most microcontrollers have an on-board LED which you can use for a real-world fe
 How does the program (sketch) do this? 
 - it's all in the example below
   
-Copy the code below and paste it into a new Arduino sketch _OR_ download and open this example sketch: Blink example sketch: [Blink.ino](examples/Blink/Blink.ino)
+Copy the code below and paste it into a new Arduino sketch _OR_ download and open this example sketch: Blink example sketch: [Blink.ino](examples/Blink_st/Blink_st.ino)
 
 ```cpp
 /*
