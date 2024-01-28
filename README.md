@@ -155,8 +155,8 @@ everything is explained in the [Blink](http://arduino.cc/en/Tutorial/Blink) tut
 combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
 - _Hint/Cheat:_ [HelloWorld_blink.ino](examples/02_HelloWorld_blink/02_HelloWorld_blink.ino)
 
-#### Let's an an LED of our own
-Add an external LED (as opposed to the internal LED we just lit up)
+### Let's add an LED of our own
+- Add an external LED (as opposed to the internal LED we just lit up)
 
   ![LED_red](/images/LED_red_sm.jpg)
 
