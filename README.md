@@ -60,7 +60,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
 
 
 ### Is this thing on?
-Copy the code below into a new Arduino sketch or download and open the example sketch: [HelloWorld.ino](examples/HelloWorld/HelloWorld.ino)
+Copy the code below and paste it into a new Arduino sketch _OR_ download and open this example sketch: [HelloWorld.ino](/examples/HelloWorld/HelloWorld.ino)
 
 ```cpp
 /*
@@ -103,33 +103,41 @@ More on the specific functions and variables soon! Let's make something happen i
 
 Copy or download the code below rather than the Arduino tutorial code included in File > Examples. 
 (The new version of Blink uses a helpful pointer to BUILTIN_LED, which makes part of the following explanation more difficult)
-
-Blink example sketch: [Blink.ino](examples/Blink/Blink.ino)
+Most microcontrollers have an on-board LED which you can use for a real-world feedback. 
+- On the Arduino Uno the built-in LED is connected to pin 13.
+- We can send a signal to pin 13 to turn the LED on and off.
+How does the program (sketch) do this? 
+- it's all in the example below
+  
+Copy the code below and paste it into a new Arduino sketch _OR_ download and open this example sketch: Blink example sketch: [Blink.ino](examples/Blink/Blink.ino)
 
 ```cpp
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
- 
-  This example code is in the public domain.
-*/
- 
-// Pin 13 has an LED connected on most Arduino boards.
-// give it a name:
-int led = 13;
+  Blink
 
-// the setup routine runs once when you press reset:
-void setup() {                
-  // initialize the digital pin as an output.
-  pinMode(led, OUTPUT);     
+  Turns an LED on for one second, then off for one second, repeatedly.
+
+  Most Arduinos have an on-board LED you can control. 
+  On the UNO it is attached to digital pin 13
+
+  This example code is modified from.
+  https://www.arduino.cc/en/Tutorial/BuiltInExamples/Blink
+*/
+
+int led = 13;  // define a variable to hold the pin number of the internal LED
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(led, OUTPUT);
 }
 
-// the loop routine runs over and over again forever:
+// the loop function runs over and over again forever
 void loop() {
-  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay(1000);               // wait for a second
-  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
-  delay(1000);               // wait for a second
+  digitalWrite(led, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(led, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
 }
 ```
 upload this code to your Arduino!
