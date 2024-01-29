@@ -7,7 +7,7 @@ Michael Shiloh and Judy Castro for *Teach Me To Make*
 
 Revised by Sudhu Tewari 2018-24
 
-##### Arduino Examples - coming soon!
+<!-- ##### Arduino Examples - coming soon! -->
 
 The workshop will focus on getting you up and running with Arduino quickly, so that you will understand the basic procedures for working with Arduino and can explore further on your own.
 
@@ -58,7 +58,7 @@ All of this is in the Arduino Getting Started guide for your operating system.
    - Look for the amber LED on your Arduino to be blinking
      - No blinking? Raise your hand for help or visit [troubleshooting](http://arduino.cc/en/Guide/Troubleshooting)
 
-
+*******************************************************************************
 ### Is this thing on?
 Copy the code below and paste it into a new Arduino sketch _OR_ download and open this example sketch: [HelloWorld.ino](/examples/HelloWorld/HelloWorld.ino)
 
@@ -99,6 +99,7 @@ a little code anatomy:
 
 More on the specific functions and variables soon! Let's make something happen in the real world first.
 
+*******************************************************************************
 ### How to use Arduino to turn something ON and OFF
 
 Copy or download the code below rather than the Arduino tutorial code included in File > Examples. 
@@ -154,7 +155,8 @@ everything is explained in the [Blink](http://arduino.cc/en/Tutorial/Blink) tut
 #### Exercise:
 combine HelloWorld and Blink to make a program that shows it's working with physical (LED) and digital (serial ) output.
 - _Hint/Cheat:_ [HelloWorld_blink.ino](examples/02_HelloWorld_blink/02_HelloWorld_blink.ino)
-
+- 
+*******************************************************************************
 ### Let's add an LED of our own
 - Add an external LED (as opposed to the internal LED we just lit up)
 
@@ -229,6 +231,7 @@ If you changed the program to control only pin 8, then the built-in LED on pin 1
 
 Are we limited to LEDs? No; we could replace the LED (and its resistor) with any other suitable device, with some considerations. We’ll learn more about this later.
 
+*******************************************************************************
 ### How to use a sensor: analogRead()
 So far we’ve only used Arduino as an output device, to control something in the physical world (the LED). The other way of interfacing to the physical world is as an input device, using a sensor to get information about the physical world. We’ll start with a photoresistor, also called a light dependent resistor or LDR. It’s a resistor whose resistance depends on the light: the more light, the lower the resistance. (The resistor we used above with the LED is a fixed resistor.)
 The LDR responds to the amount of light by changing its resistance. Arduino cannot measure resistance directly, but can measure voltage (electrical potential).  Fortunately, we can easily convert a varying resistance to a varying voltage using a fixed resistor to create a [voltage divider](https://learn.sparkfun.com/tutorials/voltage-dividers/all). This time the fixed resistor needs a larger resistance, so select a 10k ohm resistor and build the circuit below. You don’t need to remove the LED circuit as there should be room on your breadboard for both, and we’ll use the LED again later.
@@ -264,6 +267,7 @@ That's nice, but what if we want to use the sensor data to control some kind of 
 
 Let's shift our focus, for a moment, to outputting a range of voltages. Then we'll put the input and output together to get real world input to control real world output. 
 
+*******************************************************************************
 ### analogWrite(): Controlling speed or brightness
 If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess analogWrite() might do?
 - If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess _analogWrite()_ might do?
@@ -299,8 +303,8 @@ Why did I ask you to move the LED to pin 9?
 
 for extra fun, check out _File -> Examples -> Analog -> Fading_ <- this implements a For loop to do the fading!
 
-
-### LDR controls LED
+*******************************************************************************
+### Interfacing input & output -> sensor data controls LED state
 Now that we've worked with _analogRead()_ to read a range of voltage coming from our LDR.
 AND
 we've used _analogWrite()_ to fade our LED using a range of voltage
@@ -352,10 +356,24 @@ Some other online information about RGB LEDs
  - https://howtomechatronics.com/tutorials/arduino/how-to-use-a-rgb-led-with-arduino/
 
 
+*******************************************************************************
+### Button - Let's add some tactile input!!
+
+start by wiring a button like this:
+![Button_bb.png](/examples/07_Button/Button_bb.png)
+
+if you don't still have an LED hooked up, add one on pin 13, like this:
+![Button_LED_bb.png](/examples/07_Button/Button_LED_bb.png)
+
+Button example code
+- [07a_Button.ino](/examples/07_Button/07a_Button.ino) - same as _Examples -> Digital -> Button_
+- [07b_Button_StateChageDetection.ino](/examples/07_Button/07b_Button_StateChageDetection.ino) - same as _Examples -> Digital -> StateChangeDetection_
 
 
-
-
+Some other online information about buttons (aka pushbuttons aka tactile swiches)
+- [Tactile switches](https://www.youtube.com/watch?v=tYemeoqxpNk)
+- [Understanding Pushbuttons and Pull Up and Pull Down Resistors](https://www.youtube.com/watch?v=AgQW81zzR18)
+- [Using a Pushbutton as a Toggle Switch](https://www.youtube.com/watch?v=aMato4olzi8&ab_channel=PaulMcWhorter)
 
 
 
