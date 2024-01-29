@@ -403,7 +403,7 @@ Use a transistor to control a higher current for a motor.
     - ALWAYS look up the pinout before applying power.
       - or else 爆炸
       
-
+Transistor Motor Control with 2x AA Batteries = 3V:
 ![CircuitExample](/images/MotorTransistor_AA.jpg)
 
 
@@ -414,7 +414,7 @@ or
 
 It's important to note that we are now using a separate power source for the motor. There are good reasons for doing so...
 
-![CircuitExample](/images/Transistor_Motor.jpg)
+<!-- Transistor Motor Control with a 9v Battery: ![CircuitExample](/images/Transistor_Motor.jpg) --> 
 	
 ##### References:
 - [Arduino Transistor Motor Control](https://www.arduino.cc/en/Tutorial/TransistorMotorControl)
@@ -423,14 +423,12 @@ It's important to note that we are now using a separate power source for the mot
 
 
 #### More to explore
-- digitalRead()
-- What is a switch?
-- _Arduino->File->Examples->Basics->DigitalReadSerial_
-- [Digital Read Serial](http://arduino.cc/en/Tutorial/DigitalReadSerial) tutorial
-- Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
-- Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc.
-- Multiple output devices: play melody while controlling motor speed, etc.
+- Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc
+- INPUT_PULLUP
+- Interrupts
 - Boolean logic, tests, and conditionals
+- Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
+- Multiple output devices: play melody while controlling motor speed, etc.
 - The problem with, and a solution to, delay(): 
   - [BlinkWithoutDelay](http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
 
