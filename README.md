@@ -325,6 +325,8 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
   - That means there are 256 x 256 x 256 = 16777216 possible colors!
  
 ![RGB_LED.jpg](/images/RGB_LED.jpg)
+<img src="/images/RGB_LED.jpg" width="150" height="280">
+<!-- <img src="/images/RGB_LED.jpg" width="150" height="280"> --> 
 
 - we still need to use a limiting resistor to keep our LEDs safe
 - Generally we use a slightly larger resistor (470 ohm) for the RED component and the same slightly smaller resistor values (430 ohm) for the GREEN and BLUE components.
