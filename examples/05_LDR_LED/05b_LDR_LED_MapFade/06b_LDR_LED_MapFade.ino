@@ -9,10 +9,10 @@
   
 */
 
+  // int led = 13;  // <- if using the on-board LED
+  int led = 9;  // <- using pin 9 for PWM -> analogWrite()
   int sensorValue = 0;
   int brightness = 0;
-
-  int led = 9;
   
 // the setup routine runs once when you press reset:
 void setup() {
