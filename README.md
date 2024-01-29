@@ -213,7 +213,7 @@ And here is a schematic of this circuit:
 ![Fritzing: LED resistor schematic](/images/Arduino_1LED_d13_schem.png)
 
 Use the Blink sketch we used earlier: [01a_Blink_st.ino](examples/01_Blink_st/01a_Blink_st/01a_Blink_st.ino)
-(you can also use the IDE example, but it has some "hepful" shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
+- (you can also use the IDE example, but it has some "hepful" shortcuts that make what we'll do next more complicated: _File -> Examples -> Basics -> Blink_)
 	
  - Does your LED blink?
 		(think about why)
@@ -233,10 +233,12 @@ Are we limited to LEDs? No; we could replace the LED (and its resistor) with any
 So far we’ve only used Arduino as an output device, to control something in the physical world (the LED). The other way of interfacing to the physical world is as an input device, using a sensor to get information about the physical world. We’ll start with a photoresistor, also called a light dependent resistor or LDR. It’s a resistor whose resistance depends on the light: the more light, the lower the resistance. (The resistor we used above with the LED is a fixed resistor.)
 The LDR responds to the amount of light by changing its resistance. Arduino cannot measure resistance directly, but can measure voltage (electrical potential).  Fortunately, we can easily convert a varying resistance to a varying voltage using a fixed resistor to create a [voltage divider](https://learn.sparkfun.com/tutorials/voltage-dividers/all). This time the fixed resistor needs a larger resistance, so select a 10k ohm resistor and build the circuit below. You don’t need to remove the LED circuit as there should be room on your breadboard for both, and we’ll use the LED again later.
 
-![CircuitExample](/images/Arduino_LDR_VoltageDiv.jpg)
+<!-- ![CircuitExample](/images/Arduino_LDR_VoltageDiv.jpg) -->
+![Fritzing: LDR_bb.png](/examples/03_LDR_LightSensor/LDR_bb.png)
 
 Open and upload this sketch:
-you can also use the Arduino IDE example ->_File->Examples->Basics->AnalogReadSerial_
+[03_LDR_LightSensor.ino](/examples/03_LDR_LightSensor/03_LDR_LightSensor.ino)
+- you can also use the Arduino IDE example ->_File->Examples->Basics->AnalogReadSerial_
 
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? 
 
@@ -262,9 +264,15 @@ That's nice, but what if we want to use the sensor data to control some kind of 
 
 Let's shift our focus, for a moment, to outputting a range of voltages. Then we'll put the input and output together to get real world input to control real world output. 
 
-
 ### analogWrite(): Controlling speed or brightness
 If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess analogWrite() might do?
+- If digitalWrite() can turn an LED on and off, and analogRead() can read a range of values, what would you guess _analogWrite()_ might do?
+  - You guessed it!
+- analogWrite() outputs a range of values, using [PWM](https://www.arduino.cc/en/tutorial/PWM)
+  - PWM = pulse width modulation
+  - this allows us, effectively, to output any voltage between minimum and maximun
+    - minimum = 0 volts = 0 in code
+    - maximum = 5 volts = 255 (@8bit resolution)
 
 Move the LED to pin 9:
 ![Fritzing: LED_pin9_bb.png](/examples/04_LED_Fade/LED_pin9_bb.png)
@@ -298,6 +306,7 @@ AND
 we've used _analogWrite()_ to fade our LED using a range of voltage
 
 -> can we use the LDR data to control the LED brightness?
+-> Yes, we can!!
 
 ![LDR_LED_bb.png](examples/05_LDR_LED/LDR_LED_bb.png)
 
@@ -307,13 +316,53 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
   - [06a_LDR_LED_ifConditional.ino](examples/06a_LDR_LED_ifConditional/06a_LDR_LED_ifConditional.ino)
   - [06b_LDR_LED_MapFade.ino](examples/06b_LDR_LED_MapFade/06b_LDR_LED_MapFade.ino)
 
-### Sensor ranges, calibration, and mapping
 
-We lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
+*******************************************************************************
+### RGB LED - 3 in 1 gets us (almost) all the colors we can imagine!
+- RGB LEDs have 3 LEDs in one physical package
+- RGB LEDs are really handy for non-text, non-serial debug and they make really pretty colors!
+- We can use analogWrite() to define the intensity of each color with a value between 0 and 255. 
+  - That means there are 256 x 256 x 256 = 16777216 possible colors!
+ 
+![RGB_LED.jpg](/images/RGB_LED.jpg)
+
+- we still need to use a limiting resistor to keep our LEDs safe
+- Generally we use a slightly larger resistor (470 ohm) for the RED component and the same slightly smaller resistor values (430 ohm) for the GREEN and BLUE components.
+- for our circuit let's use:
+  - 470 ohm for RED
+    - color bands-> yellow, purple, black, black, brown
+  - 430 ohm for GREEN and BLUE
+    - color bands-> yellow, orange, black, black, brown
+- We're using common _CATHODE_ RGB LEDs
+  - the negative leg (the cathode) is shared by (is common to) all 3 LEDs
+
+RGB LED wiring diagram 
+![RGB_LED_bb.png](/examples/06_RGB_LED/RGB_LED_bb.png)
+
+RGB LED test code
+- [06a_RGB_Test.ino](/examples/06_RGB_LED/06a_RGB_Test/06a_RGB_Test.ino)
+- 
+
+
+Some other online information about RGB LEDs
+ - https://randomnerdtutorials.com/electronics-basics-how-do-rgb-leds-work/
+ - https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/breadboard-layout
+ - https://howtomechatronics.com/tutorials/arduino/how-to-use-a-rgb-led-with-arduino/
+
+
+
+
+
+
+
+
+
+*******************************************************************************
+### Sensor ranges, calibration, and mapping
+Earlier, we lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
 
 What else can _analogWrite()_ do?
 	_analogWrite()_ also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
-
 
 ### Arduino outputs: Voltage and current
 - When used as outputs, two things must be considered: the voltage and the current. Our Arduino can deliver 5 v, and at most 40 mA.
