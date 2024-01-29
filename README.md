@@ -330,11 +330,11 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
 
 - we still need to use a limiting resistor to keep our LEDs safe
 - Generally we use a slightly larger resistor (470 ohm) for the RED component and the same slightly smaller resistor values (430 ohm) for the GREEN and BLUE components.
-- for our circuit let's use:
-  - 470 ohm for RED
-    - color bands-> yellow, purple, black, black, brown
-  - 430 ohm for GREEN and BLUE
-    - color bands-> yellow, orange, black, black, brown
+  - for our circuit let's use:
+    - 470 ohm for RED
+      - color bands-> yellow, purple, black, black, brown
+    - 430 ohm for GREEN and BLUE
+      - color bands-> yellow, orange, black, black, brown
 - We're using common _CATHODE_ RGB LEDs
   - the negative leg (the cathode) is shared by (is common to) all 3 LEDs
 
@@ -343,7 +343,7 @@ RGB LED wiring diagram
 
 RGB LED test code
 - [06a_RGB_Test.ino](/examples/06_RGB_LED/06a_RGB_Test/06a_RGB_Test.ino)
-- 
+- [06b_RGB_SimpleFade.ino](/examples/06_RGB_LED/06b_RGB_SimpleFade/06b_RGB_SimpleFade.ino)
 
 
 Some other online information about RGB LEDs
