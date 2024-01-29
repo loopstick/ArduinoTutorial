@@ -7,7 +7,7 @@ Michael Shiloh and Judy Castro for *Teach Me To Make*
 
 Revised by Sudhu Tewari 2018-24
 
-<!-- ##### Arduino Examples - coming soon! -->
+##### Arduino Examples - coming soon! 
 
 The workshop will focus on getting you up and running with Arduino quickly, so that you will understand the basic procedures for working with Arduino and can explore further on your own.
 
