@@ -324,8 +324,8 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
 - We can use analogWrite() to define the intensity of each color with a value between 0 and 255. 
   - That means there are 256 x 256 x 256 = 16777216 possible colors!
  
-![RGB_LED.jpg](/images/RGB_LED.jpg)
-<img src="/images/RGB_LED.jpg" width="400">
+<!-- ![RGB_LED.jpg](/images/RGB_LED.jpg) -->
+<img src="/images/RGB_LED.jpg" width="700">
 <!-- <img src="/images/RGB_LED.jpg" width="150" height="280"> --> 
 
 - we still need to use a limiting resistor to keep our LEDs safe
