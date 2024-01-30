@@ -370,16 +370,14 @@ if you don't still have an LED hooked up, add one on pin 13, like this:
 ![Button_LED_bb.png](/examples/07_Button/Button_LED_bb.png)
 
 Button example code
-- [07a_Button.ino](/examples/07_Button/07a_Button.ino) - same as _Examples -> Digital -> Button_
-- [07b_Button_StateChageDetection.ino](/examples/07_Button/07b_Button_StateChageDetection.ino) - same as _Examples -> Digital -> StateChangeDetection_
+- [07a_Button.ino](/examples/07_Button/07a_Button/07a_Button.ino) - same as _Examples -> Digital -> Button_
+- [07b_Button_StateChageDetection.ino](/examples/07_Button/07b_Button_StateChageDetection/07b_Button_StateChageDetection.ino) - same as _Examples -> Digital -> StateChangeDetection_
 
 
 Some other online information about buttons (aka pushbuttons aka tactile swiches)
 - [Tactile switches](https://www.youtube.com/watch?v=tYemeoqxpNk)
 - [Understanding Pushbuttons and Pull Up and Pull Down Resistors](https://www.youtube.com/watch?v=AgQW81zzR18)
 - [Using a Pushbutton as a Toggle Switch](https://www.youtube.com/watch?v=aMato4olzi8&ab_channel=PaulMcWhorter)
-
-
 
 *******************************************************************************
 ### Sensor ranges, calibration, and mapping
