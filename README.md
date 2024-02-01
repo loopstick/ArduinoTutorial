@@ -396,8 +396,9 @@ Servo motors are a simple and easy way to add motion to your Arduibno project.
 - They 'know' their own position which makes them easy ton control
 - they are not _that_ powerful (although larger, more power servos _do_ exist)
 
- <!-- ![Servo.jpg](/images/Servo.jpg)  ![Servo_diagram.jpg](/images/Servo_diagram.jpg) -->-->
-  <img src="/images/Servo.jpg" width="400"> <img src="/images/Servo_diagram.jpg" width="400">
+ <!-- ![Servo.jpg](/images/Servo.jpg)  ![Servo_diagram.jpg](/images/Servo_diagram.jpg) -->
+  <img src="/images/Servo.jpg" width="400"> 
+  <img src="/images/Servo_diagram.jpg" width="400">
 
 More comprehensive information abotu servos:
 - [How To Mechatronics: How to Control Servo Motors with Arduino – Complete Guide](https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/)
