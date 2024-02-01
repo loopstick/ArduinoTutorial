@@ -380,6 +380,32 @@ Some other online information about buttons (aka pushbuttons aka tactile swiches
 - [Understanding Pushbuttons and Pull Up and Pull Down Resistors](https://www.youtube.com/watch?v=AgQW81zzR18)
 - [Using a Pushbutton as a Toggle Switch](https://www.youtube.com/watch?v=aMato4olzi8&ab_channel=PaulMcWhorter)
 
+
+*******************************************************************************
+### Potentiometer
+![Potentiometers_all.png](/images/Potentiometers_all.png)
+
+- code, etc coming soon!
+
+
+
+
+*******************************************************************************
+### Servo motors
+Servo motors are a simple and easy way to add motion to your Arduibno project.
+- They 'know' their own position which makes them easy ton control
+- they are not _that_ powerful (although larger, more power servos _do_ exist)
+
+  ![Servo.jpg](/images/Servo.jpg)
+
+  ![Servo_diagram.jpg](/images/Servo_diagram.jpg)
+
+
+More comprehensive information abotu servos:
+- [How To Mechatronics: How to Control Servo Motors with Arduino – Complete Guide](https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/)
+- [Hobby Servo Tutorial: Sparkfun](https://learn.sparkfun.com/tutorials/hobby-servo-tutorial/all)
+
+
 *******************************************************************************
 ### Sensor ranges, calibration, and mapping
 Earlier, we lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
@@ -387,11 +413,13 @@ Earlier, we lit up an LED using _analogWrite()_ based on sensor data _analogRead
 What else can _analogWrite()_ do?
 	_analogWrite()_ also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
 
+*******************************************************************************
 ### Arduino outputs: Voltage and current
 - When used as outputs, two things must be considered: the voltage and the current. Our Arduino can deliver 5 v, and at most 40 mA.
 - The voltage is determined by Arduino, but the current is determined by whatever we’re trying to control. In the case of the LEDs, they only need 20 mA or less. The motor we have might take more than 40 mA. In the worst case, when it’s stalled, it might want a 200 mA.
 - The important thing to realize is that Arduino does not have the ability to limit this current. It will try to deliver whatever is asked of it, even if it overheats and damages itself.
 - If we want to control a device that might take more than 40 mA, we have to use an intermediary.
+- the most common device for controlling large current loads with a microcontroller is a transistor (we could also use a relay or a switch)
 
 ### Controlling large loads with a transistor
 The transistor is like a bicycle gear: you control it with a small amount of current, and it in turn can control a lot more current. The transistor also allows us to use a higher voltage than the 5V Arduino can deliver.
