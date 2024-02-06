@@ -421,8 +421,23 @@ Servo motors are a simple and easy way to add motion to your Arduibno project.
 - They 'know' their own position which makes them easy to control
 - they are not _that_ powerful (although larger, more power servos _do_ exist)
 
-<img src="/images/Servo.jpg" width="400"> 
-<img src="/images/Servo_diagram.jpg" width="400">
+<img src="/images/Servo.jpg" width="500"> 
+<img src="/images/Servo_diagram.jpg" width="500">
+
+leave the potentiometer from the previous example connected and add the servo on pin 9. 
+The servo needs 3 connections:
+- positive voltage (power) - in this case: 5v
+- ground (GND: 0v)
+- signal (the PWM signal from your microcontroller that tells the servo where to go)
+
+Servo example code:
+- [09a_Servo_Knob.ino](/examples/09_Servo/09a_Servo_Knob/09a_Servo_Knob.ino) - same as _Examples -> Servo -> Knob_
+- [09b_Servo_Sweep.ino](/examples/09_Servo/09c_Servo_Sweep/09b_Servo_Sweep.ino) - same as _Examples -> Servo -> Sweep_
+
+Code challenges:
+- potentiometer controls sweep speed
+- potentiometer controls sweep range
+
 
 More comprehensive information about servos:
 - [How To Mechatronics: How to Control Servo Motors with Arduino – Complete Guide](https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/)
