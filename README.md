@@ -397,7 +397,8 @@ A poteniometer is a like a button in that it allows for tactile control of elect
 ![Potentiometers_all.png](/images/Potentiometers_all.png)
 
 Our potentiometers look like this: 
-<img src="/images/Potentiometer_actual.jpg" width="300">
+
+<img src="/images/Potentiometer_actual.jpg" width="200">
 
 start by wiring a potentiometer like this:
 ![Potentiometer_bb.png](/examples/08_Potentiometer/Potentiometer_bb.png)
