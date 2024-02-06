@@ -421,7 +421,8 @@ Servo motors are a simple and easy way to add motion to your Arduibno project.
 - They 'know' their own position which makes them easy ton control
 - they are not _that_ powerful (although larger, more power servos _do_ exist)
 
-  ![Servo.jpg](/images/Servo.jpg)
+  <-- ![Servo.jpg](/images/Servo.jpg) -->
+  <img src="/images/Servo.jpg" width="400">
 
   ![Servo_diagram.jpg](/images/Servo_diagram.jpg)
 
