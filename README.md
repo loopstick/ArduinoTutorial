@@ -385,6 +385,9 @@ Some other online information about buttons (aka pushbuttons aka tactile swiches
 ### Potentiometer
 ![Potentiometers_all.png](/images/Potentiometers_all.png)
 
+![Potentiometers_all.png](/examples/08_Potentiometer/Potentiometer_bb.png)
+
+
 - code, etc coming soon!
 
 
