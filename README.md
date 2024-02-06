@@ -433,7 +433,7 @@ The servo needs 3 connections:
 
 Servo example code:
 - [09a_Servo_Knob.ino](/examples/09_Servo/09a_Servo_Knob/09a_Servo_Knob.ino) - same as _Examples -> Servo -> Knob_
-<!-- - [09b_Servo_Sweep.ino](/examples/09_Servo/09c_Servo_Sweep/09b_Servo_Sweep.ino) - same as _Examples -> Servo -> Sweep_ -->
+- [09b_Servo_Sweep.ino](/examples/09_Servo/09c_Servo_Sweep/09b_Servo_Sweep.ino) - same as _Examples -> Servo -> Sweep_ 
 
 Code challenges:
 - potentiometer controls sweep speed
