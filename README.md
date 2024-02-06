@@ -363,6 +363,14 @@ Some other online information about RGB LEDs
 *******************************************************************************
 ### Button - Let's add some tactile input!!
 
+A button (switch) is a mechanical device that makes or breaks an electrical connection, usually by moving small metal componenets so they touch or don't touch, thus allowing or preventing the flow of electrons through the conductors.
+
+![SwitchCircuit.png](/images/SwitchCircuit.png)
+
+![SwitchButton_actual.jpg](/images/SwitchButton_actual.jpg)
+
+![SwitchButton.png](/images/SwitchButton.png)
+
 start by wiring a button like this:
 ![Button_bb.png](/examples/07_Button/Button_bb.png)
 
@@ -383,9 +391,15 @@ Some other online information about buttons (aka pushbuttons aka tactile swiches
 
 *******************************************************************************
 ### Potentiometer
+A poteniometer is a like a button in that it allows for tactile control of electron flow, but it allows from analog control rather than jsut the digitial on/off. With a potentiometer we can adust to any value between minimum and maximum voltage.
+
 ![Potentiometers_all.png](/images/Potentiometers_all.png)
 
-![Potentiometers_all.png](/examples/08_Potentiometer/Potentiometer_bb.png)
+Our potentiometers look like this: 
+![Potentiometer_actual.jpg](/images/Potentiometer_actual.jpg)
+
+start by wiring a potentiometer like this:
+![Potentiometer_bb.png](/examples/08_Potentiometer/Potentiometer_bb.png)
 
 
 - code, etc coming soon!
