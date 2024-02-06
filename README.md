@@ -410,6 +410,8 @@ Now, add an LED like this:
 ![Potentiometer_LED_bb.png](/examples/08_Potentiometer/Potentiometer_LED_bb.png)
 
 - [08b_Pot_AnalogInput.ino](/examples/08_Potentiometer/08b_Pot_AnalogInput/08b_Pot_AnalogInput.ino) - same as _Examples -> Analog -> AnalogInput
+- [08c_Pot_AnalogInOutSerial.ino](/examples/08_Potentiometer/08c_Pot_AnalogInOutSerial/08c_Pot_AnalogInOutSerial.ino) - same as _Examples -> Analog -> AnalogInOutSerial
+^^ remember to move the LED to pin 9 -> because analogWrite() uses ~ (PWM)
 
 
 
