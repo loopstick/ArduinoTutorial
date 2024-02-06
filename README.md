@@ -367,7 +367,8 @@ A button (switch) is a mechanical device that makes or breaks an electrical conn
 
 ![SwitchCircuit.png](/images/SwitchCircuit.png)
 
-![SwitchButton_actual.jpg](/images/SwitchButton_actual.jpg)
+<!-- ![SwitchButton_actual.jpg](/images/SwitchButton_actual.jpg) -->
+<img src="/images/SwitchButton_actual.jpg" width="300">
 
 ![SwitchButton.png](/images/SwitchButton.png)
 
@@ -391,7 +392,7 @@ Some other online information about buttons (aka pushbuttons aka tactile swiches
 
 *******************************************************************************
 ### Potentiometer
-A poteniometer is a like a button in that it allows for tactile control of electron flow, but it allows from analog control rather than jsut the digitial on/off. With a potentiometer we can adust to any value between minimum and maximum voltage.
+A poteniometer is a like a button in that it allows for tactile control of electron flow, but it allows from analog control rather than just the digitial on/off. With a potentiometer we can adust to any value between minimum and maximum voltage.
 
 ![Potentiometers_all.png](/images/Potentiometers_all.png)
 
