@@ -378,7 +378,7 @@ start by wiring a button like this:
 if you don't still have an LED hooked up, add one on pin 13, like this:
 ![Button_LED_bb.png](/examples/07_Button/Button_LED_bb.png)
 
-Button example code
+Button example code:
 - [07a_Button.ino](/examples/07_Button/07a_Button/07a_Button.ino) - same as _Examples -> Digital -> Button_
 - [07b_Button_StateChangeDetection.ino](/examples/07_Button/07b_Button_StateChangeDetection/07b_Button_StateChangeDetection.ino) - same as _Examples -> Digital -> StateChangeDetection_
 
@@ -400,11 +400,16 @@ Our potentiometers look like this:
 
 <img src="/images/Potentiometer_actual.jpg" width="200">
 
-start by wiring a potentiometer like this:
+start by wiring the potentiometer circuit like this:
 ![Potentiometer_bb.png](/examples/08_Potentiometer/Potentiometer_bb.png)
 
+Potentiometer example code:
+- [08a_Pot_ReadAnalogVoltage.ino](/examples/08_Potentiometer/08a_Pot_ReadAnalogVoltage/08a_Pot_ReadAnalogVoltage.ino) - same as _Examples -> Basics -> ReadAnalogVoltage
 
-- code, etc coming soon!
+Now, add an LED like this:
+![Potentiometer_LED_bb.png](/examples/08_Potentiometer/Potentiometer_LED_bb.png)
+
+- [08b_Pot_AnalogInput.ino](/examples/08_Potentiometer/08b_Pot_AnalogInput/08b_Pot_AnalogInput.ino) - same as _Examples -> Analog -> AnalogInput
 
 
 
