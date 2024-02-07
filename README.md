@@ -421,7 +421,7 @@ Servo motors are a simple and easy way to add motion to your Arduibno project.
 - They 'know' their own position which makes them easy to control
 - they are not _that_ powerful (although larger, more power servos _do_ exist)
 
-<img src="/images/Servo.jpg" width="500"> <img src="/images/Servo_diagram.jpg" width="500">
+<img src="/images/Servo.jpg" width="475"> <img src="/images/Servo_diagram.jpg" width="600">
 
 leave the potentiometer from the previous example connected and add the servo on pin 9. 
 
