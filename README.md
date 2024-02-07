@@ -426,6 +426,8 @@ Servo motors are a simple and easy way to add motion to your Arduibno project.
 
 leave the potentiometer from the previous example connected and add the servo on pin 9. 
 
+![Servo_Potentiometer_bb.png](/examples/09_Servo/Servo_Potentiometer_bb.png)
+
 The servo needs 3 connections:
 - positive voltage (power) - in this case: 5v
 - ground (GND: 0v)

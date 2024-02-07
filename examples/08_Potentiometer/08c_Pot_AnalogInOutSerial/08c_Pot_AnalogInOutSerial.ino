@@ -11,12 +11,9 @@
     side pins of the potentiometer go to +5V and ground
   - LED connected from digital pin 9 to ground through 220 ohm resistor
 
-  created 29 Dec. 2008
-  modified 9 Apr 2012
-  by Tom Igoe
+  created 29 Dec. 2008 by Tom Igoe
 
-  This example code is in the public domain.
-
+  This example code is modified from:
   https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogInOutSerial
 */
 
@@ -28,18 +25,18 @@ int sensorValue = 0;        // value read from the pot
 int outputValue = 0;        // value output to the PWM (analog out)
 
 void setup() {
-  // initialize serial communications at 9600 bps:
-  Serial.begin(9600);
+
+  Serial.begin(9600);     // initialize serial communications at 9600 bps:
 }
 
 void loop() {
-  // read the analog in value:
-  sensorValue = analogRead(analogInPin);
-  // map it to the range of the analog out:
-  outputValue = map(sensorValue, 0, 1023, 0, 255);
-  // change the analog out value:
-  analogWrite(analogOutPin, outputValue);
+  sensorValue = analogRead(analogInPin);  // read the analog in value from the portentiometer
+  
+  outputValue = map(sensorValue, 0, 1023, 0, 255);   // map it to the range of the analog out:
 
+  analogWrite(analogOutPin, outputValue);   // change the analog out value 
+                                            // aka light up the led with brightness controlled by the potentiometer
+  
   // print the results to the Serial Monitor:
   Serial.print("sensor = ");
   Serial.print(sensorValue);
