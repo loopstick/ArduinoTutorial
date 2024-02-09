@@ -244,7 +244,7 @@ The LDR responds to the amount of light by changing its resistance. Arduino cann
 ![Fritzing: LDR_bb.png](/examples/03_LDR_LightSensor/LDR_bb.png)
 
 Open and upload this sketch:
-[03_LDR_LightSensor.ino](/examples/03_LDR_LightSensor/03_LDR_LightSensor.ino)
+[03a_LDR_LightSensor.ino](/examples/03_LDR_LightSensor/03a_LDR_LightSensor/03a_LDR_LightSensor.ino)
 - you can also use the Arduino IDE example ->_File->Examples->Basics->AnalogReadSerial_
 
 How do you know if anything is working? Arduino might be reading the sensor, but is it telling you anything? 
@@ -286,7 +286,7 @@ Move the LED to pin 9:
 ![Fritzing: LED_pin9_bb.png](/examples/04_LED_Fade/LED_pin9_bb.png)
 
 Now upload this sketch:
-[04_LED_Fade.ino](/examples/04_LED_Fade/04_LED_Fade.ino) 
+[04a_LED_Fade.ino](/examples/04_LED_Fade/04a_LED_Fade/04a_LED_Fade.ino) 
  - you can also use the Arduino IDE _Fade_ example:_File -> Examples -> Basics -> Fade_
 
 
@@ -321,8 +321,8 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
 #### Exercise: 
 - use the LDR data to control the LED brightness!
 - _Hint/Cheats:_
-  - [06a_LDR_LED_ifConditional.ino](examples/06a_LDR_LED_ifConditional/06a_LDR_LED_ifConditional.ino)
-  - [06b_LDR_LED_MapFade.ino](examples/06b_LDR_LED_MapFade/06b_LDR_LED_MapFade.ino)
+  - [05a_LDR_LED_ifConditional.ino](examples/05_LDR_LED/05a_LDR_LED_ifConditional/05a_LDR_LED_ifConditional.ino)
+  - [05b_LDR_LED_MapFade.ino](examples/05_LDR_LED/05b_LDR_LED_MapFade/05b_LDR_LED_MapFade.ino)
 
 
 *******************************************************************************
@@ -415,7 +415,7 @@ Now, add an LED like this:
 
 *******************************************************************************
 ### Servo motors
-Servo motors are a simple and easy way to add motion to your Arduibno project.
+Servo motors are a simple and easy way to add motion to your Arduino project.
 - They 'know' their own position which makes them easy to control
 - they are not _that_ powerful (although larger, more power servos _do_ exist)
 
