@@ -413,8 +413,6 @@ Now, add an LED like this:
 - [08c_Pot_AnalogInOutSerial.ino](/examples/08_Potentiometer/08c_Pot_AnalogInOutSerial/08c_Pot_AnalogInOutSerial.ino) - same as _Examples -> Analog -> AnalogInOutSerial_ <-remember to move the LED to pin 9 -> because analogWrite() uses ~PWM
 
 
-
-
 *******************************************************************************
 ### Servo motors
 Servo motors are a simple and easy way to add motion to your Arduibno project.
