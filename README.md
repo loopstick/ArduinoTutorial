@@ -321,8 +321,8 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
 #### Exercise: 
 - use the LDR data to control the LED brightness!
 - _Hint/Cheats:_
-  - [05a_LDR_LED_ifConditional.ino](examples/05a_LDR_LED_ifConditional/05a_LDR_LED_ifConditional.ino)
-  - [05b_LDR_LED_MapFade.ino](examples/05b_LDR_LED_MapFade/05b_LDR_LED_MapFade.ino)
+  - [05a_LDR_LED_ifConditional.ino](examples/05_LDR_LED/05a_LDR_LED_ifConditional/05a_LDR_LED_ifConditional.ino)
+  - [05b_LDR_LED_MapFade.ino](examples/05_LDR_LED/05b_LDR_LED_MapFade/05b_LDR_LED_MapFade.ino)
 
 
 *******************************************************************************
