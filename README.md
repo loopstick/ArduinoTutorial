@@ -517,9 +517,10 @@ notes:
   - but it can handle up to 35v
   - and it can run as low as 4.5v
 <!-- - We'll power the motor > with 6v (4x 1.5v AA batteries)   -->  
-- the L298N can get the 5v it needs to operate from an onboard voltage regulator or from an external 5v source
+- the L298N can get the 5v it needs to operate from an onboard voltage regulator OR from an external 5v source
   - since we're only giving it 6v for the motor, we'll need to power it with the Arduino's 5v
     - most voltage regulators need about 2v more than their output voltage
+- because we're bypassing the onboard voltage regulator we'll need to remove the shorting block near the 5v screw terminal
 
 - _IN1 & IN2_ control the direction of the motor rotation of motor 1
 
