@@ -491,8 +491,27 @@ It's important to note that we are now using a separate power source for the mot
 - [ITP NYU: Using a Transistor to Control High Current Loads](http://itp.nyu.edu/physcomp/labs/motors-and-transistors/using-a-transistor-to-control-high-current-loads-with-an-arduino/)
 
 
+*******************************************************************************
 
-#### More to explore
+### H-Bridge Motor Driver
+- The H-Bridge is a circuit that allows us to control the direction of a motor as well as its speed.
+- The L298N is a popular H-Bridge motor driver that can be used with the Arduino.
+- The L298N has 2 H-Bridges, which means it can control 2 motors.
+- The L298N can handle up to 2A per channel, and up to 35V.
+<!-- - The L298N has a built-in 5V regulator, so it can be used to power the Arduino.
+- The L298N has a built-in diode to protect against voltage spikes from the motor.
+- The L298N has a built-in heat sink, so it can handle a lot of power without overheating.
+- The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
+
+start by wiring the L298 module to the Arduino, battery pack, and motor like this:
+<img src="/images/L298n_1Motor_bb.png" width="425"> <img src="/images/L298n_1Motor_bb.png" width="550">
+
+##### References:
+- [How To Mechatronics: L298 Motor Driver](https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/)
+- [Arduino: L298N library](https://www.arduino.cc/reference/en/libraries/l298n/)
+
+
+### More to explore
 - Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc
 - INPUT_PULLUP
 - Interrupts
@@ -504,7 +523,7 @@ It's important to note that we are now using a separate power source for the mot
 
 
 
-#### Resources!!!
+### Resources!!!
 - [Dr Sudhu's resources page](https://github.com/loopstick/ResourcesForClasses)
 
 
