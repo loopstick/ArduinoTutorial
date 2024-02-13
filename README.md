@@ -498,6 +498,7 @@ It's important to note that we are now using a separate power source for the mot
 
 ![Hbridge GIF](/images/Hbridge.gif) 
 
+### L298N H-Bridge Motor Driver
 - The L298N is a popular H-Bridge motor driver that can be used with the Arduino.
 - The L298N has 2 H-Bridges, which means it can control 2 motors.
 - The L298N can handle up to 2A per channel, and up to 35V.
@@ -507,6 +508,7 @@ It's important to note that we are now using a separate power source for the mot
 - The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
 
 start by wiring the L298 module to the Arduino, battery pack, and motor like this:
+
 <img src="/images/L298n_1Motor_bb.png" width="950">
 <!-- ![L298n_1Motor](/images/L298n_1Motor_bb.png)  -->
 
@@ -514,7 +516,7 @@ notes:
 - on many L298N modules, the power input is labeled 12v
   - but it can handle up to 35v
   - and it can run as low as 4.5v
-- We're powering the motors with 6v (4x 1.5v AA batteries)     
+<!-- - We'll power the motor > with 6v (4x 1.5v AA batteries)   -->  
 - the L298N can get the 5v it needs to operate from an onboard voltage regulator or from an external 5v source
   - since we're only giving it 6v for the motor, we'll need to power it with the Arduino's 5v
     - most voltage regulators need about 2v more than their output voltage
@@ -528,6 +530,8 @@ notes:
 
 - _IN3 & IN4_ control the direction of the motor rotation of motor 2
 - _ENB_ "enables" motor 2. 
+
+
 
 L298N example code:
 
