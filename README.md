@@ -495,6 +495,9 @@ It's important to note that we are now using a separate power source for the mot
 
 ### H-Bridge Motor Driver
 - The H-Bridge is a circuit that allows us to control the direction of a motor as well as its speed.
+
+![L298n_1Motor](/images/L298n_1Motor_bb.png) Hbridge.gif
+
 - The L298N is a popular H-Bridge motor driver that can be used with the Arduino.
 - The L298N has 2 H-Bridges, which means it can control 2 motors.
 - The L298N can handle up to 2A per channel, and up to 35V.
