@@ -441,7 +441,7 @@ Code challenges:
 
 
 More comprehensive information about servos:
-- [How To Mechatronics: How to Control Servo Motors with Arduino – Complete Guide](https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/)
+- [How To Mechatronics: How to Control Servo Motors with Arduino](https://howtomechatronics.com/how-it-works/how-servo-motors-work-how-to-control-servos-using-arduino/)
 - [Hobby Servo Tutorial: Sparkfun](https://learn.sparkfun.com/tutorials/hobby-servo-tutorial/all)
 
 
@@ -474,7 +474,7 @@ Use a transistor to control a higher current for a motor.
       - or else 爆炸
       
 Transistor Motor Control with 2x AA Batteries = 3V:
-![CircuitExample](/images/MotorTransistor_AA.jpg)
+![CircuitExample](/images/Motor_Transistor_AA.jpg)
 
 
 You can test this with either
@@ -487,8 +487,8 @@ It's important to note that we are now using a separate power source for the mot
 <!-- Transistor Motor Control with a 9v Battery: ![CircuitExample](/images/Transistor_Motor.jpg) --> 
 	
 ##### References:
-- [Arduino Transistor Motor Control](https://www.arduino.cc/en/Tutorial/TransistorMotorControl)
-- [Using a Transistor to Control High Current Loads](http://itp.nyu.edu/physcomp/labs/motors-and-transistors/using-a-transistor-to-control-high-current-loads-with-an-arduino/)
+- [Arduino Docs: Transistor Motor Control](https://docs.arduino.cc/learn/electronics/transistor-motor-control/)
+- [ITP NYU: Using a Transistor to Control High Current Loads](http://itp.nyu.edu/physcomp/labs/motors-and-transistors/using-a-transistor-to-control-high-current-loads-with-an-arduino/)
 
 
 
