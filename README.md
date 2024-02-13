@@ -531,7 +531,9 @@ notes:
 - _IN3 & IN4_ control the direction of the motor rotation of motor 2
 - _ENB_ "enables" motor 2. 
 
-
+- We _could_ write our own code to control ENA, IN1, and IN2 pins, but there are quite a few H-bridge libraries available for Arduino that make it easier to control the L298N. 
+  - We'll use the Arduino [L298N library](https://www.arduino.cc/reference/en/libraries/l298n/) for this example:
+    - _File -> Examples -> L298N -> L298N_1Motor_Example_
 
 L298N example code:
 
