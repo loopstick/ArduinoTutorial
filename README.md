@@ -504,7 +504,7 @@ It's important to note that we are now using a separate power source for the mot
 - The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
 
 start by wiring the L298 module to the Arduino, battery pack, and motor like this:
-<img src="/images/L298n_1Motor_bb.png" width="750">
+<img src="/images/L298n_1Motor_bb.png" width="950">
 
 ![L298n_1Motor](/images/L298n_1Motor_bb.png)
 
