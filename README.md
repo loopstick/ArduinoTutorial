@@ -356,7 +356,7 @@ RGB LED test code
 
 
 Some other online information about RGB LEDs
- - [Random Nerd Tutorials: How Do RGB LEDs Work](https://randomnerdtutorials.com/)electronics-basics-how-do-rgb-leds-work/)
+ - [Random Nerd Tutorials: How Do RGB LEDs Work](https://randomnerdtutorials.com/electronics-basics-how-do-rgb-leds-work/)
  - [Adafruit Arduino Lesson 3: RGB LEDs](https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/breadboard-layout)
  - [How to Mechatronics: How To Use a RGB LED with Arduino](https://howtomechatronics.com/tutorials/arduino/how-to-use-a-rgb-led-with-arduino/)
 
