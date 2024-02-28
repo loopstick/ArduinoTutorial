@@ -356,9 +356,9 @@ RGB LED test code
 
 
 Some other online information about RGB LEDs
- - https://randomnerdtutorials.com/electronics-basics-how-do-rgb-leds-work/
- - https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/breadboard-layout
- - https://howtomechatronics.com/tutorials/arduino/how-to-use-a-rgb-led-with-arduino/
+ - [Random Nerd Tutorials: How Do RGB LEDs Work](https://randomnerdtutorials.com/)electronics-basics-how-do-rgb-leds-work/
+ - [Adafruit Arduino Lesson 3: RGB LEDs](https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds/)breadboard-layout
+ - [How to Mechatronics: How To Use a RGB LED with Arduino](https://howtomechatronics.com/tutorials/arduino/how-to-use-a-rgb-led-with-arduino/)
 
 
 *******************************************************************************
@@ -413,6 +413,8 @@ Now, add an LED like this:
 - [08b_Pot_AnalogInput.ino](/examples/08_Potentiometer/08b_Pot_AnalogInput/08b_Pot_AnalogInput.ino) - same as _Examples -> Analog -> AnalogInput_
 - [08c_Pot_AnalogInOutSerial.ino](/examples/08_Potentiometer/08c_Pot_AnalogInOutSerial/08c_Pot_AnalogInOutSerial.ino) - same as _Examples -> Analog -> AnalogInOutSerial_ <-remember to move the LED to pin 9 -> because analogWrite() uses ~PWM
 
+Code challenges:
+- potentiometer controls RGB LED color: 1 knob to control them all (the colors)
 
 *******************************************************************************
 ### Servo motors
