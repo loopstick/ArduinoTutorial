@@ -449,8 +449,8 @@ More comprehensive information about servos:
 *******************************************************************************
 ### Ultrasonic Distance Sensor - HC-SR04
 The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like bats or dolphins do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. According to the manufacturer specifications the range is 2cm to 400cm or 1 inch to 13 feet. <!-- Its operation is not affected by sunlight or black material like Sharp rangefinders are (although acoustically soft materials like cloth can be difficult to detect). -->
- - more info soon.
- 
+ more info soon.
+
  in the meantime, here are a few tutorials on ultrasonic sensors from
   [How To Mechatronics](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/) 
   [Lady Ada](https://learn.adafruit.com/ultrasonic-sonar-distance-sensors/overview)  
