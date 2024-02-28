@@ -452,9 +452,9 @@ The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like
  more info soon.
 
  in the meantime, here are a few tutorials on ultrasonic sensors from
-  - [How To Mechatronics](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/) 
-  - [Lady Ada](https://learn.adafruit.com/ultrasonic-sonar-distance-sensors/overview)  
-  - [Last Minute Engineers](https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/) 
+  - [How To Mechatronics: Ultrasonic Sensor HCSRr04](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/) 
+  - [Lady Ada: Ultrasonic Sonar Distance Sensor Overview](https://learn.adafruit.com/ultrasonic-sonar-distance-sensors/overview)  
+  - [Last Minute Engineers: SR04 Ultrasonic Sensor Tutorial](https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/) 
 
 
 
