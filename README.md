@@ -18,8 +18,8 @@ Read about Arduino here : https://www.arduino.cc/en/Guide/Introduction
 Additionally: Lady Ada's [Learn Arduino](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all) lessons are great. The [tour](https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0?view=all#take-a-tour) of Arduino architecture is particularly useful for understanding Arduino.
 
 #### Before the Workshop - Install Arduino Software
-Arduino software (IDE) runs on Windows, Mac OSX, and Linux. Please download the (free) Arduino software prior to the workshop from http://arduino.cc/en/Main/Software, and install as much as you can.  We prefer to use an older version of the Arduino IDE: Version 1.8.19. Feel free to download the newer version as well and run them both for comparison.
-Please bring your laptop with the software installed to the workshop.
+Arduino software (IDE) runs on Windows, Mac OSX, and Linux. Please download and install the (free) Arduino software from http://arduino.cc/en/Main/Software.  <!-- We prefer to use an older version of the Arduino IDE: Version 1.8.19. Feel free to download the newer version as well and run them both for comparison. -->
+Please bring your laptop, with the software installed, to the workshop.
 
 Additional instructions at http://arduino.cc/en/Guide/HomePage  
 and https://learn.adafruit.com/ladyadas-learn-arduino-lesson-number-0/download-software
