@@ -538,7 +538,7 @@ notes:
   - but it can handle up to 35v
   - and it can run as low as 4.5v
 
-- since motors take a significant amount of current, we'll use a separate power source for the motor
+- since motors take a significant amount of current, we'll use a separate power source for the motor(s)
   - this external source can be a power supply or a battery pack
 
 
