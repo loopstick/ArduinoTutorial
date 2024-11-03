@@ -540,13 +540,13 @@ notes:
   - this external source can be a power supply or a battery pack
 
 ### External Power Supply - L298N H-Bridge Motor Driver 
-<img src="/images/powerSupply.jpg" width="250">
+
+  <img src="/images/powerSupply.jpg" width="250">
+
 - We can power the motor with an external power supply      
   - match the power supply voltage to the motor voltage 
     - you'll also need to consider the motor's current draw
     - the manufacturer's specification should provide this information
-
-
 
 - the L298N can get the 5v it needs to operate from an onboard voltage regulator 
     - most voltage regulators need about 2v more than their output voltage so the minimum voltage is 7v
@@ -555,6 +555,7 @@ notes:
 <img src="/images/Hbridge/l298n_1Motor_powerSupply.png" width="950">
 
 ### 6v Battery Pack - L298N H-Bridge Motor Driver
+
 - We can power the motor with 6v (4x 1.5v AA batteries) 
   - this is the maximum for [TT motors](https://www.adafruit.com/product/3777)
   <!-- - 4.5v is also possible, but the motor will be slower and we'd be operating at the bottom of the range of the L298N. ->
@@ -563,7 +564,7 @@ notes:
     - most voltage regulators need about 2v more than their output voltage
 - because we're bypassing the onboard voltage regulator we'll need to remove the shorting block near the 5v screw terminal
 
-<img src="/images/Hbridge/L298n_1Motor_bb.png" width="950">
+<img src="/images/Hbridge/L298n_1Motor_6vAA_notes.png" width="950">
 <!-- ![L298n_1Motor](/images/Hbridge/L298n_1Motor_bb.png)  -->
 
 ### L298N H-Bridge Motor Driver - Operation
