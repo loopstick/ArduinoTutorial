@@ -51,7 +51,7 @@ void setup() {
 }
 
 void loop() {
-  distCM = ultrasonic.read();
+  distCM = ultrasonic.read(CM);
   Serial.print("Distance in CM: ");
   Serial.println(distCM);
   delay(100);
