@@ -525,6 +525,7 @@ We can start with a simple test to get familiar with the NeoPixel library. When 
 - neoPixel example code:
   - FIRST -> install the Adafruit [NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) library
   - [12a_NeoPixel_simpleTest.ino](/examples/12_NeoPixel/12a_NeoPixel_simpleTest/12a_NeoPixel_simpleTest.ino)
+    - [12b_NeoPixel_strandtest.ino](/examples/12_NeoPixel/12b_NeoPixel_strandtest/12b_NeoPixel_strandtest.ino)
 
 
 <!-- *******************************************************************************
