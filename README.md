@@ -671,6 +671,7 @@ L298N example code:
 - Boolean logic, tests, and conditionals
 - Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
 - Multiple output devices: play melody while controlling motor speed, etc.
+
 - The problem with, and a solution to, delay(): 
   - [BlinkWithoutDelay](http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
 
