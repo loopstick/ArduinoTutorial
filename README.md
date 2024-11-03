@@ -531,7 +531,7 @@ It's important to note that we are now using a separate power source for the mot
 - The L298N has a built-in heat sink, so it can handle a lot of power without overheating.
 - The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
 
-  <img src="/images/Hbridge/dual-h-bridge-motor-driver-l298n-44325-750x750.jpg" width="350">
+  <img src="/images/Hbridge/dual-h-bridge-motor-driver-l298n-44325-750x750.jpg" width="450">
 
 notes:
 - on many L298N modules, the power input is labeled 12v
@@ -544,7 +544,7 @@ notes:
 
 ### External Power Supply - L298N H-Bridge Motor Driver 
 
-  <img src="/images/powerSupply.jpg" width="250">
+  <img src="/images/powerSupply.jpg" width="350">
 
 - We can power the motor with an external power supply      
   - match the power supply voltage to the motor voltage 
@@ -583,7 +583,7 @@ notes:
 - _IN3 & IN4_ control the direction of the motor rotation of motor 2
 - _ENB_ "enables" motor 2. 
 
-![L298 GIF](/images/Hbridge/llustration-of-L298N-Dual-H-Bridge-Motor-Driver.ppm) 
+<img src="/images/Hbridge/llustration-of-L298N-Dual-H-Bridge-Motor-Driver.ppm" width="750">
 
 ### L298N H-Bridge Motor Driver - Code
 
