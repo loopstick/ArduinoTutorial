@@ -513,12 +513,12 @@ More comprehensive information about ultrasonic sensors:
 
 NeoPixels are individually addressable (WS2812B) RGB LEDs that can be chained together to create a string of lights. They are very bright and can be used to create a wide range of colors. They are available in a variety of form factors, including strips, rings, and matrices. They are typically controlled by a single data line and can be powered by 5V. That said, our Arduino can only supply a limited amount of current, so we need to be careful when powering neoPixels.  
 
-We can start with a simple test to get familiar with the NeoPixel library. When we're ready to control larger numbers of NeoPixels, we'll need to consider power requirements and how to power them safely.
-
 <img src="/images/neopixel_Stick_cropped.jpg" width="650"> 
 
 If you want to understand addressable LEDs (aka neoPixels), read this guide!! 
 - [Adafruit NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide)
+
+We can start with a simple test to get familiar with the NeoPixel library. When we're ready to control larger numbers of NeoPixels, we'll need to consider power requirements and how to power them safely.
 
 <img src="/examples/12_NeoPixel/NeoPixel_stick_bb.png" width="850"> 
 
