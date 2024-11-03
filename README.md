@@ -598,10 +598,13 @@ L298N example code:
   - _File -> Examples -> L298N -> L298N-Fade_ to control 1 motor, 'fading' the speed up and down
 
 
-##### References:
+### L298N H-Bridge Motor Driver - References:
 - [How To Mechatronics: L298 Motor Driver](https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/)
 - [Arduino: L298N library](https://www.arduino.cc/reference/en/libraries/l298n/)
 
+
+
+####++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ### More to explore
 - Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc
