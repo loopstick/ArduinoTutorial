@@ -472,9 +472,9 @@ start by wiring the ultrasonic sensor like this:
  hint: you can use Male-Female jumpers to connect directly from the ultrasonic sensor to your Arduino
  <img src="/images/jumper_MtoF.jpg" width="200"> 
 
-install the ultrasonic library by Erick Simoes: https://github.com/ErickSimoes/Ultrasonic
 
-- Simple Ultrasonic example code:
+
+- Simple Ultrasonic example code using [Erick Simoe's Ultrasonic](https://github.com/ErickSimoes/Ultrasonic)library:
   - [10a_UltrasonicSimple_werk.ino](/examples/10_Ultrasonic/10a_UltrasonicSimple_werk/10a_UltrasonicSimple_werk.ino) 
   - [10b_UltrasonicSimple_InCm.ino](/examples/10_Ultrasonic/10b_UltrasonicSimple_InCm/) 
 
