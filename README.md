@@ -546,7 +546,7 @@ notes:
 
   <img src="/images/powerSupply.jpg" width="350">
 
-- We can power the motor with an external power supply      
+- We can power the motor(s) with an external power supply      
   - match the power supply voltage to the motor voltage 
     - you'll also need to consider the motor's current draw
     - the manufacturer's specification should provide this information
@@ -560,11 +560,11 @@ notes:
 
 ### 6v Battery Pack - L298N H-Bridge Motor Driver
 
-- We can power the motor with 6v (4x 1.5v AA batteries) 
+- We can power the motor(s) with 6v (4x 1.5v AA batteries) 
   - this is the maximum for [TT motors](https://www.adafruit.com/product/3777)
 
 - the L298N can get the 5v it needs to operate from an onboard voltage regulator OR from an external 5v source
-  - since we're only giving it 6v for the motor, we'll need to power it with the Arduino's 5v
+  - since we're only giving it 6v for the motor(s), we'll need to power it with the Arduino's 5v
     - most voltage regulators need about 2v more than their output voltage
 - because we're bypassing the onboard voltage regulator we'll need to remove the shorting block near the 5v screw terminal
 
@@ -575,7 +575,7 @@ notes:
 
 - _IN1 & IN2_ control the direction of the motor rotation of motor 1
 
-- _ENA_ "enables" the motor. 
+- _ENA_ "enables" motor 1. 
   - with the shorting block in place, the motor is always on
   - if you connect _ENA_ to a digital pin, you can control the motor On/Off with a digitalWrite() 
   - if you connect _ENA_ to an analog pin, you can use analogWrite() to control the speed of the motor
