@@ -480,7 +480,7 @@ start by wiring the ultrasonic sensor like this:
   - [10b_UltrasonicSimple_InCm.ino](/examples/10_Ultrasonic/10b_UltrasonicSimple_InCm/) 
 
 - NewPing example code:
- - install [Tim Eckel's NewPing](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home) library 
+  - install [Tim Eckel's NewPing](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home) library 
   - [10c_NewPing_v1_simple.ino](/examples/10_Ultrasonic/10c_NewPing_v1_simple/10c_NewPing_v1_simple.ino)
   - [10d_NewPing_v2_ranges.ino](/examples/10_Ultrasonic/10d_NewPing_v2_ranges/10d_NewPing_v2_ranges.ino)   
   - [10e_NewPing_v4_Smoothing_RGB.ino](/examples/10_Ultrasonic/10e_NewPing_Smoothing_v4_RGB/10e_NewPing_Smoothing_v4_RGB.ino) 
