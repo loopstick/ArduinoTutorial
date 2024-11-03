@@ -431,7 +431,8 @@ Servo motors are a simple and easy way to add motion to your Arduino project.
 
 leave the potentiometer from the previous example connected and add the servo on pin 9. 
 
-![Servo_Potentiometer_bb.png](/examples/09_Servo/Servo_Potentiometer_bb.png)
+![Servo_Potentiometer_v2_bb.png](/examples/09_Servo/Servo_Potentiometer_v2_bb.png)
+
 
 The servo needs 3 connections:
 - positive voltage (power) - in this case: 5v
