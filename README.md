@@ -475,8 +475,13 @@ start by wiring the ultrasonic sensor like this:
 install the ultrasonic library by Erick Simoes: https://github.com/ErickSimoes/Ultrasonic
 
 - Simple Ultrasonic example code:
-  - [UltrasonicSimple_werk.ino](/examples/10_Ultrasonic/UltrasonicSimple/UltrasonicSimple_werk/UltrasonicSimple_werk.ino) 
-  - [UltrasonicSimple_InCm.ino](/examples/10_Ultrasonic/UltrasonicSimple/UltrasonicSimple_InCm/UltrasonicSimple_InCm.ino) 
+  - [10a_UltrasonicSimple_werk.ino](/examples/10_Ultrasonic/10a_UltrasonicSimple_werk/10a_UltrasonicSimple_werk.ino) 
+  - [10b_UltrasonicSimple_InCm.ino](/examples/10_Ultrasonic/10b_UltrasonicSimple_InCm/) 
+
+- [NewPing](https://docs.arduino.cc/libraries/newping/) example code:
+  - [10c_NewPing_v1_simple.ino](/examples/10_Ultrasonic/10c_NewPing_v1_simple/10c_NewPing_v1_simple.ino)
+  - [10d_NewPing_v2_ranges.ino](/examples/10_Ultrasonic/10d_NewPing_v2_ranges/10d_NewPing_v2_ranges.ino)   
+  - [10e_NewPing_v2_RGB.ino](/examples/10_Ultrasonic/10e_NewPing_v4_RGB/10e_NewPing_v4_RGB.ino) 
 
 More comprehensive information about ultrasonic sensors:
   - [How To Mechatronics: Ultrasonic Sensor HC-SR04 and Arduino](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/) 
