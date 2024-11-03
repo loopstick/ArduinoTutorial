@@ -518,7 +518,7 @@ We can start with a simple test to get familiar with the NeoPixel library. When 
 If you want to understand addressable LEDs (aka neoPixels), read this guide!! 
 - [Adafruit NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide)
 
-<img src="/examples/12_NeoPixel/NeoPixel_stick_bb.png" width="425"> 
+<img src="/examples/12_NeoPixel/NeoPixel_stick_bb.png" width="850"> 
 
 - neoPixel example code:
   - FIRST -> install the Adafruit [NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) library
