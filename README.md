@@ -475,12 +475,12 @@ start by wiring the ultrasonic sensor like this:
 
 
 - Simple Ultrasonic example code using 
-  - install [Erick Simoe's Ultrasonic](https://github.com/ErickSimoes/Ultrasonic) library
+  - FIRST -> install [Erick Simoe's Ultrasonic](https://github.com/ErickSimoes/Ultrasonic) library
   - [10a_UltrasonicSimple_werk.ino](/examples/10_Ultrasonic/10a_UltrasonicSimple_werk/10a_UltrasonicSimple_werk.ino) 
   - [10b_UltrasonicSimple_InCm.ino](/examples/10_Ultrasonic/10b_UltrasonicSimple_InCm/) 
 
 - NewPing example code:
-  - install [Tim Eckel's NewPing](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home) library 
+  - FIRST -> install [Tim Eckel's NewPing](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home) library 
   - [10c_NewPing_v1_simple.ino](/examples/10_Ultrasonic/10c_NewPing_v1_simple/10c_NewPing_v1_simple.ino)
   - [10d_NewPing_v2_ranges.ino](/examples/10_Ultrasonic/10d_NewPing_v2_ranges/10d_NewPing_v2_ranges.ino)   
   - [10e_NewPing_v4_Smoothing_RGB.ino](/examples/10_Ultrasonic/10e_NewPing_Smoothing_v4_RGB/10e_NewPing_Smoothing_v4_RGB.ino) 
@@ -507,11 +507,28 @@ More comprehensive information about ultrasonic sensors:
 - [Lady Ada: PIR Motion Sensor](https://learn.adafruit.com/pir-passive-infrared-proximity-motion-sensor/overview)
 - [Arduino with PIR Sensor](https://randomnerdtutorials.com/arduino-with-pir-motion-sensor/)
 
+
 *******************************************************************************
+### NeoPixels (low-current) 
+
+NeoPixels are individually addressable (WS2812B) RGB LEDs that can be chained together to create a string of lights. They are very bright and can be used to create a wide range of colors. They are available in a variety of form factors, including strips, rings, and matrices. They are typically controlled by a single data line and can be powered by 5V. That said, our Arduino can only supply a limited amount of current, so we need to be careful when powering neoPixels.  
+
+We can start with a simple test to get familiar with the NeoPixel library. When we're ready to control larger numbers of NeoPixels, we'll need to consider power requirements and how to power them safely.
+
+If you want to understand addressable LEDs (aka neoPixels), read this guide!! 
+- [Adafruit NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide)
+
+- neoPixel example code:
+  - FIRST -> install the Adafruit [NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) library
+  - [12a_NeoPixel_simpleTest.ino](/examples/12_NeoPixel/12a_NeoPixel_simpleTest/12a_NeoPixel_simpleTest.ino)
+
+
+<!-- *******************************************************************************
 Earlier, we lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
 
 What else can _analogWrite()_ do?
 	_analogWrite()_ also works well to control the speed of a motor. However now we need to consider whether our motor is compatible with Arduino’s outputs.
+  -->
 
 *******************************************************************************
 ### Arduino outputs: Voltage and current
