@@ -35,8 +35,8 @@ void loop() {
   // to the count of pixels minus one.
   for(int i=0; i<NUMPIXELS; i++) { // For each pixel...
 
-    // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
-    // Here we're using a moderately bright red color:
+   // pixels.Color() takes RGB values, from 0,0,0 up to 255,255,255
+   // Here we're using a moderately bright red color:
   
     pixels.setPixelColor(i, pixels.Color(127, 0, 0)); // 127 = 50% of max brightness >> also 50% current draw
 
