@@ -662,9 +662,9 @@ L298N example code:
 
 
 
-####++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-### More to explore
+## More to explore
 - Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc
 - INPUT_PULLUP
 - Interrupts
@@ -676,7 +676,7 @@ L298N example code:
 
 *******************************************************************************
 
-### Resources!!!
+## Resources!!!
 - [Dr Sudhu's resources page](https://github.com/loopstick/ResourcesForClasses)
 
 
