@@ -522,6 +522,8 @@ It's important to note that we are now using a separate power source for the mot
 
 ![Hbridge GIF](/images/Hbridge/Hbridge.gif) 
 
+
+
 ### L298N H-Bridge Motor Driver
 - The L298N is a popular H-Bridge motor driver that can be used with the Arduino.
 - The L298N has 2 H-Bridges, which means it can control 2 motors.
@@ -530,6 +532,8 @@ It's important to note that we are now using a separate power source for the mot
 - The L298N has a built-in diode to protect against voltage spikes from the motor.
 - The L298N has a built-in heat sink, so it can handle a lot of power without overheating.
 - The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
+
+![L298 GIF](/images/Hbridge/llustration-of-L298N-Dual-H-Bridge-Motor-Driver.ppm) 
 
 notes:
 - on many L298N modules, the power input is labeled 12v
