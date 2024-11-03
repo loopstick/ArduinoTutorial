@@ -520,7 +520,7 @@ It's important to note that we are now using a separate power source for the mot
 ### H-Bridge Motor Driver
 - The H-Bridge is a circuit that allows us to control the direction of a motor as well as its speed.
 
-![Hbridge GIF](/images/Hbridge.gif) 
+![Hbridge GIF](/images/Hbridge/Hbridge.gif) 
 
 ### L298N H-Bridge Motor Driver
 - The L298N is a popular H-Bridge motor driver that can be used with the Arduino.
@@ -531,20 +531,40 @@ It's important to note that we are now using a separate power source for the mot
 - The L298N has a built-in heat sink, so it can handle a lot of power without overheating.
 - The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
 
-start by wiring the L298 module to the Arduino, battery pack, and motor like this:
-
-<img src="/images/L298n_1Motor_bb.png" width="950">
-<!-- ![L298n_1Motor](/images/L298n_1Motor_bb.png)  -->
-
 notes:
 - on many L298N modules, the power input is labeled 12v
   - but it can handle up to 35v
   - and it can run as low as 4.5v
-<!-- - We'll power the motor > with 6v (4x 1.5v AA batteries)   -->  
+
+- since motors take a significant amount of current, we'll use a separate power source for the motor
+  - this external source can be a power supply or a battery pack
+
+#### External Power Supply - L298N H-Bridge Motor Driver
+- We can power the motor with an external power supply 
+  - match the power supply voltage to the motor voltage
+    - you'll also need to consider the motor's current draw
+    - the manufacturer's specification should provide this information
+- the L298N can get the 5v it needs to operate from an onboard voltage regulator 
+    - most voltage regulators need about 2v more than their output voltage so the minimum voltage is 7v
+- we can also use the L298's onboard voltage regulator to provide 5V for our Arduino
+
+
+<img src="/images/Hbridge/l298n_1Motor_powerSupply.png" width="950">
+
+
+#### 6v Battery Pack - L298N H-Bridge Motor Driver
+- We can power the motor with 6v (4x 1.5v AA batteries) 
+  - this is the maximum for [TT motors](https://www.adafruit.com/product/3777)
+  <!-- - 4.5v is also possible, but the motor will be slower and we'd be operating at the bottom of the range of the L298N. ->
 - the L298N can get the 5v it needs to operate from an onboard voltage regulator OR from an external 5v source
   - since we're only giving it 6v for the motor, we'll need to power it with the Arduino's 5v
     - most voltage regulators need about 2v more than their output voltage
 - because we're bypassing the onboard voltage regulator we'll need to remove the shorting block near the 5v screw terminal
+
+<img src="/images/Hbridge/L298n_1Motor_bb.png" width="950">
+<!-- ![L298n_1Motor](/images/Hbridge/L298n_1Motor_bb.png)  -->
+
+
 
 - _IN1 & IN2_ control the direction of the motor rotation of motor 1
 
