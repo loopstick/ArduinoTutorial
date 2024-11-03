@@ -531,7 +531,7 @@ It's important to note that we are now using a separate power source for the mot
 - The L298N has a built-in heat sink, so it can handle a lot of power without overheating.
 - The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
 
-![L298 GIF](/images/Hbridge/llustration-of-L298N-Dual-H-Bridge-Motor-Driver.ppm) 
+![L298 GIF](/images/Hbridge/dual-h-bridge-motor-driver-l298n-44325-750x750.jpg) 
 
 notes:
 - on many L298N modules, the power input is labeled 12v
@@ -562,7 +562,7 @@ notes:
 
 - We can power the motor with 6v (4x 1.5v AA batteries) 
   - this is the maximum for [TT motors](https://www.adafruit.com/product/3777)
-  
+
 - the L298N can get the 5v it needs to operate from an onboard voltage regulator OR from an external 5v source
   - since we're only giving it 6v for the motor, we'll need to power it with the Arduino's 5v
     - most voltage regulators need about 2v more than their output voltage
@@ -582,6 +582,8 @@ notes:
 
 - _IN3 & IN4_ control the direction of the motor rotation of motor 2
 - _ENB_ "enables" motor 2. 
+
+![L298 GIF](/images/Hbridge/llustration-of-L298N-Dual-H-Bridge-Motor-Driver.ppm) 
 
 ### L298N H-Bridge Motor Driver - Code
 
