@@ -540,19 +540,18 @@ notes:
   - this external source can be a power supply or a battery pack
 
 ### External Power Supply - L298N H-Bridge Motor Driver
-<img src="/images/powerSupply.jpg" width="250">
-
-- We can power the motor with an external power supply  powrSupply.jpg
+- We can power the motor with an external power supply  
   - match the power supply voltage to the motor voltage
     - you'll also need to consider the motor's current draw
     - the manufacturer's specification should provide this information
+
+    <img src="/images/powerSupply.jpg" width="350">
+
 - the L298N can get the 5v it needs to operate from an onboard voltage regulator 
     - most voltage regulators need about 2v more than their output voltage so the minimum voltage is 7v
 - we can also use the L298's onboard voltage regulator to provide 5V for our Arduino
 
-
 <img src="/images/Hbridge/l298n_1Motor_powerSupply.png" width="950">
-
 
 ### 6v Battery Pack - L298N H-Bridge Motor Driver
 - We can power the motor with 6v (4x 1.5v AA batteries) 
@@ -566,18 +565,19 @@ notes:
 <img src="/images/Hbridge/L298n_1Motor_bb.png" width="950">
 <!-- ![L298n_1Motor](/images/Hbridge/L298n_1Motor_bb.png)  -->
 
-
+### L298N H-Bridge Motor Driver - Operation
 
 - _IN1 & IN2_ control the direction of the motor rotation of motor 1
 
 - _ENA_ "enables" the motor. 
   - with the shorting block in place, the motor is always on
   - if you connect _ENA_ to a digital pin, you can control the motor On/Off with a digitalWrite() 
-  - if you connect _ENA_ to aan analog pin, you can use analogWrite() to control the speed of the motor
+  - if you connect _ENA_ to an analog pin, you can use analogWrite() to control the speed of the motor
 
 - _IN3 & IN4_ control the direction of the motor rotation of motor 2
 - _ENB_ "enables" motor 2. 
 
+### L298N H-Bridge Motor Driver - Code
 
 L298N example code:
 
@@ -587,8 +587,7 @@ L298N example code:
     - _Tools -> Manage Libraries_ and search for L298N
     - select the one by Andrea Lombardo and click install
   - _File -> Examples -> L298N -> L298N-Simple_ to control 1 motor
-  - _File -> Examples -> L298N -> L298N-Fade_  to control 1 motor, 'fading' the speed up and down
-
+  - _File -> Examples -> L298N -> L298N-Fade_ to control 1 motor, 'fading' the speed up and down
 
 
 ##### References:
