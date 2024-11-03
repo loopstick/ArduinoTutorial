@@ -515,6 +515,8 @@ NeoPixels are individually addressable (WS2812B) RGB LEDs that can be chained to
 
 We can start with a simple test to get familiar with the NeoPixel library. When we're ready to control larger numbers of NeoPixels, we'll need to consider power requirements and how to power them safely.
 
+<img src="/images/neopixel_Stick.jpg" width="650"> 
+
 If you want to understand addressable LEDs (aka neoPixels), read this guide!! 
 - [Adafruit NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide)
 
