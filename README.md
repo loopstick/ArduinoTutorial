@@ -467,7 +467,7 @@ The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like
 
 start by wiring the ultrasonic sensor like this:
 
-<img src="/examples/10_Ultrasonic/Ultrasonic_noBB_bb.png" width="425"> 
+<img src="/examples/10_Ultrasonic/Ultrasonic_noBB_bb.png" width="850"> 
 
  hint: you can use Male-Female jumpers to connect directly from the ultrasonic sensor to your Arduino
 
