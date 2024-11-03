@@ -465,6 +465,13 @@ The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like
   - ultrasonic rangefinders are susceptible to false triggers when subjected to loud sounds.
   - ultrasonic rangefinders are not affected by sunlight or black material like Sharp IR rangefinders are (although acoustically soft materials like cloth can be difficult to detect). 
 
+start by wiring the ultrasonic sensor like this:
+
+<img src="/examples/10_Ultrasonic/Ultrasonic_noBB_bb.png" width="425"> 
+
+ hint: you can use Male-Female jumpers to connect directly from the ultrasonic sensor to your Arduino
+
+More comprehensive information about ultrasonic sensors:
   - [How To Mechatronics: Ultrasonic Sensor HC-SR04 and Arduino](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/) 
   - [Lady Ada: Ultrasonic Sonar Distance Sensors Overview](https://learn.adafruit.com/ultrasonic-sonar-distance-sensors/overview)  
   - [Last Minute Engineers: How HC-SR04 Ultrasonic Sensor Works](https://lastminuteengineers.com/arduino-sr04-ultrasonic-sensor-tutorial/) 
