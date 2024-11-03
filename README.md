@@ -539,9 +539,9 @@ notes:
 - since motors take a significant amount of current, we'll use a separate power source for the motor
   - this external source can be a power supply or a battery pack
 
-### External Power Supply - L298N H-Bridge Motor Driver
+### External Power Supply - L298N H-Bridge Motor Driver <img src="/images/powerSupply.jpg" width="250">
 - We can power the motor with an external power supply      
-  - match the power supply voltage to the motor voltage <img src="/images/powerSupply.jpg" width="250">
+  - match the power supply voltage to the motor voltage 
     - you'll also need to consider the motor's current draw
     - the manufacturer's specification should provide this information
 
