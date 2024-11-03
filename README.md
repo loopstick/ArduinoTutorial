@@ -531,7 +531,7 @@ It's important to note that we are now using a separate power source for the mot
 - The L298N has a built-in heat sink, so it can handle a lot of power without overheating.
 - The L298N has a built-in current sense resistor, so it can detect when the motor is stalled. -->
 
-![L298 GIF](/images/Hbridge/dual-h-bridge-motor-driver-l298n-44325-750x750.jpg) 
+  <img src="/images/Hbridge/dual-h-bridge-motor-driver-l298n-44325-750x750.jpg" width="450">
 
 notes:
 - on many L298N modules, the power input is labeled 12v
