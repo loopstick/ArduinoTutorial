@@ -457,7 +457,9 @@ More comprehensive information about servos:
 *******************************************************************************
 ### Ultrasonic Distance Sensor - HC-SR04
 The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like bats or dolphins do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. According to the manufacturer specifications the range is 2cm to 400cm or 1 inch to 13 feet. <!-- Its operation is not affected by sunlight or black material like Sharp rangefinders are (although acoustically soft materials like cloth can be difficult to detect). -->
- more info soon.
+
+
+<img src="/examples/10_Ultrasonic/HCSR04_Ultrasonic_Distance_Sensor_02.jpeg/" width="425"> 
 
  in the meantime, here are a few tutorials on ultrasonic sensors from
   - [How To Mechatronics: Ultrasonic Sensor HC-SR04 and Arduino](https://howtomechatronics.com/tutorials/arduino/ultrasonic-sensor-hc-sr04/) 
@@ -469,6 +471,14 @@ The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like
 
 *******************************************************************************
 ### Sensor ranges, calibration, and mapping
+  - coming soon
+
+
+*******************************************************************************
+### Passive Infrared Sensor - PIR
+
+<img src="/examples/11_PIR/HC-505-Mini-PIR-Motion-Sensor-Module.jpg" width="425"> 
+
   - coming soon
 
 *******************************************************************************
@@ -617,7 +627,7 @@ L298N example code:
 - The problem with, and a solution to, delay(): 
   - [BlinkWithoutDelay](http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
 
-
+*******************************************************************************
 
 ### Resources!!!
 - [Dr Sudhu's resources page](https://github.com/loopstick/ResourcesForClasses)
