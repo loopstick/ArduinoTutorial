@@ -539,8 +539,10 @@ notes:
 - since motors take a significant amount of current, we'll use a separate power source for the motor
   - this external source can be a power supply or a battery pack
 
-#### External Power Supply - L298N H-Bridge Motor Driver
-- We can power the motor with an external power supply 
+### External Power Supply - L298N H-Bridge Motor Driver
+<img src="/images/powerSupply.jpg" width="250">
+
+- We can power the motor with an external power supply  powrSupply.jpg
   - match the power supply voltage to the motor voltage
     - you'll also need to consider the motor's current draw
     - the manufacturer's specification should provide this information
@@ -552,7 +554,7 @@ notes:
 <img src="/images/Hbridge/l298n_1Motor_powerSupply.png" width="950">
 
 
-#### 6v Battery Pack - L298N H-Bridge Motor Driver
+### 6v Battery Pack - L298N H-Bridge Motor Driver
 - We can power the motor with 6v (4x 1.5v AA batteries) 
   - this is the maximum for [TT motors](https://www.adafruit.com/product/3777)
   <!-- - 4.5v is also possible, but the motor will be slower and we'd be operating at the bottom of the range of the L298N. ->
