@@ -196,7 +196,8 @@ Use the breadboard to add an external LED (and a resistor).
     - The lower the resistance, the brighter the light.
     - Evil Mad Scientist explains it well [here](https://www.evilmadscientist.com/2012/resistors-for-leds/)
   - Resistor Color Code!
-    - [Learn the Resistor Color Code in in 5 minutes](http://www.resistorguide.com/resistor-color-code/)
+     <!-- - [Learn the Resistor Color Code in in 5 minutes](http://www.resistorguide.com/resistor-color-code/)  -->
+    - [Learn the Resistor Color Code](https://www.arrow.com/en/research-and-events/articles/resistor-color-code)
 
     ![ResistorColorCode](/images/ResistorColorCode.png)
 
