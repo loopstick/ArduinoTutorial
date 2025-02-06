@@ -1,5 +1,5 @@
 /*
-  Button
+  Button control RGB LED - ST 2025
 
   Turns on and off a light emitting diode(LED) connected to pin 9 (RGB - red),
   when pressing a pushbutton attached to pin 2.
