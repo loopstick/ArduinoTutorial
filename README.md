@@ -388,6 +388,7 @@ if you don't still have an LED hooked up, add one on pin 13, like this:
 Button example code:
 - [07a_Button.ino](/examples/07_Button/07a_Button/07a_Button.ino) - same as _Examples -> Digital -> Button_
 - [07b_Button_StateChangeDetection.ino](/examples/07_Button/07b_Button_StateChangeDetection/07b_Button_StateChangeDetection.ino) - same as _Examples -> Digital -> StateChangeDetection_
+- [/07c_Button_RGBled.ino](/examples/07_Button/07c_Button_RGBled/07c_Button_RGBled.ino)
 
 
 
