@@ -357,8 +357,9 @@ RGB LED wiring diagram
 ![RGB_LED_bb.png](/examples/06_RGB_LED/RGB_LED_bb.png)
 
 RGB LED test code
-- [06a_RGB_Test.ino](/examples/06_RGB_LED/06a_RGB_Test/06a_RGB_Test.ino)
-- [06b_RGB_SimpleFade.ino](/examples/06_RGB_LED/06b_RGB_SimpleFade/06b_RGB_SimpleFade.ino)
+- [06a_RGB_Test.ino](/examples/06_RGB_LED/06a_RGB_Test/06a_RGB_Test.ino) - blink Red, Green, Blue
+- [06b_RGB_SimpleFade.ino](/examples/06_RGB_LED/06b_RGB_SimpleFade/06b_RGB_SimpleFade.ino) - fades through all colors
+- [06c_RGB_LDRfade.ino](/examples/06_RGB_LED/06c_RGB_LDRfade/06c_RGB_LDRfade.ino) - citrus fade
 
 
 Some other online information about RGB LEDs
