@@ -673,17 +673,22 @@ L298N example code:
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-## More to explore
-- Joining inputs and outputs: switch controls speed, switch choses between two brightness levels, thermistor or other sensor changes behavior, etc
-- INPUT_PULLUP
-- Interrupts
-- Boolean logic, tests, and conditionals
-- Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
-- Multiple output devices: play melody while controlling motor speed, etc.
-
+## STOP USING DELAYS!!!
 - The problem with, and a solution to, delay(): 
   - [BlinkWithoutDelay](http://arduino.cc/en/Tutorial/BlinkWithoutDelay) tutorial
+ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+## More to explore
+
+- [INPUT_PULLUP](https://docs.arduino.cc/built-in-examples/digital/InputPullupSerial/) - connect a switch WITHOUT a pulldown resistor!!
+- [Interrupts](https://www.arduino.cc/reference/cs/language/functions/external-interrupts/attachinterrupt/) - get IMMEDIATE results from sensor inputs
+- [Boolean operators](https://www.tutorialspoint.com/arduino/arduino_boolean_operators.htm)
+- [Switch Case](https://www.arduino.cc/reference/cs/language/structure/control-structure/switchcase/) - use to set up different "modes" of operation
+  
+- Multiple output devices: play melody while controlling motor speed, etc.
+
+- Making sounds: [Melody](https://itp.nyu.edu/physcomp/labs/labs-arduino-digital-and-analog/tone-output-using-an-arduino/) tutorial
 
 *******************************************************************************
 
