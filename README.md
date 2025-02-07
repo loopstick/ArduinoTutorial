@@ -387,6 +387,8 @@ A button (switch) is a mechanical device that makes or breaks an electrical conn
 start by wiring a button like this:
 ![Button_bb.png](/examples/07_Button/Button_bb.png)
 
+for those who are wondering, the 10kΩ resistor in this circuit is acting as a [pull-down resistor](https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor/#). It help reset the circuit after the button has been pushed (it bleeds extra energy to ground).
+
 if you don't still have an LED hooked up, add one on pin 13, like this:
 ![Button_LED_bb.png](/examples/07_Button/Button_LED_bb.png)
 
