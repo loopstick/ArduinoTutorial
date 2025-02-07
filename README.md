@@ -351,6 +351,9 @@ we've used _analogWrite()_ to fade our LED using a range of voltage
       - color bands-> yellow, purple, black, black, brown
     - 430 ohm for GREEN and BLUE
       - color bands-> yellow, orange, black, black, brown
+        
+![Resistors_RGB.png](/images/Resistors_RGB.png)
+	
 - We're using common _CATHODE_ RGB LEDs
   - the negative leg (the cathode) is shared by (is common to) all 3 LEDs
 
