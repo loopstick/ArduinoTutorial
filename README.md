@@ -177,6 +177,7 @@ combine HelloWorld and Blink to make a program that shows it's working with phys
 ### Using a solderless Breadboard to connect Arduino to other things (LEDs, motors, speakers, sensors, etc.)
 
 The Solderless Breadboard (SparkFun [tutorial:](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard))
+[Breadboarding for Beginners](https://learn.adafruit.com/breadboards-for-beginners?view=all)
 
 ![Breadboard](/images/Breadboard_st.jpg)
 
