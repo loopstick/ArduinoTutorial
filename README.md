@@ -681,7 +681,7 @@ L298N example code:
   - [BWD - Blink w button - broken](https://www.tinkercad.com/things/igIXq3rA8d3-bwd-blink-w-button-broken)
   - [BWD - Blink w button - BWD](https://www.tinkercad.com/things/kL7iV53QhIT-bwd-blink-w-button-bwd)
     
-- Not Blink WIthout Delay, but related:
+Not Blink WIthout Delay, but related:
   
  Fade vs Fading - For loops stall sensor reads!!
 
