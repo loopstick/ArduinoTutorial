@@ -505,12 +505,12 @@ start by wiring the ultrasonic sensor like this:
 
 
 
-- Simple Ultrasonic example code using 
+Simple Ultrasonic example code using 
   - FIRST -> install [Erick Simoe's Ultrasonic](https://github.com/ErickSimoes/Ultrasonic) library
   - [10a_UltrasonicSimple_werk.ino](/examples/10_Ultrasonic/10a_UltrasonicSimple_werk/10a_UltrasonicSimple_werk.ino) 
   - [10b_UltrasonicSimple_InCm.ino](/examples/10_Ultrasonic/10b_UltrasonicSimple_InCm/) 
 
-- NewPing example code:
+NewPing example code:
   - FIRST -> install [Tim Eckel's NewPing](https://bitbucket.org/teckel12/arduino-new-ping/wiki/Home) library 
   - [10c_NewPing_v1_simple.ino](/examples/10_Ultrasonic/10c_NewPing_v1_simple/10c_NewPing_v1_simple.ino)
   - [10d_NewPing_v2_ranges.ino](/examples/10_Ultrasonic/10d_NewPing_v2_ranges/10d_NewPing_v2_ranges.ino)   
@@ -548,7 +548,7 @@ More comprehensive information about ultrasonic sensors:
 
 - Last Minute Engineers[MAX4466 Microphone Amplifier Module tutorial](https://lastminuteengineers.com/max4466-arduino-tutorial/)
 
-- Adafruit [Microphoen Amplifier Breakout tutorial](https://learn.adafruit.com/adafruit-microphone-amplifier-breakout)
+- Adafruit [Microphone Amplifier Breakout tutorial](https://learn.adafruit.com/adafruit-microphone-amplifier-breakout)
 
 *******************************************************************************
 ### NeoPixels (low-current) 
@@ -564,7 +564,7 @@ We can start with a simple test to get familiar with the NeoPixel library. When 
 
 <img src="/examples/12_NeoPixel/NeoPixel_stick_bb.png" width="850"> 
 
-- neoPixel example code:
+neoPixel example code:
   - FIRST -> install the Adafruit [NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) library
   - [12a_NeoPixel_simpleTest.ino](/examples/12_NeoPixel/12a_NeoPixel_simpleTest/12a_NeoPixel_simpleTest.ino)
     - [12b_NeoPixel_strandtest.ino](/examples/12_NeoPixel/12b_NeoPixel_strandtest/12b_NeoPixel_strandtest.ino)
@@ -621,10 +621,10 @@ It's important to note that we are now using a separate power source for the mot
 
 <img src="https://m.media-amazon.com/images/I/51uz6ic1S0L._AC_SL1001_.jpg" width="220" />      +      <img src="https://m.media-amazon.com/images/I/61a4AO9nVkL._SL1500_.jpg" width="200" />
 
-- [video: Solenoid Basics Explained](https://www.youtube.com/watch?v=BbmocfETTFo)
+- video: [Solenoid Basics Explained](https://www.youtube.com/watch?v=BbmocfETTFo)
 
 - MOS module = breakout board built around a single IRF520 MOSFET transistor
-- same as above, but the circuit is built for you
+- same as above, but the circuit is built for you (no need to worry about which way to wire the diode!)
 <!-- - [AI generated tutorial MOS Module tutorial](https://electropeak.com/learn/interfacing-irf520-mosfet-driver-module-switch-button-hcmodu0083-with-arduino/?srsltid=AfmBOooAt1fvwTH-hx7iBUSyaW9nlxNEpQ3TXh5BaaZRg-11ggJKzHOE) -->
 
 - you can use batteries OR a power supply
@@ -638,7 +638,7 @@ It's important to note that we are now using a separate power source for the mot
 - when using 5v the circuit is a little different than when using more than a higher voltage (7-12V)
 - - more soon....
 
-- MOS Module example code!
+MOS Module example code!
 - [22a_MOS_Blink.ino](examples/22_Solenoid_MOSModule/22a_MOS_Blink/22a_MOS_Blink.ino) <- use this to test your wiring
 - [22b_MOS_Musical.ino](examples/22_Solenoid_MOSModule/22b_MOS_Musical/22b_MOS_Musical.ino) <- musically rhythmic
 - [22c_MOS_Mathematical.ino](examples/22_Solenoid_MOSModule/22c_MOS_Mathematical/22c_MOS_Mathematical.ino) <- mathematically rhythmic
