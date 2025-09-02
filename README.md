@@ -540,6 +540,16 @@ More comprehensive information about ultrasonic sensors:
 
 
 *******************************************************************************
+### Sound Sensor (aka microphone + pre-amplifier) 
+
+<img src="https://cdn-shop.adafruit.com/970x728/1063-06.jpg" width="200" />
+
+... coming soon
+
+Last Minute Engineers[MAX4466 Microphone Amplifier Module tutorial](https://lastminuteengineers.com/max4466-arduino-tutorial/)
+Adafruit [Microphoen Amplifier Breakout tutorial](https://learn.adafruit.com/adafruit-microphone-amplifier-breakout)
+
+*******************************************************************************
 ### NeoPixels (low-current) 
 
 NeoPixels are individually addressable (WS2812B) RGB LEDs that can be chained together to create a string of lights. They are very bright and can be used to create a wide range of colors. They are available in a variety of form factors, including strips, rings, and matrices. They are typically controlled by a single data line and can be powered by 5V. That said, our Arduino can only supply a limited amount of current, so we need to be careful when powering neoPixels.  
