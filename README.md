@@ -628,13 +628,13 @@ It's important to note that we are now using a separate power source for the mot
 - [AI generated tutorial MOS Module tutorial](https://electropeak.com/learn/interfacing-irf520-mosfet-driver-module-switch-button-hcmodu0083-with-arduino/?srsltid=AfmBOooAt1fvwTH-hx7iBUSyaW9nlxNEpQ3TXh5BaaZRg-11ggJKzHOE)
 - when using 5v the circuit is a little different than when using more than a higher voltage (7-12V)
 
-![MOSmodule w/ power supply](/images/MOSmodule/SolenoidMosModule_PowerSupply_bb.png) 
+<!-- ![MOSmodule w/ power supply](/images/MOSmodule/SolenoidMosModule_PowerSupply_bb.png)  -->
 
-![MOSmodule w/ power supply](/examples/22_Solenoid_MOSModule/SolenoidMosModule_Batteries_bb.png)
+![MOSmodule w/ power supply](examples/22_Solenoid_MOSModule/SolenoidMosModule_PowerSupply_bb.png)
 
+![MOSmodule w/ batteries](/examples/22_Solenoid_MOSModule/SolenoidMosModule_Batteries_bb.png)
 
-
-![MOSmodule w/ batteries](/images/MOSModule/SolenoidMosModule_Batteries_bb.png) 
+<!-- ![MOSmodule w/ batteries](/images/MOSModule/SolenoidMosModule_Batteries_bb.png) -->
 
 - - more soon....
 
