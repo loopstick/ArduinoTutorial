@@ -544,7 +544,7 @@ More comprehensive information about ultrasonic sensors:
 
 <img src="https://cdn-shop.adafruit.com/970x728/1063-06.jpg" width="200" />
 
-<img src="/examples/21_SoundSensor/SoundSensor_MAX4466_bb.png width="650"> 
+<img src="/examples/21_SoundSensor/SoundSensor_MAX4466_bb.png" width="650"> 
 
 - VCC = power for preamp (5v from Arduino) <- accepts 2.4V to 5.5V 
 - GND = ground (0v) = GND pin on the Arduino
