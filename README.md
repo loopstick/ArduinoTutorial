@@ -616,13 +616,17 @@ It's important to note that we are now using a separate power source for the mot
 
 
 *******************************************************************************
-### MOS module - single transistor breakout board + 5v solenoid
+### MOS module + 5v solenoid - single transistor breakout board + electro-mechanical actuator
 
-<img src="https://m.media-amazon.com/images/I/61a4AO9nVkL._SL1500_.jpg" width="200" />
-
+<img src="https://m.media-amazon.com/images/I/61a4AO9nVkL._SL1500_.jpg" width="200" /> 
 <img src="https://m.media-amazon.com/images/I/51uz6ic1S0L._AC_SL1001_.jpg" width="200" />
 
+- breakout board built around a single IRF520 MOSFET transistor
+- same as above, but the circuit is built for you
+- [AI generated tutorial MOS Module tutorial](https://electropeak.com/learn/interfacing-irf520-mosfet-driver-module-switch-button-hcmodu0083-with-arduino/?srsltid=AfmBOooAt1fvwTH-hx7iBUSyaW9nlxNEpQ3TXh5BaaZRg-11ggJKzHOE)
+- when using 5v the circuit is a little different than when using more than a higher voltage (7-12V)
 
+- - more soon....
 
 *******************************************************************************
 ### H-Bridge Motor Driver
