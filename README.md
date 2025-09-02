@@ -629,8 +629,8 @@ It's important to note that we are now using a separate power source for the mot
 <!-- - [AI generated tutorial MOS Module tutorial](https://electropeak.com/learn/interfacing-irf520-mosfet-driver-module-switch-button-hcmodu0083-with-arduino/?srsltid=AfmBOooAt1fvwTH-hx7iBUSyaW9nlxNEpQ3TXh5BaaZRg-11ggJKzHOE) -->
 
 - you can use batteries OR a power supply
-- We can misues the module a little and run it with only 5v
-- the circuit is the same as when a higher voltage (7-12V)
+- We can misuse the module a little and run it with only 5v
+- the circuit is the same as when using a higher voltage (7-12V)
 
 ![MOSmodule w/ power supply](examples/22_Solenoid_MOSModule/SolenoidMosModule_PowerSupply_bb.png)
 
@@ -639,19 +639,18 @@ It's important to note that we are now using a separate power source for the mot
 <!-- ![MOSmodule w/ batteries](/images/MOSModule/SolenoidMosModule_Batteries_bb.png) -->
 
 - the MOS module has 3 pins: 
-  - VCC = power for the MOS module (5v from Arduino)
+  - VCC = power for the MOS module (5v from Arduino) <- not more that 5v - or else 爆炸!
   - GND = ground (0v) = GND pin on the Arduino
   - SIG = signal from Arduino (e.g. pin 9) to control the MOSFET transistor 
 - Power
   - connect the MOS module GND to the ground of your power supply (or battery pack)
   - connect the MOS module VCC to your power supply (or battery pack)
-  - we must be sure that the power supply ground and the Arduino ground are connected together (the MOS modules makes this connection for us)
-- The solenoid has 2 wires
-  - polarity doesn't matter
-  - connect one wire to the MOS module's + terminal
-  - connect the other wire to the MOS module's - terminal 
+  - we must be sure that the power supply ground and the Arduino ground are connected together <- the MOS modules makes this connection for us
+- The solenoid has 2 wires <- polarity doesn't matter in this case
+  - connect one wire to the MOS module + terminal
+  - connect the other wire to the MOS module - terminal 
 
-MOS Module example code!
+MOS Module example code
 - [22a_MOS_Blink.ino](examples/22_Solenoid_MOSModule/22a_MOS_Blink/22a_MOS_Blink.ino) <- use this to test your wiring
 - [22b_MOS_Musical.ino](examples/22_Solenoid_MOSModule/22b_MOS_Musical/22b_MOS_Musical.ino) <- musically rhythmic
 - [22c_MOS_Mathematical.ino](examples/22_Solenoid_MOSModule/22c_MOS_Mathematical/22c_MOS_Mathematical.ino) <- mathematically rhythmic
