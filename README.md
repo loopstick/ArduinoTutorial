@@ -619,7 +619,7 @@ It's important to note that we are now using a separate power source for the mot
 *******************************************************************************
 ### MOS module + 5v solenoid - single transistor breakout board + electro-mechanical actuator
 
-<img src="https://m.media-amazon.com/images/I/51uz6ic1S0L._AC_SL1001_.jpg" width="220" />           <img src="https://m.media-amazon.com/images/I/61a4AO9nVkL._SL1500_.jpg" width="200" />
+<img src="https://m.media-amazon.com/images/I/51uz6ic1S0L._AC_SL1001_.jpg" width="220" />      +      <img src="https://m.media-amazon.com/images/I/61a4AO9nVkL._SL1500_.jpg" width="200" />
 
 - [video: Solenoid Basics Explained](https://www.youtube.com/watch?v=BbmocfETTFo)
 
