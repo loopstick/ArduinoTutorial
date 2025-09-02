@@ -616,7 +616,15 @@ It's important to note that we are now using a separate power source for the mot
 
 
 *******************************************************************************
+### MOS module - single transistor breakout board + 5v solenoid
 
+<img src="https://m.media-amazon.com/images/I/61a4AO9nVkL._SL1500_.jpg" width="200" />
+
+<img src="https://m.media-amazon.com/images/I/51uz6ic1S0L._AC_SL1001_.jpg" width="200" />
+
+
+
+*******************************************************************************
 ### H-Bridge Motor Driver
 - The H-Bridge is a circuit that allows us to control the direction of a motor as well as its speed.
 
@@ -656,7 +664,6 @@ notes:
 - we can also use the L298's onboard voltage regulator to provide 5V for our Arduino
 
 <img src="/images/Hbridge/l298n_1Motor_powerSupply.png" width="950">
-
 
 ### 6v Battery Pack - L298N H-Bridge Motor Driver
 
