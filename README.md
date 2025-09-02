@@ -544,7 +544,16 @@ More comprehensive information about ultrasonic sensors:
 
 <img src="https://cdn-shop.adafruit.com/970x728/1063-06.jpg" width="200" />
 
-... coming soon
+<img src="/examples/21_SoundSensor/SoundSensor_MAX4466_bb.png width="650"> 
+
+- VCC = power for preamp (5v from Arduino) <- accepts 2.4V to 5.5V 
+- GND = ground (0v) = GND pin on the Arduino
+- OUT is the analog output pin that delivers the amplified sound signal. Please note that the output will have a DC bias equal to VCC/2, so when it’s perfectly quiet, the voltage will remain steady at a VCC/2 level.
+
+note: it’s recommended to use 3.3V input power as it provides the “quietest” supply on the Arduino. 
+
+Sound Sensor example code:
+  - [21a_SoundSensor_basic.ino](/examples/21_SoundSensor/21a_SoundSensor_basic/21a_SoundSensor_basic.ino)
 
 - Last Minute Engineers [MAX4466 Microphone Amplifier Module tutorial](https://lastminuteengineers.com/max4466-arduino-tutorial/)
 
