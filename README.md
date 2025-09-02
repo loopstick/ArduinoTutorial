@@ -544,6 +544,8 @@ More comprehensive information about ultrasonic sensors:
 
 <img src="https://cdn-shop.adafruit.com/970x728/1063-06.jpg" width="200" />
 
+The Adafruit MAX4466 microphone amplifier is a great way to add sound detection to your project. It has a built-in adjustable gain amplifier, so you can set the sensitivity to your needs. The output is an analog voltage that can be read by an analog input on your microcontroller.
+
 <img src="/examples/21_SoundSensor/SoundSensor_MAX4466_bb.png" width="650"> 
 
 - VCC = power for preamp (5v from Arduino) <- accepts 2.4V to 5.5V 
@@ -555,8 +557,8 @@ note: it’s recommended to use 3.3V input power as it provides the “quietest�
 Sound Sensor example code:
   - [21a_SoundSensor_basic.ino](/examples/21_SoundSensor/21a_SoundSensor_basic/21a_SoundSensor_basic.ino)
 
+Addtional Resources:
 - Last Minute Engineers [MAX4466 Microphone Amplifier Module tutorial](https://lastminuteengineers.com/max4466-arduino-tutorial/)
-
 - Adafruit [Microphone Amplifier Breakout tutorial](https://learn.adafruit.com/adafruit-microphone-amplifier-breakout)
 
 *******************************************************************************
