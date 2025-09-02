@@ -557,6 +557,8 @@ note: it’s recommended to use 3.3V input power as it provides the “quietest�
 Sound Sensor example code:
   - [21a_SoundSensor_basic.ino](/examples/21_SoundSensor/21a_SoundSensor_basic/21a_SoundSensor_basic.ino)
 
+hint: you can use the Serial Plotter to see the sound data in real time (_Tools > Serial Plotter_)
+
 Addtional Resources:
 - Last Minute Engineers [MAX4466 Microphone Amplifier Module tutorial](https://lastminuteengineers.com/max4466-arduino-tutorial/)
 - Adafruit [Microphone Amplifier Breakout tutorial](https://learn.adafruit.com/adafruit-microphone-amplifier-breakout)
