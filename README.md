@@ -5,7 +5,7 @@
 This workshop originally created by:
 Michael Shiloh and Judy Castro for *Teach Me To Make*
 
-Revised by Sudhu Tewari 2018-24
+Revised by Sudhu Tewari 2018-25
 
 <!-- ##### Arduino Examples - coming soon! --> 
 
