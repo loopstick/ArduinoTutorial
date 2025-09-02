@@ -239,23 +239,27 @@ If you changed the program to control only pin 8, then the built-in LED on pin 1
 
 Are we limited to LEDs? No; we could replace the LED (and its resistor) with any other suitable device, with some considerations. We’ll learn more about this later.
 
-*******************************************************************************
-### Jumper Wire color code!
 
-remember the [Resistor Color Code](/images/ResistorColorCode.png)? Wouldn't it be helpful if we had a code to help us keep track of the various connections that our jumper wires are making?
+*******************************************************************************
+### Jumper Wire color code
+
+Remember the [Resistor Color Code](/images/ResistorColorCode.png)? Wouldn't it be helpful if we had a code to help us keep track of the various connections that our jumper wires are making?
 In fact, YES, this is terribly important for conceptualizing and making intelligible breadboard circuits <!--(if only to keep some of us from having panic atttacks when we see what looks like a dangerous short circuit)-->
 
-There is no 'official' color code but there are some conventions:
+- There is no 'official' color code but there are some conventions:
 
-Black (or sometimes green): connected to ground (GND)
+- Black (or sometimes green): connected to ground (GND)
 
-Red: connected to power (in our world this will be 5V for Arduino and 3.3V for ESP32)
+- Red: connected to power (in our world this will be 5V for Arduino and 3.3V for ESP32)
 
 to prevent connections that 'release the magic smoke' **NEVER** connect Red to Black (aka **NEVER** connct positive voltage to ground)
 
-some notes from [Daragh Byrne](https://diotlabs.daraghbyrne.me/docs/a-simple-internet-appliance/jumpers/): "When working with other components, choose a consistent color. For example if working with an RGB led, you might use a Green, Orange (because red is for power) and Blue cable to connect to each of the color terminals on the LED.
+some notes from [Daragh Byrne](https://diotlabs.daraghbyrne.me/docs/a-simple-internet-appliance/jumpers/): 
+
+"When working with other components, choose a consistent color. For example if working with an RGB led, you might use a Green, Orange (because red is for power) and Blue cable to connect to each of the color terminals on the LED.
 
 Servos normally have three wired connections, brown/black, orange/red and yellow. Match the colors. Match the jumper wires connecting to your breadboard to make it quick and easy to check connections."
+
 
 *******************************************************************************
 ### How to use a sensor: analogRead()
