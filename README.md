@@ -613,7 +613,7 @@ What else can _analogWrite()_ do?
 ### Arduino outputs: Voltage and current
 - When used as outputs, two things must be considered: the voltage and the current. Our Arduino can deliver 5 v, and at most 40 mA.
 - The voltage is determined by Arduino, but the current is determined by whatever we’re trying to control. In the case of the LEDs, they only need 20 mA or less. The motor we have might take more than 40 mA. In the worst case, when it’s stalled, it might want a 200 mA.
-- The important thing to realize is that Arduino does not have the ability to limit this current. It will try to deliver whatever is asked of it, even if it overheats and damages itself.
+- The important thing to realize is that Arduino does not have the ability to limit this current. It will try to deliver whatever is asked of it, even if it overheats and damages itself (爆炸).
 - If we want to control a device that might take more than 40 mA, we have to use an intermediary.
 - the most common device for controlling large current loads with a microcontroller is a transistor (we could also use a relay or a switch)
 
@@ -623,9 +623,9 @@ The transistor is like a bicycle gear: you control it with a small amount of cur
 Use a transistor to control a higher current for a motor.
  - There are hundreds of transisors that will work for this application. 
    - here are a few that I commonly use:
-	- [TIP120](https://cdn-shop.adafruit.com/datasheets/TIP120.pdf) - Darlington sold by Adafruit
-	- [IRF520](https://www.vishay.com/docs/91017/91017.pdf)
-	- [IRF8721](https://cdn-shop.adafruit.com/datasheets/irlb8721pbf.pdf) - MOSFET sold by Adafruit
+	- [TIP120](https://cdn-shop.adafruit.com/datasheets/TIP120.pdf) - Darlington 
+	- [IRF520](https://www.vishay.com/docs/91017/irf520.pdf) - MOSFET
+	- [IRF8721](https://cdn-shop.adafruit.com/datasheets/irlb8721pbf.pdf) - MOSFET 
   - never assume the pinout of a transistor or IC.
     - ALWAYS look up the pinout before applying power.
       - or else 爆炸
