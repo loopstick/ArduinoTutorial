@@ -575,11 +575,32 @@ We can start with a simple test to get familiar with the NeoPixel library. When 
 
 <img src="/examples/12_NeoPixel/NeoPixel_stick_bb.png" width="850"> 
 
-neoPixel example code:
+NeoPixel example code:
   - FIRST -> install the Adafruit [NeoPixel](https://github.com/adafruit/Adafruit_NeoPixel) library
   - [12a_NeoPixel_simpleTest.ino](/examples/12_NeoPixel/12a_NeoPixel_simpleTest/12a_NeoPixel_simpleTest.ino)
     - [12b_NeoPixel_strandtest.ino](/examples/12_NeoPixel/12b_NeoPixel_strandtest/12b_NeoPixel_strandtest.ino)
+    <!-- CoPilot suggestions
+    - [12c_NeoPixel_rainbowCycle.ino](/examples/12_NeoPixel/12c_NeoPixel_rainbowCycle/12c_NeoPixel_rainbowCycle.ino)
+    - [12d_NeoPixel_Potentiometer.ino](/examples/12_NeoPixel/12d_NeoPixel_Potentiometer/12d_NeoPixel_Potentiometer.ino)  - potentiometer controls brightness
+    - [12e_NeoPixel_PIR.ino](/examples/12_NeoPixel/12e_NeoPixel_PIR/12e_NeoPixel_PIR.ino) - PIR motion sensor triggers rainbow cycle
+    - [12f_NeoPixel_Ultrasonic.ino](/examples/12_NeoPixel/12f_NeoPixel_Ultrasonic/12f_NeoPixel_Ultrasonic.ino) - ultrasonic distance sensor controls number of lit pixels
+    - [12g_NeoPixel_SoundSensor.ino](/examples/12_NeoPixel/12g_NeoPixel_SoundSensor/12g_NeoPixel_SoundSensor.ino) - sound sensor controls brightness
+    - [12h_NeoPixel_RGB.ino](/examples/12_NeoPixel/12h_NeoPixel_RGB/12h_NeoPixel_RGB.ino) - RGB LED controls NeoPixel color
+    -->
 
+Additional Resources:
+- [Adafruit NeoPixel Uberguide](https://learn.adafruit.com/adafruit-neopixel-uberguide)
+
+
+*******************************************************************************
+### Microphone + NeoPixel stick
+
+Watching the serial plotter is fun, but can we use the sound data to control something physical? Yes, we can!
+
+<img src="/examples/21_SoundSensor/SoundSensor_NeoPixel_stick_bb.png" width="650">
+
+Example code:
+- coming soon!
 
 <!-- *******************************************************************************
 Earlier, we lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
