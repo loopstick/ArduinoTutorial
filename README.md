@@ -630,9 +630,11 @@ It's important to note that we are now using a separate power source for the mot
 
 ![MOSmodule w/ power supply](/images/MOSmodule/SolenoidMosModule_PowerSupply_bb.png) 
 
+![MOSmodule w/ power supply](/examples/22_Solenoid_MOSModule/SolenoidMosModule_Batteries_bb.png)
 
 
-![MOSmodule w/ batteries](/images/MOSmodule/SolenoidMosModule_Batteries_bb.png) 
+
+![MOSmodule w/ batteries](/images/MOSModule/SolenoidMosModule_Batteries_bb.png) 
 
 - - more soon....
 
