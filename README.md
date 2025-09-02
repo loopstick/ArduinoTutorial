@@ -546,8 +546,9 @@ More comprehensive information about ultrasonic sensors:
 
 ... coming soon
 
-Last Minute Engineers[MAX4466 Microphone Amplifier Module tutorial](https://lastminuteengineers.com/max4466-arduino-tutorial/)
-Adafruit [Microphoen Amplifier Breakout tutorial](https://learn.adafruit.com/adafruit-microphone-amplifier-breakout)
+- Last Minute Engineers[MAX4466 Microphone Amplifier Module tutorial](https://lastminuteengineers.com/max4466-arduino-tutorial/)
+
+- Adafruit [Microphoen Amplifier Breakout tutorial](https://learn.adafruit.com/adafruit-microphone-amplifier-breakout)
 
 *******************************************************************************
 ### NeoPixels (low-current) 
