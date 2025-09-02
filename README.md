@@ -625,18 +625,24 @@ It's important to note that we are now using a separate power source for the mot
 
 - MOS module = breakout board built around a single IRF520 MOSFET transistor
 - same as above, but the circuit is built for you
-- [AI generated tutorial MOS Module tutorial](https://electropeak.com/learn/interfacing-irf520-mosfet-driver-module-switch-button-hcmodu0083-with-arduino/?srsltid=AfmBOooAt1fvwTH-hx7iBUSyaW9nlxNEpQ3TXh5BaaZRg-11ggJKzHOE)
-- when using 5v the circuit is a little different than when using more than a higher voltage (7-12V)
+<!-- - [AI generated tutorial MOS Module tutorial](https://electropeak.com/learn/interfacing-irf520-mosfet-driver-module-switch-button-hcmodu0083-with-arduino/?srsltid=AfmBOooAt1fvwTH-hx7iBUSyaW9nlxNEpQ3TXh5BaaZRg-11ggJKzHOE) -->
 
-<!-- ![MOSmodule w/ power supply](/images/MOSmodule/SolenoidMosModule_PowerSupply_bb.png)  -->
+- you can use batteries OR a power supply
 
 ![MOSmodule w/ power supply](examples/22_Solenoid_MOSModule/SolenoidMosModule_PowerSupply_bb.png)
 
 ![MOSmodule w/ batteries](/examples/22_Solenoid_MOSModule/SolenoidMosModule_Batteries_bb.png)
-
+<!-- ![MOSmodule w/ power supply](/images/MOSmodule/SolenoidMosModule_PowerSupply_bb.png)  -->
 <!-- ![MOSmodule w/ batteries](/images/MOSModule/SolenoidMosModule_Batteries_bb.png) -->
 
+- when using 5v the circuit is a little different than when using more than a higher voltage (7-12V)
 - - more soon....
+
+- MOS Module example code!
+- [22a_MOS_Blink.ino](examples/22_Solenoid_MOSModule/22a_MOS_Blink/22a_MOS_Blink.ino) <- use this to test your wiring
+- [22b_MOS_Musical.ino](examples/22_Solenoid_MOSModule/22b_MOS_Musical/22b_MOS_Musical.ino) <- musically rhythmic
+- [22c_MOS_Mathematical.ino](examples/22_Solenoid_MOSModule/22c_MOS_Mathematical/22c_MOS_Mathematical.ino) <- mathematically rhythmic
+- [22d_MOS_Random.ino](examples/22_Solenoid_MOSModule/22d_MOS_Random/22d_MOS_Random.ino) <- randomly rhythmic
 
 *******************************************************************************
 ### H-Bridge Motor Driver
