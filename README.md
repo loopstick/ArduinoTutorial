@@ -544,7 +544,7 @@ More comprehensive information about ultrasonic sensors:
 
 <img src="https://cdn-shop.adafruit.com/970x728/1063-06.jpg" width="200" />
 
-The Adafruit MAX4466 microphone amplifier is a great way to add sound detection to your project. It has a built-in adjustable gain amplifier, so you can set the sensitivity to your needs. The output is an analog voltage that can be read by an analog input on your microcontroller.
+The [Adafruit MAX4466 microphone amplifier](https://www.adafruit.com/product/1063) is a great way to add sound detection to your project. It has a built-in adjustable gain amplifier, so you can set the sensitivity to your needs. The output is an analog voltage that can be read by an analog input on your microcontroller.
 
 <img src="/examples/21_SoundSensor/SoundSensor_MAX4466_bb.png" width="650"> 
 
