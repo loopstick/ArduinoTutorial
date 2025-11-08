@@ -604,6 +604,10 @@ Watching the serial plotter is fun, but can we use the sound data to control som
 Example code:
 - coming soon!
 
+
+Note:
+- It turns out that noise from the neopixel data can interfere with the microphone sensitivity. If it seems like the microphone isn't working correctly, try it without the neopixels (or reduce the neopixel brightness to 10 or less).
+
 <!-- *******************************************************************************
 Earlier, we lit up an LED using _analogWrite()_ based on sensor data _analogRead()_!
 
